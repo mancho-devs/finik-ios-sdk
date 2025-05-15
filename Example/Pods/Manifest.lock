@@ -1,0 +1,16 @@
+PODS:
+  - FinikIosSdk (0.1.0)
+
+DEPENDENCIES:
+  - FinikIosSdk (from `../`)
+
+EXTERNAL SOURCES:
+  FinikIosSdk:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FinikIosSdk: 7ee1863cb9e61a0a2d3fb35f5c86cba20cda93d0
+
+PODFILE CHECKSUM: 07d83d2af7afab492cc65a9c4ce00f5acd7981a2
+
+COCOAPODS: 1.16.2
