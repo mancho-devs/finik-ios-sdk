@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'FinikIosSdk'
   s.version          = '0.1.1'
-  s.summary = 'A lightweight SDK for integrating Finik payments into your iOS app.'
+  s.summary          = 'A lightweight SDK for integrating Finik payments into your iOS app.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -31,10 +31,10 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/mancho-devs/finik-ios-sdk.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.swift_version = '5.0'
+  s.swift_version    = '5.0'
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'FinikIosSdk/Classes/**/*'
+  s.source_files     = 'FinikIosSdk/Classes/**/*'
   
   # s.resource_bundles = {
   #   'FinikIosSdk' => ['FinikIosSdk/Assets/*.png']
