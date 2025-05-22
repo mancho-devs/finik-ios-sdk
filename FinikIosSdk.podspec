@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FinikIosSdk'
-  s.version          = '0.1.3'
+  s.version          = '0.1.15'
   s.summary          = 'A lightweight SDK for integrating Finik payments into your iOS app.'
 
   s.description      = <<-DESC
@@ -21,24 +21,16 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/mancho-devs/finik-ios-sdk'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'birimkulov951' => 'birimkulov951@gmail.com' }
+  s.author           = { 'Finik' => 'engineering@quickpay.kg' }
   s.source           = { :git => 'https://github.com/mancho-devs/finik-ios-sdk.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.static_framework = true
+#  s.static_framework = true
 
   s.swift_version    = '5.0'
   s.ios.deployment_target = '12.0'
 
   s.source_files = 'FinikIosSdk/Classes/**/*'
+  s.vendored_frameworks = 'FinikIosSdk/Frameworks/*'
   
-  s.dependency 'Flutter'
-
-  # s.resource_bundles = {
-  #   'FinikIosSdk' => ['FinikIosSdk/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
