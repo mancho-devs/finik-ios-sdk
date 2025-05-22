@@ -16,7 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    // IntantiateFlutterEngine
     lazy var flutterEngine = FlutterEngine(name: "finik_ios_sdk")
 
     func application(
@@ -25,11 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             [UIApplicationLaunchOptionsKey: Any]?
     ) -> Bool {
 
-        // Run FlutterEngine
         flutterEngine.run()
-        // Register plugins from Flutter module
         GeneratedPluginRegistrant.register(with: flutterEngine)
-        // Pass to FInikIosSdk
         FlutterEngineHolder.shared.engine = flutterEngine
 
         return true
