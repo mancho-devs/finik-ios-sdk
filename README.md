@@ -1,5 +1,7 @@
 # FinikIosSdk
 
+FinikIosSdk is an iOS SDK for integrating the Finik payment system, including support for Flutter modules.
+
 [![CI Status](https://img.shields.io/travis/birimkulov951/FinikIosSdk.svg?style=flat)](https://travis-ci.org/birimkulov951/FinikIosSdk)
 [![Version](https://img.shields.io/cocoapods/v/FinikIosSdk.svg?style=flat)](https://cocoapods.org/pods/FinikIosSdk)
 [![License](https://img.shields.io/cocoapods/l/FinikIosSdk.svg?style=flat)](https://cocoapods.org/pods/FinikIosSdk)
@@ -7,22 +9,16 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+- To run the example project, clone the repo, and run `pod install` from the Example directory first.
+- Flutter code requires running on a real device. Simulators are not supported due to Flutter running in release mode.
 
 ## Requirements
 
-## Installation
-
-FinikIosSdk is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
-
-```ruby
-pod 'FinikIosSdk'
-```
+- iOS 12.0 or later
 
 ## Author
-
-birimkulov951, birimkulov951@gmail.com
+~~
+~~Finik, engineering@quickpay.kg
 
 ## License
 

@@ -176,16 +176,22 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/connectivity_plus/connectivity_plus.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/path_provider_foundation/path_provider_foundation.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/sqflite_darwin/sqflite_darwin.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/url_launcher_ios/url_launcher_ios.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FinikIosSdk/FinikIosSdk.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/App.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/connectivity_plus.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/path_provider_foundation.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/sqflite_darwin.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/url_launcher_ios.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter/Flutter.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/connectivity_plus/connectivity_plus.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/path_provider_foundation/path_provider_foundation.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/sqflite_darwin/sqflite_darwin.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/url_launcher_ios/url_launcher_ios.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/FinikIosSdk/FinikIosSdk.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/App.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/connectivity_plus.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/path_provider_foundation.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/sqflite_darwin.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/url_launcher_ios.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter/Flutter.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

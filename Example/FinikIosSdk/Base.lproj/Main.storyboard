@@ -12,24 +12,23 @@
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="FinikIosSdk_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="center" id="kh9-bI-dsS" colorLabel="IBBuiltInLabel-Orange" propertyAccessControl="none">
+                    <view key="view" contentMode="center" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" id="kh9-bI-dsS" colorLabel="IBBuiltInLabel-Orange" propertyAccessControl="none">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Main Screen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vhE-3u-Yy0">
                                 <rect key="frame" x="112" y="273" width="151" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <button opaque="NO" contentMode="bottom" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTZ-Gl-cTO">
-                                <rect key="frame" x="108" y="460" width="159" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="108" y="556" width="159" height="35"/>
+                                <autoresizingMask key="autoresizingMask"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Go to FinikScreen"/>
                                 <connections>
-                                    <action selector="button:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WYR-UI-I1d"/>
+                                    <action selector="onTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="S75-7X-FZ0"/>
                                 </connections>
                             </button>
                         </subviews>

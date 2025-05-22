@@ -11,7 +11,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func button(_ sender: Any) {
+    @IBAction func onTapped(_ sender: UIButton) {
 
         FinikSdkProvider.present(
             from: self,
@@ -35,14 +35,10 @@ class ViewController: UIViewController {
                 textScenario: TextScenario.replenishment,
                 fixedAmount: 11.11,
                 requiredFields: [
-                    RequiredField(fieldId: "FIELD_ID", value: "VALUE"),
+                    RequiredField(fieldId: "FIELD_ID", value: "VALUE")
                 ]
             )
-            //            widget: GetItemHandlerWidget(
-            //                itemId: "72145c2f-b987-46b9-b718-5d8313854f69"
-            //            )
         )
-
     }
 
     override func viewDidLoad() {
