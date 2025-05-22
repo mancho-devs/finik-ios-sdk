@@ -10,3 +10,7 @@
 #endif
 #endif
 
+
+FOUNDATION_EXPORT double connectivity_plusVersionNumber;
+FOUNDATION_EXPORT const unsigned char connectivity_plusVersionString[];
+
