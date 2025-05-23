@@ -15,7 +15,7 @@ class ViewController: UIViewController {
 
         FinikSdkProvider.present(
             from: self,
-            apiKey: "da2-qtfmf4xkzjeypiexb75aqxtn6u",
+            apiKey: "YOUR_API_KEY",
             isBeta: true,
             locale: FinikSdkLocale.kg,
             useHiveForGraphQLCache: true,
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
                 print("ExampleApp: Payment failed: \(error)")
             },
             widget: CreateItemHandlerWidget(
-                accountId: "72145c2f-b987-46b9-b718-5d8313854f69",
+                accountId: "YOUR_ACCOUNT_ID",
                 nameEn: "YOUR_NAME_EN",
                 callbackUrl: "YOUR_CALBACK_URL",
                 textScenario: TextScenario.replenishment,
@@ -38,6 +38,10 @@ class ViewController: UIViewController {
                     RequiredField(fieldId: "FIELD_ID", value: "VALUE")
                 ]
             )
+            //             widget: GetItemHandlerWidget(
+            //                 itemId: "YOUR_ITEM_ID",
+            //                 textScenario: TextScenario.replenishment,
+            //             )
         )
 
     }
