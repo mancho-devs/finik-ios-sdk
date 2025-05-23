@@ -4,7 +4,6 @@ target 'FinikIosSdk_Example' do
   use_frameworks!
 
   pod 'FinikIosSdk', :path => '../'
-#  pod 'FinikIosSdk', :git => 'https://github.com/mancho-devs/finik-ios-sdk.git'
 
   target 'FinikIosSdk_Tests' do
     inherit! :search_paths
