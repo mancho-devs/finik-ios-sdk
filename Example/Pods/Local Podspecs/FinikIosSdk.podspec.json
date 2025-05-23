@@ -21,10 +21,5 @@
   },
   "source_files": "FinikIosSdk/Classes/**/*",
   "vendored_frameworks": "FinikIosSdk/Frameworks/*",
-  "dependencies": {
-    "Flutter": [
-
-    ]
-  },
   "swift_version": "5.0"
 }

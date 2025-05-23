@@ -1,6 +1,0 @@
-framework module FinikIosSdk {
-  umbrella header "FinikIosSdk-umbrella.h"
-
-  export *
-  module * { export * }
-}

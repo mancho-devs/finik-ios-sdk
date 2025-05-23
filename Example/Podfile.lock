@@ -1,23 +1,21 @@
 PODS:
-  - FinikIosSdk (0.1.15):
-    - Flutter
-  - Flutter (3.13.0)
+  - FinikIosSdk (0.1.15)
 
 DEPENDENCIES:
-  - FinikIosSdk (from `../`)
-
-SPEC REPOS:
-  trunk:
-    - Flutter
+  - FinikIosSdk (from `https://github.com/mancho-devs/finik-ios-sdk.git`)
 
 EXTERNAL SOURCES:
   FinikIosSdk:
-    :path: "../"
+    :git: https://github.com/mancho-devs/finik-ios-sdk.git
+
+CHECKOUT OPTIONS:
+  FinikIosSdk:
+    :commit: a344d2cb98f10a6ebddb5431543fe9f59d601a24
+    :git: https://github.com/mancho-devs/finik-ios-sdk.git
 
 SPEC CHECKSUMS:
-  FinikIosSdk: 4e1f2d86fec817cccc8cf5a6a16a4aa6d00ef669
-  Flutter: 8ff16720b007bae16abfe75ef9fe3ee45ead486a
+  FinikIosSdk: 990cd8483b9a3d8cc7dba6a2c1a9c91a73ff75ba
 
-PODFILE CHECKSUM: f415912fb50b84a286b62b6f43faf5c3bb2a01c9
+PODFILE CHECKSUM: b92bad5858d3eda3a77ee0cd2aed87821d61085a
 
 COCOAPODS: 1.16.2
