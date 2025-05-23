@@ -11,7 +11,6 @@ FinikIosSdk is a native iOS SDK for integrating the Finik payment platform, incl
 - 🧱 Supports multiple widget types (Create/Get payment item)
 - 🌐 Multi-language support: `en`, `ru`, `kg`
 
----
 
 ## Getting Started
 
@@ -24,7 +23,7 @@ pod 'FinikIosSdk', '~> 0.1.15'
 ```
 
 
-# Ensure you are using dynamic frameworks:
+## Ensure you are using dynamic frameworks:
 
 ```
 target 'YOUR_PROJECT_NAME' do
@@ -33,7 +32,7 @@ target 'YOUR_PROJECT_NAME' do
 end
 ```
 
-# Enable Flutter post-install step (if you integrate a Flutter module):
+## Enable Flutter post-install step (if you integrate a Flutter module):
 
 ```
 post_install do |installer|
@@ -41,9 +40,9 @@ post_install do |installer|
 end
 ```
 
-🧠 Flutter Engine Initialization
+# 🧠 Flutter Engine Initialization
 
-# In AppDelegate.swift, initialize the shared Flutter engine:
+## In AppDelegate.swift, initialize the shared Flutter engine:
 
 ``` swift
 lazy var flutterEngine = FlutterEngine(name: "finik_ios_sdk")
@@ -60,9 +59,9 @@ func application(
 ```
 
 
-💡 Usage
+# 💡 Usage
 
-# 📲 Presenting the Finik SDK UI
+## 📲 Presenting the Finik SDK UI
 
 ```swift
 FinikSdkProvider.present(
@@ -101,9 +100,6 @@ FinikSdkProvider.present(
 ```
 
 
-
-
-
 ## Parameters Explained
 
 - **apiKey**: Your API key from the Finik server.
@@ -125,9 +121,9 @@ The `FinikWidget` is a basic widget used in the Finik SDK. It lets you add diffe
 to your app and is passed to `FinikSdkProvider`. The SDK currently includes these widgets:
 
 
-🧩 Widgets
+# 🧩 Widgets
 
-1. CreateItemHandlerWidget
+## 1. CreateItemHandlerWidget
 
 Use this widget to create a new payment item and generate a QR code.
 
@@ -141,7 +137,7 @@ Use this widget to create a new payment item and generate a QR code.
 | `requiredFields` | `[RequiredField]` | Additional form fields                         |
 
 
-#### Example Code
+### Example Code
 
 ```swift
 CreateItemHandlerWidget(
@@ -157,16 +153,16 @@ CreateItemHandlerWidget(
 ```
 
 
-2. GetItemHandlerWidget
+## 2. GetItemHandlerWidget
 
 Use this widget to retrieve an existing item by its ID and display its details.
 
-#### Parameters
+### Parameters
 
 - **`itemId`** *(String, required)*: The unique ID for the item to fetch.
 - **`textScenario`**: Choose a text scenario for the widget. Default is `TextScenario.payment`.
 
-#### Example Code
+### Example Code
 
 ```swift
 GetItemHandlerWidget(
@@ -180,22 +176,22 @@ GetItemHandlerWidget(
 - iOS 12.0 or later
 
 
-📁 Example Project
+## 📁 Example Project
 To run the example:
 1. Clone the repo
 2. Run pod install in Example/ directory
 3. Run on a real device (simulator is not supported with Flutter release xcframework)
 
 
-🙋‍♂️ Contributing
+## 🙋‍♂️ Contributing
 - We welcome PRs and issues!
 - Feel free to open discussions, suggest features, or contribute code.
 
 
-📄 License
+## 📄 License
 - FinikIosSdk is available under the MIT license. See the LICENSE file for more info.
 
 
-👨‍💻 Author
+## 👨‍💻 Author
 - Finik — engineering@quickpay.kg
 
