@@ -31,6 +31,6 @@ Pod::Spec.new do |s|
   s.source_files = 'FinikIosSdk/Classes/**/*'
   s.vendored_frameworks = 'FinikIosSdk/Frameworks/*'
 
-  s.dependency 'Flutter'  # 3.13.0
+  s.dependency 'Flutter'  # Flutter is 3.13.0
 
 end

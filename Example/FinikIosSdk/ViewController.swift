@@ -38,10 +38,6 @@ class ViewController: UIViewController {
                     RequiredField(fieldId: "FIELD_ID", value: "VALUE")
                 ]
             )
-            //             widget: GetItemHandlerWidget(
-            //                 itemId: "YOUR_ITEM_ID",
-            //                 textScenario: TextScenario.replenishment,
-            //             )
         )
 
     }

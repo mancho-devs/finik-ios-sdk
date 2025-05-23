@@ -69,7 +69,6 @@ public class FinikSdkProvider {
 
         viewController.present(flutterVC, animated: true) {
 
-            // Pass arguments to Flutter
             let args: [String: Any] = [
                 "apiKey": apiKey,
                 "isBeta": isBeta,

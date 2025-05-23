@@ -11,6 +11,14 @@ modules via `.xcframework`.
 - 🧱 Supports multiple widget types (Create/Get payment item)
 - 🌐 Multi-language support: `kg`, `en`, `ru`
 
+## 📁 Example Project
+
+To run the example:
+
+1. Clone the repo
+2. Run pod install in Example/ directory
+3. Run on a real device (simulator is not supported with Flutter release xcframework)
+
 ## Getting Started
 
 ### 🔧 Installation
@@ -168,14 +176,6 @@ GetItemHandlerWidget(
 ## Requirements
 
 - iOS 12.0 or later
-
-## 📁 Example Project
-
-To run the example:
-
-1. Clone the repo
-2. Run pod install in Example/ directory
-3. Run on a real device (simulator is not supported with Flutter release xcframework)
 
 ## 🙋‍♂️ Contributing
 
