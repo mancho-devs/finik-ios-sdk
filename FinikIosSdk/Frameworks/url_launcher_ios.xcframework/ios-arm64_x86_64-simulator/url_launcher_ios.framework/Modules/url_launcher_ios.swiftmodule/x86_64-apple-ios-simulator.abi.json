@@ -5,16 +5,6 @@
     "printedName": "url_launcher_ios",
     "children": [
       {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "url_launcher_ios",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "Launcher",
         "printedName": "Launcher",
@@ -113,8 +103,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16url_launcher_ios8LauncherP4open_7options17completionHandlery10Foundation3URLV_SDySo38UIApplicationOpenExternalURLOptionsKeyaypGySbcSgtF",
-            "mangledName": "$s16url_launcher_ios8LauncherP4open_7options17completionHandlery10Foundation3URLV_SDySo38UIApplicationOpenExternalURLOptionsKeyaypGySbcSgtF",
+            "usr": "s:16url_launcher_ios8LauncherP4open_7options17completionHandlery10Foundation3URLV_SDySo38UIApplicationOpenExternalURLOptionsKeyaypGySbYbScMYccSgtF",
+            "mangledName": "$s16url_launcher_ios8LauncherP4open_7options17completionHandlery10Foundation3URLV_SDySo38UIApplicationOpenExternalURLOptionsKeyaypGySbYbScMYccSgtF",
             "moduleName": "url_launcher_ios",
             "genericSig": "<τ_0_0 where τ_0_0 : url_launcher_ios.Launcher>",
             "sugared_genericSig": "<Self where Self : url_launcher_ios.Launcher>",
@@ -151,161 +141,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "DefaultLauncher",
-        "printedName": "DefaultLauncher",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "canOpenURL",
-            "printedName": "canOpenURL(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "URL",
-                "printedName": "Foundation.URL",
-                "usr": "s:10Foundation3URLV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16url_launcher_ios15DefaultLauncherC10canOpenURLySb10Foundation0H0VF",
-            "mangledName": "$s16url_launcher_ios15DefaultLauncherC10canOpenURLySb10Foundation0H0VF",
-            "moduleName": "url_launcher_ios",
-            "declAttributes": [
-              "Final"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "open",
-            "printedName": "open(_:options:completionHandler:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "URL",
-                "printedName": "Foundation.URL",
-                "usr": "s:10Foundation3URLV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[UIKit.UIApplication.OpenExternalURLOptionsKey : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "OpenExternalURLOptionsKey",
-                    "printedName": "UIKit.UIApplication.OpenExternalURLOptionsKey",
-                    "usr": "c:@T@UIApplicationOpenExternalURLOptionsKey"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((Swift.Bool) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Bool) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Bool",
-                        "printedName": "Swift.Bool",
-                        "usr": "s:Sb"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:16url_launcher_ios15DefaultLauncherC4open_7options17completionHandlery10Foundation3URLV_SDySo38UIApplicationOpenExternalURLOptionsKeyaypGySbcSgtF",
-            "mangledName": "$s16url_launcher_ios15DefaultLauncherC4open_7options17completionHandlery10Foundation3URLV_SDySo38UIApplicationOpenExternalURLOptionsKeyaypGySbcSgtF",
-            "moduleName": "url_launcher_ios",
-            "declAttributes": [
-              "Final"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DefaultLauncher",
-                "printedName": "url_launcher_ios.DefaultLauncher",
-                "usr": "s:16url_launcher_ios15DefaultLauncherC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16url_launcher_ios15DefaultLauncherCACycfc",
-            "mangledName": "$s16url_launcher_ios15DefaultLauncherCACycfc",
-            "moduleName": "url_launcher_ios",
-            "implicit": true,
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:16url_launcher_ios15DefaultLauncherC",
-        "mangledName": "$s16url_launcher_ios15DefaultLauncherC",
-        "moduleName": "url_launcher_ios",
-        "declAttributes": [
-          "Final",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Launcher",
-            "printedName": "Launcher",
-            "usr": "s:16url_launcher_ios8LauncherP",
-            "mangledName": "$s16url_launcher_ios8LauncherP"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -321,322 +156,6 @@
         "printedName": "Flutter",
         "declKind": "Import",
         "moduleName": "url_launcher_ios"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PigeonError",
-        "printedName": "PigeonError",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "code",
-            "printedName": "code",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16url_launcher_ios11PigeonErrorC4codeSSvp",
-            "mangledName": "$s16url_launcher_ios11PigeonErrorC4codeSSvp",
-            "moduleName": "url_launcher_ios",
-            "declAttributes": [
-              "Final",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 0,
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16url_launcher_ios11PigeonErrorC4codeSSvg",
-                "mangledName": "$s16url_launcher_ios11PigeonErrorC4codeSSvg",
-                "moduleName": "url_launcher_ios",
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "message",
-            "printedName": "message",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16url_launcher_ios11PigeonErrorC7messageSSSgvp",
-            "mangledName": "$s16url_launcher_ios11PigeonErrorC7messageSSSgvp",
-            "moduleName": "url_launcher_ios",
-            "declAttributes": [
-              "Final",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 1,
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16url_launcher_ios11PigeonErrorC7messageSSSgvg",
-                "mangledName": "$s16url_launcher_ios11PigeonErrorC7messageSSSgvg",
-                "moduleName": "url_launcher_ios",
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "details",
-            "printedName": "details",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16url_launcher_ios11PigeonErrorC7detailsypSgvp",
-            "mangledName": "$s16url_launcher_ios11PigeonErrorC7detailsypSgvp",
-            "moduleName": "url_launcher_ios",
-            "declAttributes": [
-              "Final",
-              "HasStorage"
-            ],
-            "fixedbinaryorder": 2,
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Any?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProtocolComposition",
-                        "printedName": "Any"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16url_launcher_ios11PigeonErrorC7detailsypSgvg",
-                "mangledName": "$s16url_launcher_ios11PigeonErrorC7detailsypSgvg",
-                "moduleName": "url_launcher_ios",
-                "implicit": true,
-                "declAttributes": [
-                  "Transparent",
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(code:message:details:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PigeonError",
-                "printedName": "url_launcher_ios.PigeonError",
-                "usr": "s:16url_launcher_ios11PigeonErrorC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Any?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:16url_launcher_ios11PigeonErrorC4code7message7detailsACSS_SSSgypSgtcfc",
-            "mangledName": "$s16url_launcher_ios11PigeonErrorC4code7message7detailsACSS_SSSgypSgtcfc",
-            "moduleName": "url_launcher_ios",
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "localizedDescription",
-            "printedName": "localizedDescription",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16url_launcher_ios11PigeonErrorC20localizedDescriptionSSvp",
-            "mangledName": "$s16url_launcher_ios11PigeonErrorC20localizedDescriptionSSvp",
-            "moduleName": "url_launcher_ios",
-            "declAttributes": [
-              "Final"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16url_launcher_ios11PigeonErrorC20localizedDescriptionSSvg",
-                "mangledName": "$s16url_launcher_ios11PigeonErrorC20localizedDescriptionSSvg",
-                "moduleName": "url_launcher_ios",
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:16url_launcher_ios11PigeonErrorC",
-        "mangledName": "$s16url_launcher_ios11PigeonErrorC",
-        "moduleName": "url_launcher_ios",
-        "declAttributes": [
-          "Final",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Error",
-            "printedName": "Error",
-            "usr": "s:s5ErrorP",
-            "mangledName": "$ss5ErrorP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          }
-        ]
       },
       {
         "kind": "TypeDecl",
@@ -1044,47 +563,6 @@
             "fixedbinaryorder": 2
           },
           {
-            "kind": "Var",
-            "name": "dismissed",
-            "printedName": "dismissed",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(url_launcher_ios.InAppLoadResult.Type) -> url_launcher_ios.InAppLoadResult",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "InAppLoadResult",
-                    "printedName": "url_launcher_ios.InAppLoadResult",
-                    "usr": "s:16url_launcher_ios15InAppLoadResultO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "url_launcher_ios.InAppLoadResult.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "InAppLoadResult",
-                        "printedName": "url_launcher_ios.InAppLoadResult",
-                        "usr": "s:16url_launcher_ios15InAppLoadResultO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:16url_launcher_ios15InAppLoadResultO9dismissedyA2CmF",
-            "mangledName": "$s16url_launcher_ios15InAppLoadResultO9dismissedyA2CmF",
-            "moduleName": "url_launcher_ios",
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "fixedbinaryorder": 3
-          },
-          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(rawValue:)",
@@ -1230,175 +708,6 @@
             "printedName": "BitwiseCopyable",
             "usr": "s:s15BitwiseCopyableP",
             "mangledName": "$ss15BitwiseCopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "messagesPigeonCodec",
-        "printedName": "messagesPigeonCodec",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "shared",
-            "printedName": "shared",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "messagesPigeonCodec",
-                "printedName": "url_launcher_ios.messagesPigeonCodec",
-                "usr": "c:@M@url_launcher_ios@objc(cs)messagesPigeonCodec"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16url_launcher_ios19messagesPigeonCodecC6sharedACvpZ",
-            "mangledName": "$s16url_launcher_ios19messagesPigeonCodecC6sharedACvpZ",
-            "moduleName": "url_launcher_ios",
-            "static": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "messagesPigeonCodec",
-                    "printedName": "url_launcher_ios.messagesPigeonCodec",
-                    "usr": "c:@M@url_launcher_ios@objc(cs)messagesPigeonCodec"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16url_launcher_ios19messagesPigeonCodecC6sharedACvgZ",
-                "mangledName": "$s16url_launcher_ios19messagesPigeonCodecC6sharedACvgZ",
-                "moduleName": "url_launcher_ios",
-                "static": true,
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "messagesPigeonCodec",
-                "printedName": "url_launcher_ios.messagesPigeonCodec",
-                "usr": "c:@M@url_launcher_ios@objc(cs)messagesPigeonCodec"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@url_launcher_ios@objc(cs)messagesPigeonCodec(im)init",
-            "mangledName": "$s16url_launcher_ios19messagesPigeonCodecCACycfc",
-            "moduleName": "url_launcher_ios",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@url_launcher_ios@objc(cs)messagesPigeonCodec",
-        "mangledName": "$s16url_launcher_ios19messagesPigeonCodecC",
-        "moduleName": "url_launcher_ios",
-        "isOpen": true,
-        "declAttributes": [
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)FlutterStandardMessageCodec",
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "Flutter.FlutterStandardMessageCodec",
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
           }
         ]
       },
@@ -1625,54 +934,9 @@
         "printedName": "UrlLauncherApiSetup",
         "children": [
           {
-            "kind": "Var",
-            "name": "codec",
-            "printedName": "codec",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "FlutterStandardMessageCodec",
-                "printedName": "Flutter.FlutterStandardMessageCodec",
-                "usr": "c:objc(cs)FlutterStandardMessageCodec"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16url_launcher_ios19UrlLauncherApiSetupC5codecSo27FlutterStandardMessageCodecCvpZ",
-            "mangledName": "$s16url_launcher_ios19UrlLauncherApiSetupC5codecSo27FlutterStandardMessageCodecCvpZ",
-            "moduleName": "url_launcher_ios",
-            "static": true,
-            "declAttributes": [
-              "Final"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "FlutterStandardMessageCodec",
-                    "printedName": "Flutter.FlutterStandardMessageCodec",
-                    "usr": "c:objc(cs)FlutterStandardMessageCodec"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:16url_launcher_ios19UrlLauncherApiSetupC5codecSo27FlutterStandardMessageCodecCvgZ",
-                "mangledName": "$s16url_launcher_ios19UrlLauncherApiSetupC5codecSo27FlutterStandardMessageCodecCvgZ",
-                "moduleName": "url_launcher_ios",
-                "static": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
             "kind": "Function",
             "name": "setUp",
-            "printedName": "setUp(binaryMessenger:api:messageChannelSuffix:)",
+            "printedName": "setUp(binaryMessenger:api:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1698,18 +962,11 @@
                   }
                 ],
                 "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
               }
             ],
             "declKind": "Func",
-            "usr": "s:16url_launcher_ios19UrlLauncherApiSetupC5setUp15binaryMessenger3api20messageChannelSuffixySo013FlutterBinaryK0_p_AA0deF0_pSgSStFZ",
-            "mangledName": "$s16url_launcher_ios19UrlLauncherApiSetupC5setUp15binaryMessenger3api20messageChannelSuffixySo013FlutterBinaryK0_p_AA0deF0_pSgSStFZ",
+            "usr": "s:16url_launcher_ios19UrlLauncherApiSetupC5setUp15binaryMessenger3apiySo013FlutterBinaryK0_p_AA0deF0_pSgtFZ",
+            "mangledName": "$s16url_launcher_ios19UrlLauncherApiSetupC5setUp15binaryMessenger3apiySo013FlutterBinaryK0_p_AA0deF0_pSgtFZ",
             "moduleName": "url_launcher_ios",
             "static": true,
             "declAttributes": [
@@ -1772,13 +1029,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "url_launcher_ios"
       },
       {
         "kind": "TypeDecl",
@@ -2225,32 +1475,6 @@
           },
           {
             "kind": "Var",
-            "name": "isLoadCompleted",
-            "printedName": "isLoadCompleted",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:16url_launcher_ios16URLLaunchSessionC15isLoadCompleted33_AA677330BCE6AD4B807BAA3DADCADE3ALLSbvp",
-            "mangledName": "$s16url_launcher_ios16URLLaunchSessionC15isLoadCompleted33_AA677330BCE6AD4B807BAA3DADCADE3ALLSbvp",
-            "moduleName": "url_launcher_ios",
-            "isInternal": true,
-            "declAttributes": [
-              "HasInitialValue",
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "fixedbinaryorder": 2,
-            "hasStorage": true
-          },
-          {
-            "kind": "Var",
             "name": "safariViewController",
             "printedName": "safariViewController",
             "children": [
@@ -2270,7 +1494,7 @@
               "HasStorage",
               "RawDocComment"
             ],
-            "fixedbinaryorder": 3,
+            "fixedbinaryorder": 2,
             "isLet": true,
             "hasStorage": true,
             "accessors": [
@@ -2339,7 +1563,7 @@
               "HasStorage",
               "RawDocComment"
             ],
-            "fixedbinaryorder": 4,
+            "fixedbinaryorder": 3,
             "hasStorage": true,
             "accessors": [
               {
@@ -2704,6 +1928,104 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "UIApplication",
+        "printedName": "UIApplication",
+        "declKind": "Class",
+        "usr": "c:objc(cs)UIApplication",
+        "moduleName": "UIKit",
+        "isOpen": true,
+        "intro_iOS": "2.0",
+        "objc_name": "UIApplication",
+        "declAttributes": [
+          "Preconcurrency",
+          "Available",
+          "ObjC",
+          "NonSendable",
+          "Custom",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)UIResponder",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "UIKit.UIResponder",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Launcher",
+            "printedName": "Launcher",
+            "usr": "s:16url_launcher_ios8LauncherP",
+            "mangledName": "$s16url_launcher_ios8LauncherP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "UIViewController",
         "printedName": "UIViewController",
         "children": [
@@ -2852,67 +2174,46 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/birimkulov951\/.pub-cache\/hosted\/pub.dev\/url_launcher_ios-6.3.3\/ios\/url_launcher_ios\/Sources\/url_launcher_ios\/messages.g.swift",
+      "filePath": "\/Users\/birimkulov951\/.pub-cache\/hosted\/pub.dev\/url_launcher_ios-6.2.4\/ios\/Classes\/messages.g.swift",
       "kind": "IntegerLiteral",
-      "offset": 1747,
+      "offset": 1151,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/birimkulov951\/.pub-cache\/hosted\/pub.dev\/url_launcher_ios-6.3.3\/ios\/url_launcher_ios\/Sources\/url_launcher_ios\/messages.g.swift",
+      "filePath": "\/Users\/birimkulov951\/.pub-cache\/hosted\/pub.dev\/url_launcher_ios-6.2.4\/ios\/Classes\/messages.g.swift",
       "kind": "IntegerLiteral",
-      "offset": 1816,
+      "offset": 1220,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/birimkulov951\/.pub-cache\/hosted\/pub.dev\/url_launcher_ios-6.3.3\/ios\/url_launcher_ios\/Sources\/url_launcher_ios\/messages.g.swift",
+      "filePath": "\/Users\/birimkulov951\/.pub-cache\/hosted\/pub.dev\/url_launcher_ios-6.2.4\/ios\/Classes\/messages.g.swift",
       "kind": "IntegerLiteral",
-      "offset": 1897,
+      "offset": 1301,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/birimkulov951\/.pub-cache\/hosted\/pub.dev\/url_launcher_ios-6.3.3\/ios\/url_launcher_ios\/Sources\/url_launcher_ios\/messages.g.swift",
+      "filePath": "\/Users\/birimkulov951\/.pub-cache\/hosted\/pub.dev\/url_launcher_ios-6.2.4\/ios\/Classes\/messages.g.swift",
       "kind": "IntegerLiteral",
-      "offset": 2050,
+      "offset": 1454,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/birimkulov951\/.pub-cache\/hosted\/pub.dev\/url_launcher_ios-6.3.3\/ios\/url_launcher_ios\/Sources\/url_launcher_ios\/messages.g.swift",
+      "filePath": "\/Users\/birimkulov951\/.pub-cache\/hosted\/pub.dev\/url_launcher_ios-6.2.4\/ios\/Classes\/messages.g.swift",
       "kind": "IntegerLiteral",
-      "offset": 2115,
+      "offset": 1519,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/birimkulov951\/.pub-cache\/hosted\/pub.dev\/url_launcher_ios-6.3.3\/ios\/url_launcher_ios\/Sources\/url_launcher_ios\/messages.g.swift",
+      "filePath": "\/Users\/birimkulov951\/.pub-cache\/hosted\/pub.dev\/url_launcher_ios-6.2.4\/ios\/Classes\/messages.g.swift",
       "kind": "IntegerLiteral",
-      "offset": 2196,
+      "offset": 1600,
       "length": 1,
       "value": "2"
-    },
-    {
-      "filePath": "\/Users\/birimkulov951\/.pub-cache\/hosted\/pub.dev\/url_launcher_ios-6.3.3\/ios\/url_launcher_ios\/Sources\/url_launcher_ios\/messages.g.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2265,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/birimkulov951\/.pub-cache\/hosted\/pub.dev\/url_launcher_ios-6.3.3\/ios\/url_launcher_ios\/Sources\/url_launcher_ios\/messages.g.swift",
-      "kind": "StringLiteral",
-      "offset": 4964,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/birimkulov951\/.pub-cache\/hosted\/pub.dev\/url_launcher_ios-6.3.3\/ios\/url_launcher_ios\/Sources\/url_launcher_ios\/URLLaunchSession.swift",
-      "kind": "BooleanLiteral",
-      "offset": 559,
-      "length": 5,
-      "value": "false"
     }
   ]
 }
