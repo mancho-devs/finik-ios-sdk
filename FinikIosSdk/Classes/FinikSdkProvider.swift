@@ -26,6 +26,8 @@ public class FinikSdkProvider {
             return
         }
 
+        engine.viewController = nil
+
         let flutterVC = FlutterViewController(
             engine: engine, nibName: nil, bundle: nil)
 
@@ -79,6 +81,7 @@ public class FinikSdkProvider {
             channel.invokeMethod("getFinikSdkParams", arguments: args)
 
         }
+
     }
 
 }
