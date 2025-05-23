@@ -303,24 +303,31 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-@protocol FlutterPluginRegistrar;
-@class FlutterMethodCall;
-@class FlutterError;
 
-SWIFT_CLASS("_TtC17connectivity_plus22ConnectivityPlusPlugin")
-@interface ConnectivityPlusPlugin : NSObject <FlutterPlugin, FlutterStreamHandler>
-+ (void)registerWithRegistrar:(id <FlutterPluginRegistrar> _Nonnull)registrar;
-- (void)detachFromEngineForRegistrar:(id <FlutterPluginRegistrar> _Nonnull)registrar;
-- (void)handleMethodCall:(FlutterMethodCall * _Nonnull)call result:(FlutterResult _Nonnull)result;
-- (FlutterError * _Nullable)onListenWithArguments:(id _Nullable)_ eventSink:(FlutterEventSink _Nonnull)events SWIFT_WARN_UNUSED_RESULT;
-- (FlutterError * _Nullable)onCancelWithArguments:(id _Nullable)_ SWIFT_WARN_UNUSED_RESULT;
+SWIFT_CLASS("_TtC17connectivity_plus31PathMonitorConnectivityProvider") SWIFT_AVAILABILITY(ios,introduced=12)
+@interface PathMonitorConnectivityProvider : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
-SWIFT_CLASS("_TtC17connectivity_plus31PathMonitorConnectivityProvider")
-@interface PathMonitorConnectivityProvider : NSObject
+SWIFT_CLASS("_TtC17connectivity_plus32ReachabilityConnectivityProvider")
+@interface ReachabilityConnectivityProvider : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@protocol FlutterPluginRegistrar;
+@class FlutterMethodCall;
+@class FlutterError;
+
+SWIFT_CLASS("_TtC17connectivity_plus27SwiftConnectivityPlusPlugin")
+@interface SwiftConnectivityPlusPlugin : NSObject <FlutterPlugin, FlutterStreamHandler>
++ (void)registerWithRegistrar:(id <FlutterPluginRegistrar> _Nonnull)registrar;
+- (void)detachFromEngineForRegistrar:(id <FlutterPluginRegistrar> _Nonnull)registrar;
+- (void)handleMethodCall:(FlutterMethodCall * _Nonnull)call result:(FlutterResult _Nonnull)result;
+- (FlutterError * _Nullable)onListenWithArguments:(id _Nullable)_ eventSink:(FlutterEventSink _Nonnull)events SWIFT_WARN_UNUSED_RESULT;
+- (FlutterError * _Nullable)onCancelWithArguments:(id _Nullable)_ SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
