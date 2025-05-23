@@ -32,5 +32,4 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'FinikIosSdk/Frameworks/*'
 
   s.dependency 'Flutter'  # Flutter is 3.13.0
-
 end
