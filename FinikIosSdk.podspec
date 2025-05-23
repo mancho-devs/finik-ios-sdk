@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FinikIosSdk'
-  s.version          = '0.1.15'
+  s.version          = '0.1.16'
   s.summary          = 'A lightweight SDK for integrating Finik payments into your iOS app.'
 
   s.description      = <<-DESC
