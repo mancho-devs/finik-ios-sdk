@@ -1,7 +1,7 @@
 # FinikIosSdk
 
-FinikIosSdk is a native iOS SDK for integrating the Finik payment platform, including full support for embedded Flutter modules via `.xcframework`.
-
+FinikIosSdk is a native iOS SDK for integrating the Finik payment platform, including full support for embedded Flutter
+modules via `.xcframework`.
 
 ## 📦 Features
 
@@ -9,8 +9,7 @@ FinikIosSdk is a native iOS SDK for integrating the Finik payment platform, incl
 - 📲 Prebuilt payment UI using Flutter
 - 📡 Built-in support for GraphQL data retrieval
 - 🧱 Supports multiple widget types (Create/Get payment item)
-- 🌐 Multi-language support: `en`, `ru`, `kg`
-
+- 🌐 Multi-language support: `kg`, `en`, `ru`
 
 ## Getting Started
 
@@ -19,9 +18,8 @@ FinikIosSdk is a native iOS SDK for integrating the Finik payment platform, incl
 Add this line to your Podfile:
 
 ```ruby
-pod 'FinikIosSdk', '~> 0.1.15'
+pod 'FinikIosSdk', '~> "LASTEST_VERSION"'
 ```
-
 
 ## Ensure you are using dynamic frameworks:
 
@@ -58,7 +56,6 @@ func application(
 }    
 ```
 
-
 # 💡 Usage
 
 ## 📲 Presenting the Finik SDK UI
@@ -77,7 +74,7 @@ FinikSdkProvider.present(
         print("ExampleApp: Payment success: \(data)")
         
         // OUTPUT example:
-        // payment succeeded: {accountId: b358ec49-c2f5-49f2-9eef-afc9f47efeb2, amount: 123.95, fields:
+        // payment succeeded: {accountId: test_account_id, amount: 123.95, fields:
         // {amount: 123.95, YOU_FIELD_ID_FOR_REQUIRED_FIELD: YOUR_VALUE}, id:
         // 692910201_9qaq0fec-69c5-419d-8cfa-4b796qb98d82_DEBIT, requestDate: 1737537122065, status: SUCCEEDED,
         // transactionDate: 1737537124659, transactionId: 97ab0bwc-69c5-419d-8cfa-4b7963b98b82, transactionType:
@@ -99,27 +96,24 @@ FinikSdkProvider.present(
 )
 ```
 
-
 ## Parameters Explained
 
 - **apiKey**: Your API key from the Finik server.
 - **isBeta**: Whether to use the beta server. Default is `false`.
 - **locale**: The language for translations. Supported options: 'kg', 'en', 'ru'.
 - **useHiveForGraphQLCache**: Chooses where to store GraphQL data:
-  - Set to `true` for local disk storage using Hive.
-  - Set to `false` for temporary in-memory storage (good for app runtime).
+    - Set to `true` for local disk storage using Hive.
+    - Set to `false` for temporary in-memory storage (good for app runtime).
 - **onBackPressed**: A function triggered when the back button is pressed. Useful for
   custom navigation or showing dialogs.
 - **onPaymentSuccess**: A function triggered when the payment is succeeded. Returns the payment data.
 - **onPaymentFailure**: A function triggered when the payment is failed. Returns the error message.
 - **widget**: The `FinikWidget` managed by `FinikSdkProvider`.
 
-
 ## FinikWidget Details
 
 The `FinikWidget` is a basic widget used in the Finik SDK. It lets you add different functions
 to your app and is passed to `FinikSdkProvider`. The SDK currently includes these widgets:
-
 
 # 🧩 Widgets
 
@@ -136,7 +130,6 @@ Use this widget to create a new payment item and generate a QR code.
 | `fixedAmount`    | `Double`          | QR amount                                      |
 | `requiredFields` | `[RequiredField]` | Additional form fields                         |
 
-
 ### Example Code
 
 ```swift
@@ -152,15 +145,16 @@ CreateItemHandlerWidget(
 )
 ```
 
-
 ## 2. GetItemHandlerWidget
 
 Use this widget to retrieve an existing item by its ID and display its details.
 
 ### Parameters
 
-- **`itemId`** *(String, required)*: The unique ID for the item to fetch.
-- **`textScenario`**: Choose a text scenario for the widget. Default is `TextScenario.payment`.
+| Parameter      | Type           | Description                                    |
+|----------------|----------------|------------------------------------------------|
+| `itemId`       | `String`       | The unique ID for the item to fetch            |
+| `textScenario` | `TextScenario` | UI text variant (`.payment`, `.replenishment`) |
 
 ### Example Code
 
@@ -175,23 +169,24 @@ GetItemHandlerWidget(
 
 - iOS 12.0 or later
 
-
 ## 📁 Example Project
+
 To run the example:
+
 1. Clone the repo
 2. Run pod install in Example/ directory
 3. Run on a real device (simulator is not supported with Flutter release xcframework)
 
-
 ## 🙋‍♂️ Contributing
+
 - We welcome PRs and issues!
 - Feel free to open discussions, suggest features, or contribute code.
 
-
 ## 📄 License
+
 - FinikIosSdk is available under the MIT license. See the LICENSE file for more info.
 
-
 ## 👨‍💻 Author
+
 - Finik — engineering@quickpay.kg
 
