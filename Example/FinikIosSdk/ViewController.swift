@@ -13,11 +13,17 @@ class ViewController: UIViewController {
 
     @IBAction func onTapped(_ sender: UIButton) {
 
+        
+//        const apiKeyBeta = 'da2-qtfmf4xkzjeypiexb75aqxtn6u'; // Beta
+//        const accountIdBeta = '72145c2f-b987-46b9-b718-5d8313854f69'; // Beta
+
+        
         FinikSdkProvider.present(
             from: self,
-            apiKey: "YOUR_API_KEY",
+            apiKey: "da2-qtfmf4xkzjeypiexb75aqxtn6u",
             isBeta: true,
             locale: FinikSdkLocale.kg,
+            textScenario: TextScenario.payment,
             useHiveForGraphQLCache: true,
             onBackPressed: {
                 print("ExampleApp: Back pressed from Flutter")
@@ -29,13 +35,14 @@ class ViewController: UIViewController {
                 print("ExampleApp: Payment failed: \(error)")
             },
             widget: CreateItemHandlerWidget(
-                accountId: "YOUR_ACCOUNT_ID",
+                accountId: "72145c2f-b987-46b9-b718-5d8313854f69",
                 nameEn: "YOUR_NAME_EN",
-                callbackUrl: "YOUR_CALBACK_URL",
-                textScenario: TextScenario.replenishment,
-                fixedAmount: 11.11,
+                requestId: "rewrewrwerewrewrefefewr",
+                callbackUrl: "YOUR_CALLBACK_URL",
+                fixedAmount: 22,
+                maxAvailableQuantity: 1,
                 requiredFields: [
-                    RequiredField(fieldId: "FIELD_ID", value: "VALUE")
+                    RequiredField(fieldId: "YOU_FIELD_ID", value: "YOUR_FIELD_VALUE")
                 ]
             )
         )
