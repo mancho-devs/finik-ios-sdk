@@ -15,6 +15,7 @@ public class FinikSdkProvider {
         apiKey: String,
         isBeta: Bool = false,
         locale: String,
+        textScenario: TextScenario = TextScenario.payment,
         useHiveForGraphQLCache: Bool = true,
         onBackPressed: @escaping () -> Void,
         onPaymentSuccess: @escaping ([String: Any]) -> Void,
@@ -46,19 +47,11 @@ public class FinikSdkProvider {
                 flutterVC.dismiss(animated: true, completion: nil)
                 result(nil)
 
-            case "onPaymentSuccess":
+            case "onPayment":
                 if let args = call.arguments as? [String: Any] {
                     onPaymentSuccess(args)
                 } else {
                     print("Invalid arguments for onPaymentSuccess")
-                }
-                result(nil)
-
-            case "onPaymentFailure":
-                if let message = call.arguments as? String {
-                    onPaymentFailure(message)
-                } else {
-                    print("Invalid arguments for onPaymentFailure")
                 }
                 result(nil)
 
@@ -73,6 +66,7 @@ public class FinikSdkProvider {
                 "apiKey": apiKey,
                 "isBeta": isBeta,
                 "locale": locale,
+                "textScenario": textScenario.rawValueString,
                 "useHiveForGraphQLCache": useHiveForGraphQLCache,
                 "widget": widget.toDictionary(),
             ]

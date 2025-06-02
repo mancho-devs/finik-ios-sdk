@@ -6,27 +6,22 @@
 //
 
 public class FinikWidget {
-    public let textScenario: TextScenario
+    
 
-    public init(textScenario: TextScenario) {
-        self.textScenario = textScenario
-    }
+        public init() {
+        }
 
-    public func toDictionary() -> [String: Any] {
-        return [
-            "textScenario": textScenario.rawValueString
-        ]
-    }
+        public func toDictionary() -> [String: Any] {
+            return [:]
+        }
 }
 
 public class GetItemHandlerWidget: FinikWidget {
     public let itemId: String
 
-    public init(
-        itemId: String, textScenario: TextScenario = TextScenario.payment
-    ) {
+    public init(itemId: String) {
         self.itemId = itemId
-        super.init(textScenario: textScenario)
+        super.init()
     }
 
     public override func toDictionary() -> [String: Any] {
@@ -40,33 +35,40 @@ public class GetItemHandlerWidget: FinikWidget {
 public class CreateItemHandlerWidget: FinikWidget {
     public let accountId: String
     public let nameEn: String
+    public let requestId: String
     public let callbackUrl: String?
     public let fixedAmount: Double?
+    public let maxAvailableQuantity: Int?
     public let requiredFields: [RequiredField]?
 
     public init(
         accountId: String,
         nameEn: String,
+        requestId: String,
         callbackUrl: String? = nil,
-        textScenario: TextScenario = TextScenario.payment,
         fixedAmount: Double? = nil,
+        maxAvailableQuantity: Int? = nil,
         requiredFields: [RequiredField]? = nil
     ) {
         self.accountId = accountId
         self.nameEn = nameEn
+        self.requestId = requestId
         self.callbackUrl = callbackUrl
         self.fixedAmount = fixedAmount
+        self.maxAvailableQuantity = maxAvailableQuantity
         self.requiredFields = requiredFields
-        super.init(textScenario: textScenario)
+        super.init()
     }
 
     public override func toDictionary() -> [String: Any] {
         var dict = super.toDictionary()
         dict["type"] = "createItem"
         dict["accountId"] = accountId
+        dict["requestId"] = requestId
         dict["nameEn"] = nameEn
         dict["callbackUrl"] = callbackUrl
         dict["fixedAmount"] = fixedAmount
+        dict["maxAvailableQuantity"] = maxAvailableQuantity
 
         if let fields = requiredFields {
             dict["requiredFields"] = fields.map { $0.toDictionary() }
