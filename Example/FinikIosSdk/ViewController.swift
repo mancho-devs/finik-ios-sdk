@@ -13,36 +13,29 @@ class ViewController: UIViewController {
 
     @IBAction func onTapped(_ sender: UIButton) {
 
-        
-//        const apiKeyBeta = 'da2-qtfmf4xkzjeypiexb75aqxtn6u'; // Beta
-//        const accountIdBeta = '72145c2f-b987-46b9-b718-5d8313854f69'; // Beta
-
-        
-        FinikSdkProvider.present(
+        FinikProvider.present(
             from: self,
-            apiKey: "da2-qtfmf4xkzjeypiexb75aqxtn6u",
+            apiKey: "YOUR_API_KEY",
             isBeta: true,
             locale: FinikSdkLocale.kg,
-            textScenario: TextScenario.payment,
-            useHiveForGraphQLCache: true,
+            textScenario: TextScenario.replenishment,
+            useHiveForGraphQLCache: false,
             onBackPressed: {
                 print("ExampleApp: Back pressed from Flutter")
             },
-            onPaymentSuccess: { data in
-                print("ExampleApp: Payment success: \(data)")
-            },
-            onPaymentFailure: { error in
-                print("ExampleApp: Payment failed: \(error)")
+            onPayment: { data in
+                print("ExampleApp: Payment data: \(data)")
             },
             widget: CreateItemHandlerWidget(
-                accountId: "72145c2f-b987-46b9-b718-5d8313854f69",
+                accountId: "YOUR_ACCOUNT_ID",
                 nameEn: "YOUR_NAME_EN",
-                requestId: "rewrewrwerewrewrefefewr",
+                requestId: "110ec58a-a0f2-4ac4-8393-c866d813b8d1",
                 callbackUrl: "YOUR_CALLBACK_URL",
-                fixedAmount: 22,
+                fixedAmount: 77.77,
                 maxAvailableQuantity: 1,
                 requiredFields: [
-                    RequiredField(fieldId: "YOU_FIELD_ID", value: "YOUR_FIELD_VALUE")
+                    RequiredField(
+                        fieldId: "YOU_FIELD_ID", value: "YOUR_FIELD_VALUE")
                 ]
             )
         )
