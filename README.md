@@ -8,7 +8,7 @@ modules via `.xcframework`.
 - 🔐 Secure payment integration with Finik server
 - 📲 Prebuilt payment UI using Flutter
 - 📡 Built-in support for GraphQL data retrieval
-- 🧱 Supports multiple widget types (Create/Get payment item)
+- 🧱 Supports multiple widget types (Create/Get payment Item)
 - 🌐 Multi-language support: `kg`, `en`, `ru`
 
 ## 📁 Example Project
@@ -66,62 +66,65 @@ func application(
 
 # 💡 Usage
 
-## 📲 Presenting the Finik SDK UI
+## 📲 Example Code
+
+Here’s how to use **FinikProvider** to add the SDK to your app:
 
 ```swift
-FinikSdkProvider.present(
+FinikProvider.present(
     from: self,
     apiKey: "YOUR_API_KEY",
     isBeta: true,
     locale: FinikSdkLocale.kg,
-    useHiveForGraphQLCache: true,
+    textScenario: TextScenario.replenishment,
+    useHiveForGraphQLCache: false,
     onBackPressed: {
-        print("ExampleApp: Back pressed from Flutter")
+      print("ExampleApp: Back pressed from Flutter")
     },
-    onPaymentSuccess: { data in
-        print("ExampleApp: Payment success: \(data)")
+    onPayment: { data in
+        print("ExampleApp: Payment data: \(data)")
         
-        // OUTPUT example:
-        // payment succeeded: {accountId: test_account_id, amount: 123.95, fields:
-        // {amount: 123.95, YOU_FIELD_ID_FOR_REQUIRED_FIELD: YOUR_VALUE}, id:
-        // 692910201_9qaq0fec-69c5-419d-8cfa-4b796qb98d82_DEBIT, requestDate: 1737537122065, status: SUCCEEDED,
-        // transactionDate: 1737537124659, transactionId: 97ab0bwc-69c5-419d-8cfa-4b7963b98b82, transactionType:
-        // DEBIT, item: {id: 3667229233_e3b98d14-ffd3-4cf8-b520-edbef079c3f0}}
-    },
-    onPaymentFailure: { error in
-        print("ExampleApp: Payment failed: \(error)")
+        // Example output:
+        // Payment Data: {accountId: test_account_id, amount: 77.95, fields: {amount: 77.77, YOU_FIELD_ID: 
+        // YOUR_FIELD_VALUE}, id: 692910201_97ab0bec-69c5-419d-8cfa-4b7963r98b82_DEBIT, requestDate: 1737537122065, 
+        // status: SUCCEEDED, transactionDate: 1737537124659, transactionId: 97ab0bec-69c5-419d-8cfa-4b7963b98b82, 
+        // transactionType: DEBIT, item: {id: 3667229233_e3b98d14-ffd3-4cf8-b520-e1be9079c3f0}}
     },
     widget: CreateItemHandlerWidget(
         accountId: "YOUR_ACCOUNT_ID",
-        nameEn: "YOUR_NAME_EN",
-        callbackUrl: "YOUR_CALBACK_URL",
-        textScenario: TextScenario.replenishment,
-        fixedAmount: 11.11,
+        nameEn: "YOUR_ITEM_NAME_EN",
+        requestId: "110ec58a-a0f2-4ac4-8393-c866d813b8d1",
+        callbackUrl: "YOUR_CALLBACK_URL",
+        fixedAmount: 77.77,
+        maxAvailableQuantity: 1,
         requiredFields: [
-            RequiredField(fieldId: "FIELD_ID", value: "VALUE")
+          RequiredField(
+                fieldId: "YOU_FIELD_ID", value: "YOUR_FIELD_VALUE")
         ]
     )
-)
+)     
 ```
 
-## Parameters Explained
+### Parameters Explained
 
-- **apiKey**: Your API key from the Finik server.
-- **isBeta**: Whether to use the beta server. Default is `false`.
+- **apiKey**: API client key provided by Finik.
+- **isBeta**: Whether to use the beta server.
 - **locale**: The language for translations. Supported options: 'kg', 'en', 'ru'.
+- **textScenario**: UI text variant (TextScenario.payment, TextScenario.replenishment)
 - **useHiveForGraphQLCache**: Chooses where to store GraphQL data:
     - Set to `true` for local disk storage using Hive.
     - Set to `false` for temporary in-memory storage (good for app runtime).
 - **onBackPressed**: A function triggered when the back button is pressed. Useful for
   custom navigation or showing dialogs.
-- **onPaymentSuccess**: A function triggered when the payment is succeeded. Returns the payment data.
-- **onPaymentFailure**: A function triggered when the payment is failed. Returns the error message.
-- **widget**: The `FinikWidget` managed by `FinikSdkProvider`.
+- **onPayment**: A function triggered when the payment is done. Returns the payment status and other payment data.
+- **widget**: The `FinikWidget` managed by `FinikProvider`. ('CreateItemHandlerWidget' or 'GetItemHandlerWidget')
+
+---
 
 ## FinikWidget Details
 
 The `FinikWidget` is a basic widget used in the Finik SDK. It lets you add different functions
-to your app and is passed to `FinikSdkProvider`. The SDK currently includes these widgets:
+to your app and is passed to `FinikProvider`. The SDK currently includes these widgets:
 
 # 🧩 Widgets
 
@@ -129,26 +132,36 @@ to your app and is passed to `FinikSdkProvider`. The SDK currently includes thes
 
 Use this widget to create a new payment item and generate a QR code.
 
-| Parameter        | Type              | Description                                    |
-|------------------|-------------------|------------------------------------------------|
-| `accountId`      | `String`          | Required account identifier                    |
-| `nameEn`         | `String`          | Item name (English)                            |
-| `callbackUrl`    | `String?`         | Optional callback URL                          |
-| `textScenario`   | `TextScenario`    | UI text variant (`.payment`, `.replenishment`) |
-| `fixedAmount`    | `Double`          | QR amount                                      |
-| `requiredFields` | `[RequiredField]` | Additional form fields                         |
+### Parameters
+
+- **accountId**: A required field. It is the Finik account where the funds will be deposited acquired from merchant's
+  clients. Reach out to Finik representatives to receive your corporate accountId with x-api-key.
+- **nameEn**: A required field used as a QR name that will be displayed to merchant's clients on their devices upon
+  payment.
+- **requestId**: A required field to control the uniqueness of a request. For each request it must be unique so that
+  Finik makes sure there are no duplicate QR items being created.
+- **callbackUrl**: An optional field used as a webhook; when specified, Finik will send a POST request to your server
+  with the payment details in its body in JSON format, including its final status that can be either SUCCEEDED or FAILED
+  as well as requiredFields in the form of fields object attribute.
+- **fixedAmount**: An optional field. When specified, a QR is generated with this specific amount. The merchant's client
+  will not be able to specify any custom amount.
+- **maxAvailableQuantity**: An optional field. The value must be 1 or null.
+- **requiredFields**: An optional field. When specified, Finik will proxy the provided key:value in the fields field
+  when sending the payment details to callbackUrl if configured.
 
 ### Example Code
 
 ```swift
 CreateItemHandlerWidget(
     accountId: "YOUR_ACCOUNT_ID",
-    nameEn: "YOUR_NAME_EN",
-    callbackUrl: "YOUR_CALBACK_URL",
-    textScenario: TextScenario.payment,
-    fixedAmount: 11.11,
+    nameEn: "YOUR_ITEM_NAME_EN",
+    requestId: "110ec58a-a0f2-4ac4-8393-c866d813b8d1",
+    callbackUrl: "YOUR_CALLBACK_URL",
+    fixedAmount: 77.77,
+    maxAvailableQuantity: 1,
     requiredFields: [
-        RequiredField(fieldId: "FIELD_ID", value: "VALUE")
+      RequiredField(
+            fieldId: "YOU_FIELD_ID", value: "YOUR_FIELD_VALUE")
     ]
 )
 ```
@@ -159,17 +172,13 @@ Use this widget to retrieve an existing item by its ID and display its details.
 
 ### Parameters
 
-| Parameter      | Type           | Description                                    |
-|----------------|----------------|------------------------------------------------|
-| `itemId`       | `String`       | The unique ID for the item to fetch            |
-| `textScenario` | `TextScenario` | UI text variant (`.payment`, `.replenishment`) |
+- **itemId**: A required field. It is the unique ID for the item to fetch.
 
 ### Example Code
 
 ```swift
 GetItemHandlerWidget(
     itemId: "YOUR_ITEM_ID",
-    textScenario: TextScenario.replenishment,
 )
 ```
 
