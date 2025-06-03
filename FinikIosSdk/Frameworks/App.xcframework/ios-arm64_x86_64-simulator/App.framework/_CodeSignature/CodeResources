@@ -10,143 +10,123 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		iF5JcWzUWzwrOTwrFEhrlRThWi4=
+		k2UbCiEwtl1sJEOi8FZnZbsB9vA=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		Fy6aODiqWY29bMSgd4IonTHQPBQ=
+		nnn91TXXmJyYJryxTzMPriVxobE=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
-		qr0kIkt5xRUfofmDxu5oMhrdIFM=
+		ydB3DlRsN7QOcQXr9qYPiZkLl/E=
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		k72lp4WmVfU2k/jXCAtJHztSeko=
+		7pzftJG7rSXJzKghvFRj0nGxcWQ=
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
-		O4Am/wvpcdrtCvAyzjf9+vlt/Gs=
+		fEuvARuTGmxoXOSSV/ppvediVY0=
 		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/fonts/Inter.ttf</key>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_bold.ttf</key>
 		<data>
-		GoffmNzdTIpn5hsbp2Z0MSOBvVE=
+		lGHnwIMTfCq+bRmPeE+w00GlJ6E=
+		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_extra_bold.ttf</key>
+		<data>
+		hyvEBnXAhMRRrxw+sQ4hwT4gCKM=
+		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_extra_light.ttf</key>
+		<data>
+		rtknCx7HZLuAmnvH3d5m45xoNsI=
+		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_light.ttf</key>
+		<data>
+		im4qzI2cT7u778L7NOv82CFsa24=
+		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_medium.ttf</key>
+		<data>
+		wdJdjBCttFqXDnHDh7vWOA8QmS0=
+		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_regular.ttf</key>
+		<data>
+		bjQw+QaktCtLY/2PM+SYpD2fjYQ=
+		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_semi_bold.ttf</key>
+		<data>
+		tL2va91qR5tGxFKnu64T9csgeb8=
+		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_thin.ttf</key>
+		<data>
+		UNSPyOkps6cG5dTsWKdeiYJ+x/Q=
+		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_tight_bold.ttf</key>
+		<data>
+		xg7QHzaPyuHM6M6shiRS5ZEyDaY=
+		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_tight_extra_bold.ttf</key>
+		<data>
+		s+OyObZHctacYg53pi0rC8QmQmY=
+		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_tight_extra_light.ttf</key>
+		<data>
+		7iACkxwhwyRI5re9a59jlKI7q1Y=
+		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_tight_light.ttf</key>
+		<data>
+		yopNCoMldfRZAgquPxkUJuxUhf0=
+		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_tight_medium.ttf</key>
+		<data>
+		B89c25tmAUagk1pcwWbsKgcXoVE=
+		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_tight_regular.ttf</key>
+		<data>
+		Y87qyBo6A2IR+6KQRuYGdS/n6o4=
+		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_tight_semi_bold.ttf</key>
+		<data>
+		d9ti293PRI+htjPm2jt2SA88pVk=
+		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_tight_thin.ttf</key>
+		<data>
+		7amL5mLUr3LPwJe3+M9/a9hy+W0=
 		</data>
 		<key>flutter_assets/packages/finik_sdk/assets/images/el_qr.png</key>
 		<data>
 		ASX1d6ghYIiudStz9D0QO2whVX0=
 		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/images/small_logo.png</key>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_applications.svg</key>
 		<data>
-		ozkDSD5Qbd9tjoYldpAHESTtOh8=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/ayil_bank.svg</key>
-		<data>
-		iS5/kF0d9gi4k6DwoBudPHWrgXE=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/bai_tushum.svg</key>
-		<data>
-		QjGE5GjMHDFnyI/twq/7tSHClu8=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/bakai.svg</key>
-		<data>
-		t5w6a66zhJ3oTgF2mWQ7ql/T+ec=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/balance.svg</key>
-		<data>
-		0DXQnM9tMHpNO84NdEICLl+mz8Q=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/bank_asia.svg</key>
-		<data>
-		jPUNcyP9pT9jRR/Kgw9QKEzu7Xw=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/capital.svg</key>
-		<data>
-		IiTDRqeLSMIBQza2vTZC3eEV9SM=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/dcb.svg</key>
-		<data>
-		kKX0J43c1oks/MdyFx6WY2sizvk=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/demir.svg</key>
-		<data>
-		BB/Ux/Ju5js1pUWEyeLzKxN3sP8=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/eib.svg</key>
-		<data>
-		dzWtQVhg9IcUbXQcgIwV1hgpods=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/elcart.svg</key>
-		<data>
-		dbBWcGhI2FUGKEdD6CDyBKeJksA=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/finik.svg</key>
-		<data>
-		Nb1T/hy8rdjASX07Q3WfuwHcq6o=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/finka.svg</key>
-		<data>
-		mm+U46QszpR98iwyf2XhLVLKzk8=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/halyk.svg</key>
-		<data>
-		gpy3ZZK+Z+xgqUyhye40rXMaLa8=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/keremet_bank.svg</key>
-		<data>
-		vHENr9lr35pQtY8TeVDiFgjC+AA=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/kicb.svg</key>
-		<data>
-		9RNdfss7rpvwcLeagVdWu1v+ieM=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/kkb.svg</key>
-		<data>
-		Ld8LeJP+5gCJuAVASQ3ijkbJt3E=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/kompanion.svg</key>
-		<data>
-		79otptaEi2LYjIssglLvtdiMReQ=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/mbank.svg</key>
-		<data>
-		IDitiiPPvBp2PwWxTVCEeEov9eI=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/mega.svg</key>
-		<data>
-		XDMvNimbzK9KI95Lvx4EDzeGQ+k=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/megapay.svg</key>
-		<data>
-		eI0/ZUAbWHX3R4AgRc8iV0o0BEY=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/o_dengi.svg</key>
-		<data>
-		h0TwKyFj+4eiHBHh9vzi96vAaCc=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/optima.svg</key>
-		<data>
-		+YmhTOXNc6vhkwA39oAsNCbbRIY=
-		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/rsk.svg</key>
-		<data>
-		J1+Kqnp7hHCuYPBrdDfzmfD7FeY=
+		8W985ztDP1IVGd+eyFtgJB5Z5G0=
 		</data>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_arrow_left.svg</key>
 		<data>
-		3VFctueWho6Ier2eHcgBMDBj2Vg=
+		pH5Bu4e3vyzyJsDB+qZtjQLAlQI=
 		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_gallery.svg</key>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_beeline.svg</key>
 		<data>
-		wdaKuYV6Q4tVtgT//XfvyC2zFA8=
+		T6bA7WUrHVEmi6qs6lxodOty1b8=
+		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_finik_logo.svg</key>
+		<data>
+		vrtHvvjtrnJpMjHDs5p2TRZ0Xlc=
 		</data>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_link_external.svg</key>
 		<data>
-		9/fB4J2U0yPHQ2Uis0DlajJmFY8=
+		D2cpOa9CqhsEeEkfF7QKkovLXeQ=
 		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_qr.svg</key>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_mega.svg</key>
 		<data>
-		FdGWs+e0LDuL9/0iT53dyCVIyR8=
+		Cab+ycmnAsBMEWVWYm4FLnyjmF4=
+		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_o.svg</key>
+		<data>
+		+lGpqlHK+ftu1Gr7vvbeGGpaR+c=
+		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_qr_code.svg</key>
+		<data>
+		6GCzkexqVNWGDFP4bYrxBv55AQ8=
 		</data>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_refresh.svg</key>
 		<data>
@@ -154,11 +134,11 @@
 		</data>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_share.svg</key>
 		<data>
-		kuNCpmH5JLfEG2YmFDTLAug3xiM=
+		dr1S0pggyffJLVme8OTpXoi6Xn0=
 		</data>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_torch.svg</key>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_whatsapp.svg</key>
 		<data>
-		qiFUknQBfHw54TjBV4V658avIIs=
+		+BhtTdZpkDgN6GkQGmsI+Rzk1yA=
 		</data>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>
 		<data>
@@ -171,42 +151,147 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LlTqmqQxhAP/EGeho1If9KvAUTvcBYvI0tXXUPZsmpo=
+			IrdCRwUoVWc8MFYbE/blYRxobU5FRmUxnXn/ZFAxJnU=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gdUPjridvprveGumbz+JL5aoEyE4n0yj1BJ4snsflwY=
+			9ZaBUQC62+tB/zkyJAGPrIVPDv353ckvJQ54W/8vawU=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			R9YC5Q4PaxKppDv5bbpN7u0kQ23B/H/MLvoK24r5AVY=
+			TdbHZU7HAtm2GYVIdgNdaCj1aVWQh/J9RhxTw9c1Kqk=
 			</data>
 		</dict>
 		<key>flutter_assets/NOTICES.Z</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			gVg7loW85X7K1H58aX+tsg049CAXrztYUkbbQx1FeLQ=
+			6L1azFs8eX2yFPXhDzs+slitBNCb6LA+6shajwDFUc0=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CWhyjPAVcQIBfpaaCqsLovDkqhdW6YU/zFdIF8RY2GQ=
+			oAL48Xs5NbkgWYBR2RpuvyPWEIwz20H/VC0Dn6Mu+NI=
 			</data>
 		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/fonts/Inter.ttf</key>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_bold.ttf</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bbjF/PYjQtCVgtGFrsVJ9iQTG0+w6A+ASGxaSvQSmVM=
+			KIMWCZseCkekcW0VkJgAXu98AGaSHzTjIAOT29sBlH8=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_extra_bold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5nVq1WkLd2BqpiJJp7Qg2ZAtRcrksASKJJEf1DJLCiI=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_extra_light.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			88cHnZ60p5klGoRKzqnrVfmQlEeTBuKsG+6HXdn3roA=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_light.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FkQU8KrL6Yp+ZK3cQ/ezv9LjL3uQ4QH+6rIn8Uw3G9o=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_medium.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			l62Ab1JuQVRtRjZbs6OTFF91t7FWiRPbdFSa2LjbqHI=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_regular.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QNaS/OGI5EceKzy6k3vpZ4ePYxrT67vc1YdofH6+DII=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_semi_bold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			eKhD+t6dRhKlVnMC+1lbVpdutfzr9P6lpZEtY4uvzeM=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_thin.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IkU/mVNF5WGNU5MVqFAfTHTKQdGJjOROfRuCBvDQl9Q=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_tight_bold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LPnYyzq37tNR1aIHcloWGrYPtNXVuqzVH+DW5gG5C2Y=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_tight_extra_bold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			DsBPvE75D/mg2G+PXynF0025oqOFhFgf504lpYEw1WM=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_tight_extra_light.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8lE1/DMqg2/GUEjle+XBGcS15dTnlzTglfOGmMWHvZs=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_tight_light.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Zbgofrwe9tiEibaT01G6OOyFOudsflk/9b/8yZ6Vllo=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_tight_medium.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/a2CTorpEJfd4mPTru1vbC6QVNB2llur+ThiCp8ruvU=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_tight_regular.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			rTIDKtKllIFAk/pzN5KVKuzUrqp2cbbdPmQLpkCKaIU=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_tight_semi_bold.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			sNiWr5PQ5b3maxdDmZVBetSH4/xRCa2glbRAiSTr9Mk=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/fonts/inter_tight_thin.ttf</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WcVmxoRU+SJZ0sY6zlQjNnZNWaaWXlSI/PHBh42D5tk=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/finik_sdk/assets/images/el_qr.png</key>
@@ -216,200 +301,60 @@
 			uoYujO+uxmWW0wFR+oy8jyRnXx6mK2APzsUiJek6WIE=
 			</data>
 		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/images/small_logo.png</key>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_applications.svg</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sH27hMSkJSTFWUo1TiDcX8hpLnYaKSqiPHYKm4YazC0=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/ayil_bank.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1F7PkAcN1EYLfWynf7TwWbm1Xtx6/hqN76qKxdkuQz4=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/bai_tushum.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			DDBeV4vtUw+N7sE35VROY7uAQB2KCs1qiiuzyJrkqtE=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/bakai.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VcTp9ynwdZzdgu/uHnQbEQjI9XiHmWR44RfLfWz+z5Q=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/balance.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			pZTItv/h83OBhR9O6h71wrDTDV4M4GwORcxqcJR9d+U=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/bank_asia.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			MImY6PO9mfMOXt7TfxapTZrxSn/oPhw2XX6dDVvWGcU=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/capital.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			bEz/C3n7TqppoI+NEmz2GUHX0irYxuXTcijSS0Hq/VM=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/dcb.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			TEvz0ARitTFPw2GLQ/2plWUrsRQOOYvhZMVq/9Z4uY4=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/demir.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KmneKRsxNtamPF39yF9MAxjPH/qNvAzA1ksjnT2LsIQ=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/eib.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			30XUBl3j5wU/cy7yvUYjiJXlu3brj2B3Ph48Dyxd+jg=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/elcart.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			pjpzfrEZybRLXnYDoyAol8odljwq1JyOs8xZFWHBd6U=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/finik.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			om/+7bSoXOTSPU7T21b6O5ZocxT5/KOE4hwEntLKAg8=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/finka.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			JA6Ptz4wcL1QWIlHVKJwJTK7n1bkZVstRWRWssR5eZ0=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/halyk.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			HXssHobrZYe6Z7OzRK+/1DW/jizn3tbb6lF7RjIJAzc=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/keremet_bank.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			h286/AMlKoYYTdXk93onghnUcy8uHNAtTY+iB8vhNms=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/kicb.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			KUIn0Fq2yvgjZkzvTcw+MYm1w5eMBuVPB9vXvGxsmcE=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/kkb.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			stu73hmdz2f+v7tN98p5mL+XvYy2Y0evz0HdW/7fbPk=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/kompanion.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			JOf0Z+0pmbAJdkFzInjxxlrdkYXdIkK0FSktepuNmkA=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/mbank.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			XkfyxqXlNKNtNoZ3MaMYinPPgtsXX/GrQCKxw/K/qFY=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/mega.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			VjhdENvRUG3z0M+feVu4fXrxoT/P9WuQUp0P9dtmBZM=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/megapay.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			vMuKvx405l3TIVJn37Xj//P23VJ1YY2k1rV71qG6PTk=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/o_dengi.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ObfmRpryjSuZl60NzQZXmYUUKn2MBI9qpvdNn8avfsY=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/optima.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			F10RF2ka5JMQ6ljo8KHWozoQXizBTxNDqxaAbKqW28E=
-			</data>
-		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/banks/rsk.svg</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			gs8Gvix7Z1eHD6j7xT2WGU3CVb8rl2ykVtQho0iE+io=
+			skYKY4jN1zIV5g3BWZtNwsFuYNMk+Rs7iTnhGzf9EMM=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_arrow_left.svg</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			sz3QNNOdbH34GFMmiThWlCoo+cMLCDhsjhdW0r+rj18=
+			ZFEAuCrnl34xUvcuHz3g97wXMPU2bWzC6p7jnvWd9OU=
 			</data>
 		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_gallery.svg</key>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_beeline.svg</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ht/ZrDV5hXlrDXrui6h/l42Xa8XQt6SGQi8wc9+c9hg=
+			vZe+s1dK6wEbgVFmip5ddDxkXdOUqKuh1JL0xGSbVX8=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_finik_logo.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			FxTzc+wS28LYXAg/fd14D6SOTA1RKAP393tvmsOXwK4=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_link_external.svg</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			nDy4BOU0JnA0mQ/hEjYveWj2OSCWzPzFabwkYEIZcpY=
+			l/DdUa0KX7FPEux+L4m9YBL5E8tSLFA/UCMElckMfVg=
 			</data>
 		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_qr.svg</key>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_mega.svg</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Kl6W600yb+Z2Hw2h4BjxuT/xvyc2lWbqHXuTe/SF3NM=
+			MYsqvf25iduABMkOwNxyPYw+XxDymLCLOWb9jMwnEeA=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_o.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uiOytHYWVXtKqWx8tZXz/ClH+Km9EnKwceoZaIiEIes=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_qr_code.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oGF+5T9kRhMs/Mql1ubIeLI8cwLmjOij5N1OUJ8UdzE=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_refresh.svg</key>
@@ -423,14 +368,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			zJ5cVAFvezZSqIaRwrruNO08TFMiU13kEViR9yYi8eI=
+			/BINfrC45Rg+5KJ2uR1PdZk0WEymakWdOVMLBPXSVGY=
 			</data>
 		</dict>
-		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_torch.svg</key>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_whatsapp.svg</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DGFtrrWC9AMKSxZE07FOh+dRrDyWiUSQVbJIqzouBiI=
+			bh/3SJ2bRMqBMhS5fxvzYCeSVc0WEl9SYnHCW7/mBnU=
 			</data>
 		</dict>
 		<key>flutter_assets/shaders/ink_sparkle.frag</key>
