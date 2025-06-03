@@ -6,14 +6,13 @@
 //
 
 public class FinikWidget {
-    
 
-        public init() {
-        }
+    public init() {
+    }
 
-        public func toDictionary() -> [String: Any] {
-            return [:]
-        }
+    public func toDictionary() -> [String: Any] {
+        return [:]
+    }
 }
 
 public class GetItemHandlerWidget: FinikWidget {

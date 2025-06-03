@@ -1,14 +1,14 @@
 //
-//  FinikSdkProvider.swift
+//  FinikProvider.swift
 //  FinikIosSdk
 //
-//  Created by Akylbek Birimkulov on 15/5/25.
+//  Created by Akylbek Birimkulov on 3/6/25.
 //
 
 import Flutter
 import UIKit
 
-public class FinikSdkProvider {
+public class FinikProvider {
 
     public static func present(
         from viewController: UIViewController,
@@ -18,8 +18,7 @@ public class FinikSdkProvider {
         textScenario: TextScenario = TextScenario.payment,
         useHiveForGraphQLCache: Bool = true,
         onBackPressed: @escaping () -> Void,
-        onPaymentSuccess: @escaping ([String: Any]) -> Void,
-        onPaymentFailure: @escaping (String) -> Void,
+        onPayment: @escaping ([String: Any]) -> Void,
         widget: FinikWidget
     ) {
         guard let engine = FlutterEngineHolder.shared.engine else {
@@ -49,7 +48,7 @@ public class FinikSdkProvider {
 
             case "onPayment":
                 if let args = call.arguments as? [String: Any] {
-                    onPaymentSuccess(args)
+                    onPayment(args)
                 } else {
                     print("Invalid arguments for onPaymentSuccess")
                 }
