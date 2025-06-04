@@ -9,7 +9,7 @@ modules via `.xcframework`.
 - 📲 Prebuilt payment UI using Flutter
 - 📡 Built-in support for GraphQL data retrieval
 - 🧱 Supports multiple widget types (Create/Get payment Item)
-- 🌐 Multi-language support: `kg`, `en`, `ru`
+- 🌐 Multi-language support: `ky`, `en`, `ru`
 
 ## 📁 Example Project
 
@@ -77,7 +77,7 @@ FinikProvider.present(
     isBeta: true,
     locale: FinikSdkLocale.kg,
     textScenario: TextScenario.replenishment,
-    useHiveForGraphQLCache: false,
+    paymentMethod: PaymentMethod.QR,
     onBackPressed: {
       print("ExampleApp: Back pressed from Flutter")
     },
@@ -109,11 +109,12 @@ FinikProvider.present(
 
 - **apiKey**: API client key provided by Finik.
 - **isBeta**: Whether to use the beta server.
-- **locale**: The language for translations. Supported options: 'kg', 'en', 'ru'.
-- **textScenario**: UI text variant (TextScenario.payment, TextScenario.replenishment)
-- **useHiveForGraphQLCache**: Chooses where to store GraphQL data:
-    - Set to `true` for local disk storage using Hive.
-    - Set to `false` for temporary in-memory storage (good for app runtime).
+- **locale**: The language used for UI translations. Supported options: FinikSdkLocale.KY, FinikSdkLocale.EN,
+  FinikSdkLocale.RU.
+- **textScenario**: Defines the context for displayed UI text. Accepted values: TextScenario.PAYMENT,
+  TextScenario.REPLENISHMENT.
+- **paymentMethod**: Specifies the active payment method tab on the QR code screen. Supported values: PaymentMethod.APP,
+  PaymentMethod.QR.
 - **onBackPressed**: A function triggered when the back button is pressed. Useful for
   custom navigation or showing dialogs.
 - **onPayment**: A function triggered when the payment is done. Returns the payment status and other payment data.
@@ -138,7 +139,7 @@ Use this widget to create a new payment item and generate a QR code.
   clients. Reach out to Finik representatives to receive your corporate accountId with x-api-key.
 - **nameEn**: A required field used as a QR name that will be displayed to merchant's clients on their devices upon
   payment.
-- **requestId**: A required field to control the uniqueness of a request. For each request it must be unique so that
+- **requestId**: An optional field to control the uniqueness of a request. For each request it must be unique so that
   Finik makes sure there are no duplicate QR items being created.
 - **callbackUrl**: An optional field used as a webhook; when specified, Finik will send a POST request to your server
   with the payment details in its body in JSON format, including its final status that can be either SUCCEEDED or FAILED

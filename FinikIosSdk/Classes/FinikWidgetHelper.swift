@@ -34,7 +34,7 @@ public class GetItemHandlerWidget: FinikWidget {
 public class CreateItemHandlerWidget: FinikWidget {
     public let accountId: String
     public let nameEn: String
-    public let requestId: String
+    public let requestId: String?
     public let callbackUrl: String?
     public let fixedAmount: Double?
     public let maxAvailableQuantity: Int?
@@ -43,7 +43,7 @@ public class CreateItemHandlerWidget: FinikWidget {
     public init(
         accountId: String,
         nameEn: String,
-        requestId: String,
+        requestId: String? = nil,
         callbackUrl: String? = nil,
         fixedAmount: Double? = nil,
         maxAvailableQuantity: Int? = nil,
@@ -78,20 +78,40 @@ public class CreateItemHandlerWidget: FinikWidget {
 }
 
 @objc public enum TextScenario: Int {
-    case payment
-    case replenishment
+    case PAYMENT
+    case REPLENISHMENT
 
     public var rawValueString: String {
         switch self {
-        case .payment: return "payment"
-        case .replenishment: return "replenishment"
+        case .PAYMENT: return "PAYMENT"
+        case .REPLENISHMENT: return "REPLENISHMENT"
         }
     }
 
     public init?(rawString: String) {
         switch rawString {
-        case "payment": self = .payment
-        case "replenishment": self = .replenishment
+        case "PAYMENT": self = .PAYMENT
+        case "REPLENISHMENT": self = .REPLENISHMENT
+        default: return nil
+        }
+    }
+}
+
+@objc public enum PaymentMethod: Int {
+    case APP
+    case QR
+
+    public var rawValueString: String {
+        switch self {
+        case .APP: return "APP"
+        case .QR: return "QR"
+        }
+    }
+
+    public init?(rawString: String) {
+        switch rawString {
+        case "APP": self = .APP
+        case "QR": self = .QR
         default: return nil
         }
     }

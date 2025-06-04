@@ -9,114 +9,113 @@
 /* Begin PBXAggregateTarget section */
 		1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 7F21DEB9EC7A6E57FF6CE8AC8CDF3D92 /* Build configuration list for PBXAggregateTarget "Flutter" */;
+			buildConfigurationList = C51FF993451B420CF7FBF13215A98DA6 /* Build configuration list for PBXAggregateTarget "Flutter" */;
 			buildPhases = (
-				10CCE7FEA2D65E84065A07FD4731E331 /* [CP] Copy XCFrameworks */,
+				770E4FEB6A4C79302F3975B26B6A8E35 /* [CP] Copy XCFrameworks */,
 			);
 			dependencies = (
 			);
 			name = Flutter;
-			productName = Flutter;
 		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
 		19BF50D2B943F4BEF277D9558801D9E5 /* Pods-FinikIosSdk_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C05C2B1A891EC589D8793F6D0760FF93 /* Pods-FinikIosSdk_Example-dummy.m */; };
 		1C5D8094D82FD37ED7CD9905DBC93992 /* Pods-FinikIosSdk_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30F8EC23CA5C6389C7B976250DCEF558 /* Pods-FinikIosSdk_Tests-dummy.m */; };
-		235FA60DA2C1657BADE02DE8929E6CAB /* FinikWidgetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52765C77FD24483FD89104B961AC18CA /* FinikWidgetHelper.swift */; };
-		2C43159616CE3AA0417DE606E9D5A15C /* FinikIosSdk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BBA02FF755B8ADD63CA9B0513FED6AC /* FinikIosSdk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D08160919E24339F999893BA4CD3F4E /* FinikWidgetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA88EE4E8705768388F82E7693F06F5 /* FinikWidgetHelper.swift */; };
+		50C94C78917783BA20D43D22ABF20DAF /* FinikIosSdk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AC98BA23D1BEB8782A25524C7453DD4 /* FinikIosSdk-dummy.m */; };
 		571AABAEB3DD2AE86CC05F354BF2B5AF /* Pods-FinikIosSdk_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1614423EF145AB4BEB8A764926004C11 /* Pods-FinikIosSdk_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		644E21E1C7133C5067DEAD0C7E6552C8 /* FlutterEngineHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7991473A68C75E076BF14934B215C814 /* FlutterEngineHolder.swift */; };
+		5BC1849127C7DC3D73722A18408781AF /* FinikIosSdk-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E58DC96E8F739C971AFF1AC304EC71 /* FinikIosSdk-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7947472C4CF7FDD07CA3AD3EDBEDA0B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		8811346C822ACBB1438D7FF060400177 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		A510F54DDACF7D08FCB698900C3957DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		B1418C742C912F9641689413EDA652E3 /* FinikIosSdk-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 995AAFB02643A9ADD8A56FFF94CB8C02 /* FinikIosSdk-dummy.m */; };
+		AC7E33E51CCD26EE1A25BE70B798A8B2 /* FlutterEngineHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3EAD91A53CDE9319721F10CF7DB359 /* FlutterEngineHolder.swift */; };
+		B39CBF529B0D8A2F69954CB06AFB69B1 /* FinikProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3E1837F61F622FE922E6FEA4A45F42 /* FinikProvider.swift */; };
+		DD4EAD162732BFF14DAF87959AF18253 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		F3AA0A3DE21559553F7DD1564B5F58A7 /* Pods-FinikIosSdk_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 885303F4B36A1796D9A7353414E9DC70 /* Pods-FinikIosSdk_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3DD636C27ECF691B20E04335A27AB69 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC237C34C5E8F3A66B5BF86B7FB0E02 /* Utils.swift */; };
-		F554BD966C699251948E9ABED116CFE2 /* FinikProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFEDBCE34D31BE8A39DD770E0BFF6FE7 /* FinikProvider.swift */; };
+		FCFF1239B92E568728B8F0B96883750A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4FA36A8A4C3D123418EF770CE8E503 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5383379A2893B09C940E68AD7CE27633 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BD94DE48EC052BC699BB044C4DCF674B;
-			remoteInfo = "Pods-FinikIosSdk_Example";
-		};
-		98FACD20F79FC45A4ED20193638B62F2 /* PBXContainerItemProxy */ = {
+		0783A3217560DB31BF2BC561EC74052D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
 			remoteInfo = Flutter;
 		};
-		B643EB3B8268D4183F83A76BA8D9FD76 /* PBXContainerItemProxy */ = {
+		0D5DBDCC4694C0B6EF4E76396E059F50 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1EFDDC32A34D56D411E640A81DCD9E73;
 			remoteInfo = Flutter;
 		};
-		E746CE09C9DAA01F4FF999A8668B4335 /* PBXContainerItemProxy */ = {
+		5BE697EFF7DEB9F22DDF8F1E81D8D7EE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6E13BAB39F8384538323B5F5E9710EDF;
 			remoteInfo = FinikIosSdk;
 		};
+		C49F82E76AD168FBE46FFBF4A5FC950B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD94DE48EC052BC699BB044C4DCF674B;
+			remoteInfo = "Pods-FinikIosSdk_Example";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02C7CB1BF8E4DB3C2983BE5599E41894 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0DE0007984B818E1213FE1889D672D5B /* Flutter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.release.xcconfig; sourceTree = "<group>"; };
+		0E0500F73BD33F5E34728CD87B611FDB /* FinikIosSdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FinikIosSdk.release.xcconfig; sourceTree = "<group>"; };
 		10DF0FD9638D939C844F76C661153E17 /* Pods-FinikIosSdk_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FinikIosSdk_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		15F58804198F8F9EA527FF50CBE1DAE4 /* FinikIosSdk-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FinikIosSdk-Info.plist"; sourceTree = "<group>"; };
 		1614423EF145AB4BEB8A764926004C11 /* Pods-FinikIosSdk_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FinikIosSdk_Example-umbrella.h"; sourceTree = "<group>"; };
-		1BBA02FF755B8ADD63CA9B0513FED6AC /* FinikIosSdk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FinikIosSdk-umbrella.h"; sourceTree = "<group>"; };
-		2A69A17200195BE4547422088646BFD9 /* Pods_FinikIosSdk_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinikIosSdk_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2A69A17200195BE4547422088646BFD9 /* Pods-FinikIosSdk_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FinikIosSdk_Tests"; path = Pods_FinikIosSdk_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F8EC23CA5C6389C7B976250DCEF558 /* Pods-FinikIosSdk_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FinikIosSdk_Tests-dummy.m"; sourceTree = "<group>"; };
-		32D240800B405837F38E1FCE9050F428 /* url_launcher_ios.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = url_launcher_ios.xcframework; path = FinikIosSdk/Frameworks/url_launcher_ios.xcframework; sourceTree = "<group>"; };
+		3167FFCA2D449AD89AEEB791EDD97FD3 /* share_plus.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = share_plus.xcframework; path = FinikIosSdk/Frameworks/share_plus.xcframework; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		394033A395B1CD8BBF7C719279D6B330 /* path_provider_foundation.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = path_provider_foundation.xcframework; path = FinikIosSdk/Frameworks/path_provider_foundation.xcframework; sourceTree = "<group>"; };
 		409BC37899608F9AC48DD207FA08CE47 /* Flutter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Flutter.debug.xcconfig; sourceTree = "<group>"; };
-		43B8FDCD29265641CCEAA268ED25571F /* share_plus.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = share_plus.xcframework; path = FinikIosSdk/Frameworks/share_plus.xcframework; sourceTree = "<group>"; };
+		414EF7ADE0C1C93EB9FFFAA65EFACA02 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		43D7B66C658FFFA0AFDBB616F241EE5A /* Pods-FinikIosSdk_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FinikIosSdk_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		465C2B9F86860D5D55B2197ED505C19C /* FinikIosSdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FinikIosSdk.debug.xcconfig; sourceTree = "<group>"; };
 		46AB0DAF5B12A2D12E2E66C23C0CCA46 /* Pods-FinikIosSdk_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FinikIosSdk_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4C3F71D2C31BEA9F51F06B0041C87A5B /* connectivity_plus.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = connectivity_plus.xcframework; path = FinikIosSdk/Frameworks/connectivity_plus.xcframework; sourceTree = "<group>"; };
-		4E01D3DCCC2350D7276598C703422E26 /* sqflite.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = sqflite.xcframework; path = FinikIosSdk/Frameworks/sqflite.xcframework; sourceTree = "<group>"; };
-		52765C77FD24483FD89104B961AC18CA /* FinikWidgetHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FinikWidgetHelper.swift; path = FinikIosSdk/Classes/FinikWidgetHelper.swift; sourceTree = "<group>"; };
+		46E58DC96E8F739C971AFF1AC304EC71 /* FinikIosSdk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FinikIosSdk-umbrella.h"; sourceTree = "<group>"; };
+		4AC98BA23D1BEB8782A25524C7453DD4 /* FinikIosSdk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FinikIosSdk-dummy.m"; sourceTree = "<group>"; };
 		52DF848401C71C64C1754846C4C7F344 /* Pods-FinikIosSdk_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FinikIosSdk_Tests.modulemap"; sourceTree = "<group>"; };
-		55235B24AB0361D144073A5CB610AE9D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		709A55C16660C6F7D5CEFCF9B521E921 /* FlutterPluginRegistrant.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = FlutterPluginRegistrant.xcframework; path = FinikIosSdk/Frameworks/FlutterPluginRegistrant.xcframework; sourceTree = "<group>"; };
+		6F1ED617F6E1B3C8FD0C956E382D0963 /* sqflite.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = sqflite.xcframework; path = FinikIosSdk/Frameworks/sqflite.xcframework; sourceTree = "<group>"; };
 		73EADCA1FAD9A148B2AC718B0733A700 /* Pods-FinikIosSdk_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FinikIosSdk_Example.modulemap"; sourceTree = "<group>"; };
 		74B42126F6F7DFC052B8DE3DD61EE47C /* Pods-FinikIosSdk_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinikIosSdk_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		7991473A68C75E076BF14934B215C814 /* FlutterEngineHolder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlutterEngineHolder.swift; path = FinikIosSdk/Classes/FlutterEngineHolder.swift; sourceTree = "<group>"; };
 		850CF11253C396576717F6564AE9F419 /* Pods-FinikIosSdk_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FinikIosSdk_Tests-Info.plist"; sourceTree = "<group>"; };
 		885303F4B36A1796D9A7353414E9DC70 /* Pods-FinikIosSdk_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FinikIosSdk_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8A1E5C74CBADA8A7F208B1F7A5174896 /* Pods-FinikIosSdk_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinikIosSdk_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		932C8D55AA0E1D13946FF22FC5ADDEC3 /* Pods-FinikIosSdk_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinikIosSdk_Example.release.xcconfig"; sourceTree = "<group>"; };
-		95FE3CCBF15DC9B84AE8F5DD20482F80 /* path_provider_foundation.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = path_provider_foundation.xcframework; path = FinikIosSdk/Frameworks/path_provider_foundation.xcframework; sourceTree = "<group>"; };
 		98B26478DAF3A79929B5FE7BAFAB3AA1 /* Pods-FinikIosSdk_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FinikIosSdk_Example-frameworks.sh"; sourceTree = "<group>"; };
-		995AAFB02643A9ADD8A56FFF94CB8C02 /* FinikIosSdk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FinikIosSdk-dummy.m"; sourceTree = "<group>"; };
+		9A68E455FBAA2A42D0971298B4C40AAE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		9B1055F88F9C5455D84E7C01E998F40D /* Flutter-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Flutter-xcframeworks.sh"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AC4E6ADDA62D89D46126542AF307648E /* Reachability.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = Reachability.xcframework; path = FinikIosSdk/Frameworks/Reachability.xcframework; sourceTree = "<group>"; };
+		9BA88EE4E8705768388F82E7693F06F5 /* FinikWidgetHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FinikWidgetHelper.swift; path = FinikIosSdk/Classes/FinikWidgetHelper.swift; sourceTree = "<group>"; };
+		9BB7E15853DCBEE9145DC3191D292B51 /* FinikIosSdk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FinikIosSdk.modulemap; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A7D216A6CFB3AF396ED526D71E5DC89C /* FinikIosSdk-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FinikIosSdk-xcframeworks.sh"; sourceTree = "<group>"; };
+		AA5AE4B89569A43BDB00282C71B0A35D /* connectivity_plus.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = connectivity_plus.xcframework; path = FinikIosSdk/Frameworks/connectivity_plus.xcframework; sourceTree = "<group>"; };
+		AEA5009048089CD2E0C588F7E9CC66F1 /* FlutterPluginRegistrant.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = FlutterPluginRegistrant.xcframework; path = FinikIosSdk/Frameworks/FlutterPluginRegistrant.xcframework; sourceTree = "<group>"; };
 		AEAC6026CCB7F36DB3C6CBBCBD381350 /* Pods-FinikIosSdk_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FinikIosSdk_Example-Info.plist"; sourceTree = "<group>"; };
-		B4754C72A3138296BD6AFA0927A47565 /* FinikIosSdk-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FinikIosSdk-Info.plist"; sourceTree = "<group>"; };
 		C05C2B1A891EC589D8793F6D0760FF93 /* Pods-FinikIosSdk_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FinikIosSdk_Example-dummy.m"; sourceTree = "<group>"; };
-		C204B5A688809AD3E83AD1AAAC75834A /* Pods_FinikIosSdk_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinikIosSdk_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C75BB723044856530773731F699E7812 /* FinikIosSdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FinikIosSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE49A97616F65F2D963C71CA759C8EF7 /* Flutter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; path = Flutter.xcframework; sourceTree = "<group>"; };
-		CF8420A07BAA322E738FC61F40AA5EB4 /* FinikIosSdk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FinikIosSdk.modulemap; sourceTree = "<group>"; };
-		CFEDBCE34D31BE8A39DD770E0BFF6FE7 /* FinikProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FinikProvider.swift; path = FinikIosSdk/Classes/FinikProvider.swift; sourceTree = "<group>"; };
-		D37CF7C9318C561F852CE7A815170F6E /* App.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = FinikIosSdk/Frameworks/App.xcframework; sourceTree = "<group>"; };
-		EEC237C34C5E8F3A66B5BF86B7FB0E02 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = FinikIosSdk/Classes/Utils.swift; sourceTree = "<group>"; };
-		EF7497CB2E6FE66B73CF32F5722B6592 /* FinikIosSdk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FinikIosSdk-prefix.pch"; sourceTree = "<group>"; };
+		C204B5A688809AD3E83AD1AAAC75834A /* Pods-FinikIosSdk_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FinikIosSdk_Example"; path = Pods_FinikIosSdk_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4E7B93E8C4620BED680488C5D084054 /* App.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = App.xcframework; path = FinikIosSdk/Frameworks/App.xcframework; sourceTree = "<group>"; };
+		C75BB723044856530773731F699E7812 /* FinikIosSdk */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FinikIosSdk; path = FinikIosSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDEB0BF3275EB894F916DA7F9893EF50 /* Reachability.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = Reachability.xcframework; path = FinikIosSdk/Frameworks/Reachability.xcframework; sourceTree = "<group>"; };
+		CE49A97616F65F2D963C71CA759C8EF7 /* Flutter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Flutter.xcframework; sourceTree = "<group>"; };
+		D8FCC7AFE3A797ED191F6F490D673CF1 /* FinikIosSdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FinikIosSdk.debug.xcconfig; sourceTree = "<group>"; };
+		DA4FA36A8A4C3D123418EF770CE8E503 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = FinikIosSdk/Classes/Utils.swift; sourceTree = "<group>"; };
+		E6DCEB75980E3100F73758D54828D39A /* FinikIosSdk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FinikIosSdk-prefix.pch"; sourceTree = "<group>"; };
+		ED378F64AA02EEB52CA1EFE68359124A /* FinikIosSdk.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FinikIosSdk.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F05D6570ADA2A624F66631D2599340FB /* Pods-FinikIosSdk_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FinikIosSdk_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F1814FAF6264D97F5055269E7C865E3B /* Pods-FinikIosSdk_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinikIosSdk_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F6AA9D7370703DE9B3B2A14B1617D2CE /* FinikIosSdk.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FinikIosSdk.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		FB83C981ADC5B09208E35FC1EECD482E /* FinikIosSdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FinikIosSdk.release.xcconfig; sourceTree = "<group>"; };
-		FEA28371F3EFE899BC15456EB4085AB6 /* FinikIosSdk-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FinikIosSdk-xcframeworks.sh"; sourceTree = "<group>"; };
+		F7D987182985886575619CA2280BE886 /* url_launcher_ios.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = url_launcher_ios.xcframework; path = FinikIosSdk/Frameworks/url_launcher_ios.xcframework; sourceTree = "<group>"; };
+		FA3E1837F61F622FE922E6FEA4A45F42 /* FinikProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FinikProvider.swift; path = FinikIosSdk/Classes/FinikProvider.swift; sourceTree = "<group>"; };
+		FC3EAD91A53CDE9319721F10CF7DB359 /* FlutterEngineHolder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FlutterEngineHolder.swift; path = FinikIosSdk/Classes/FlutterEngineHolder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,11 +135,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B41B2E4CDE89A7AB3158E8DE3A1EA8BF /* Frameworks */ = {
+		350E51480028E16AC359956ADD8E27BF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A510F54DDACF7D08FCB698900C3957DF /* Foundation.framework in Frameworks */,
+				DD4EAD162732BFF14DAF87959AF18253 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,26 +149,34 @@
 		19F76BF4AAE937F8CC7E21E4AD3E691A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C75BB723044856530773731F699E7812 /* FinikIosSdk.framework */,
-				C204B5A688809AD3E83AD1AAAC75834A /* Pods_FinikIosSdk_Example.framework */,
-				2A69A17200195BE4547422088646BFD9 /* Pods_FinikIosSdk_Tests.framework */,
+				C75BB723044856530773731F699E7812 /* FinikIosSdk */,
+				C204B5A688809AD3E83AD1AAAC75834A /* Pods-FinikIosSdk_Example */,
+				2A69A17200195BE4547422088646BFD9 /* Pods-FinikIosSdk_Tests */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		53ECEA4CDFD7E4EFC3D4102050E0AFAF /* Frameworks */ = {
+		1CD35AEC3A1A4F237D65F68487296011 /* FinikIosSdk */ = {
 			isa = PBXGroup;
 			children = (
-				D37CF7C9318C561F852CE7A815170F6E /* App.xcframework */,
-				4C3F71D2C31BEA9F51F06B0041C87A5B /* connectivity_plus.xcframework */,
-				709A55C16660C6F7D5CEFCF9B521E921 /* FlutterPluginRegistrant.xcframework */,
-				95FE3CCBF15DC9B84AE8F5DD20482F80 /* path_provider_foundation.xcframework */,
-				AC4E6ADDA62D89D46126542AF307648E /* Reachability.xcframework */,
-				43B8FDCD29265641CCEAA268ED25571F /* share_plus.xcframework */,
-				4E01D3DCCC2350D7276598C703422E26 /* sqflite.xcframework */,
-				32D240800B405837F38E1FCE9050F428 /* url_launcher_ios.xcframework */,
+				FA3E1837F61F622FE922E6FEA4A45F42 /* FinikProvider.swift */,
+				9BA88EE4E8705768388F82E7693F06F5 /* FinikWidgetHelper.swift */,
+				FC3EAD91A53CDE9319721F10CF7DB359 /* FlutterEngineHolder.swift */,
+				DA4FA36A8A4C3D123418EF770CE8E503 /* Utils.swift */,
+				86E2B421A2B9D43EC0F7312310991DE5 /* Frameworks */,
+				77B4275039D4AC38897F5A0CD723DE18 /* Pod */,
+				7B8A05637AA1EDB88C305553363F5BD9 /* Support Files */,
 			);
-			name = Frameworks;
+			name = FinikIosSdk;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		54485A2C77B2DAB6F5A61E910D01ADB4 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CD35AEC3A1A4F237D65F68487296011 /* FinikIosSdk */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		57D5ED791FE86520D619B661DCD3B8EB /* Frameworks */ = {
@@ -180,28 +187,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6F17B3DC8C8ED6F2766A52E6B12516F3 /* Development Pods */ = {
+		77B4275039D4AC38897F5A0CD723DE18 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				CC439357D1615E7F762972CC997EE968 /* FinikIosSdk */,
+				ED378F64AA02EEB52CA1EFE68359124A /* FinikIosSdk.podspec */,
+				414EF7ADE0C1C93EB9FFFAA65EFACA02 /* LICENSE */,
+				9A68E455FBAA2A42D0971298B4C40AAE /* README.md */,
 			);
-			name = "Development Pods";
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		7660DCE6B9B40FC5A8454CB35B15E4E1 /* Support Files */ = {
+		7B8A05637AA1EDB88C305553363F5BD9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CF8420A07BAA322E738FC61F40AA5EB4 /* FinikIosSdk.modulemap */,
-				995AAFB02643A9ADD8A56FFF94CB8C02 /* FinikIosSdk-dummy.m */,
-				B4754C72A3138296BD6AFA0927A47565 /* FinikIosSdk-Info.plist */,
-				EF7497CB2E6FE66B73CF32F5722B6592 /* FinikIosSdk-prefix.pch */,
-				1BBA02FF755B8ADD63CA9B0513FED6AC /* FinikIosSdk-umbrella.h */,
-				FEA28371F3EFE899BC15456EB4085AB6 /* FinikIosSdk-xcframeworks.sh */,
-				465C2B9F86860D5D55B2197ED505C19C /* FinikIosSdk.debug.xcconfig */,
-				FB83C981ADC5B09208E35FC1EECD482E /* FinikIosSdk.release.xcconfig */,
+				9BB7E15853DCBEE9145DC3191D292B51 /* FinikIosSdk.modulemap */,
+				4AC98BA23D1BEB8782A25524C7453DD4 /* FinikIosSdk-dummy.m */,
+				15F58804198F8F9EA527FF50CBE1DAE4 /* FinikIosSdk-Info.plist */,
+				E6DCEB75980E3100F73758D54828D39A /* FinikIosSdk-prefix.pch */,
+				46E58DC96E8F739C971AFF1AC304EC71 /* FinikIosSdk-umbrella.h */,
+				A7D216A6CFB3AF396ED526D71E5DC89C /* FinikIosSdk-xcframeworks.sh */,
+				D8FCC7AFE3A797ED191F6F490D673CF1 /* FinikIosSdk.debug.xcconfig */,
+				0E0500F73BD33F5E34728CD87B611FDB /* FinikIosSdk.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/FinikIosSdk";
+			sourceTree = "<group>";
+		};
+		86E2B421A2B9D43EC0F7312310991DE5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4E7B93E8C4620BED680488C5D084054 /* App.xcframework */,
+				AA5AE4B89569A43BDB00282C71B0A35D /* connectivity_plus.xcframework */,
+				AEA5009048089CD2E0C588F7E9CC66F1 /* FlutterPluginRegistrant.xcframework */,
+				394033A395B1CD8BBF7C719279D6B330 /* path_provider_foundation.xcframework */,
+				CDEB0BF3275EB894F916DA7F9893EF50 /* Reachability.xcframework */,
+				3167FFCA2D449AD89AEEB791EDD97FD3 /* share_plus.xcframework */,
+				6F1ED617F6E1B3C8FD0C956E382D0963 /* sqflite.xcframework */,
+				F7D987182985886575619CA2280BE886 /* url_launcher_ios.xcframework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		8A6718BA351630895C000C08DD5DFE5F /* Targets Support Files */ = {
@@ -227,6 +251,7 @@
 				57D5ED791FE86520D619B661DCD3B8EB /* Frameworks */,
 				B2E2A987DE36C3D485710F03B1EA3BF3 /* Support Files */,
 			);
+			name = Flutter;
 			path = Flutter;
 			sourceTree = "<group>";
 		};
@@ -257,36 +282,11 @@
 			path = "Target Support Files/Pods-FinikIosSdk_Tests";
 			sourceTree = "<group>";
 		};
-		C43E6752A2CE48AAE42949AECEF3C3B8 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				F6AA9D7370703DE9B3B2A14B1617D2CE /* FinikIosSdk.podspec */,
-				02C7CB1BF8E4DB3C2983BE5599E41894 /* LICENSE */,
-				55235B24AB0361D144073A5CB610AE9D /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		CC439357D1615E7F762972CC997EE968 /* FinikIosSdk */ = {
-			isa = PBXGroup;
-			children = (
-				CFEDBCE34D31BE8A39DD770E0BFF6FE7 /* FinikProvider.swift */,
-				52765C77FD24483FD89104B961AC18CA /* FinikWidgetHelper.swift */,
-				7991473A68C75E076BF14934B215C814 /* FlutterEngineHolder.swift */,
-				EEC237C34C5E8F3A66B5BF86B7FB0E02 /* Utils.swift */,
-				53ECEA4CDFD7E4EFC3D4102050E0AFAF /* Frameworks */,
-				C43E6752A2CE48AAE42949AECEF3C3B8 /* Pod */,
-				7660DCE6B9B40FC5A8454CB35B15E4E1 /* Support Files */,
-			);
-			name = FinikIosSdk;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				6F17B3DC8C8ED6F2766A52E6B12516F3 /* Development Pods */,
+				54485A2C77B2DAB6F5A61E910D01ADB4 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				A4E02D04CF4F0D056351B124EE9911F6 /* Pods */,
 				19F76BF4AAE937F8CC7E21E4AD3E691A /* Products */,
@@ -330,11 +330,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B238E8FD8692D4E01146B8E76750209E /* Headers */ = {
+		1D652C32516B517F3D94726FA793390D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C43159616CE3AA0417DE606E9D5A15C /* FinikIosSdk-umbrella.h in Headers */,
+				5BC1849127C7DC3D73722A18408781AF /* FinikIosSdk-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,31 +369,31 @@
 			buildRules = (
 			);
 			dependencies = (
-				E57AC6D73BE8BE08B64B8FABBA63987A /* PBXTargetDependency */,
+				01BA59C4E97056D174A1526CB2B203CB /* PBXTargetDependency */,
 			);
 			name = "Pods-FinikIosSdk_Tests";
 			productName = Pods_FinikIosSdk_Tests;
-			productReference = 2A69A17200195BE4547422088646BFD9 /* Pods_FinikIosSdk_Tests.framework */;
+			productReference = 2A69A17200195BE4547422088646BFD9 /* Pods-FinikIosSdk_Tests */;
 			productType = "com.apple.product-type.framework";
 		};
 		6E13BAB39F8384538323B5F5E9710EDF /* FinikIosSdk */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC4A145E97D679EEEF1FB8C5BE615A17 /* Build configuration list for PBXNativeTarget "FinikIosSdk" */;
+			buildConfigurationList = 349E67CC481557377DB29E36441233B3 /* Build configuration list for PBXNativeTarget "FinikIosSdk" */;
 			buildPhases = (
-				B238E8FD8692D4E01146B8E76750209E /* Headers */,
-				129AA3849B15CF55679EF2C05D43EFEB /* [CP] Copy XCFrameworks */,
-				09702A9A342A9AC07F6C5B4613422AF1 /* Sources */,
-				B41B2E4CDE89A7AB3158E8DE3A1EA8BF /* Frameworks */,
-				99F48F423D9695CC62F06BFAA1E8E3D4 /* Resources */,
+				1D652C32516B517F3D94726FA793390D /* Headers */,
+				6A3ADF11B4EE315D4F268890DABB66B7 /* [CP] Copy XCFrameworks */,
+				570C651C19C50FAE91673067D98B5C62 /* Sources */,
+				350E51480028E16AC359956ADD8E27BF /* Frameworks */,
+				9506E8321F20852DDB1804EB9EF3365B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C9D32C0104ACB89552E43FE1BBE9DB89 /* PBXTargetDependency */,
+				04697F8B55E636DBCFD922428E962EB9 /* PBXTargetDependency */,
 			);
 			name = FinikIosSdk;
 			productName = FinikIosSdk;
-			productReference = C75BB723044856530773731F699E7812 /* FinikIosSdk.framework */;
+			productReference = C75BB723044856530773731F699E7812 /* FinikIosSdk */;
 			productType = "com.apple.product-type.framework";
 		};
 		BD94DE48EC052BC699BB044C4DCF674B /* Pods-FinikIosSdk_Example */ = {
@@ -408,12 +408,12 @@
 			buildRules = (
 			);
 			dependencies = (
-				B4BBF3760DA5A00A19C55025ECBBE5F0 /* PBXTargetDependency */,
-				F4D662557D36F7629242EEC7FE4C4BFC /* PBXTargetDependency */,
+				6C80C8E73020813AE5085FFD5ECC5C0A /* PBXTargetDependency */,
+				1491F6E9F1D794814C437A4426B8AF20 /* PBXTargetDependency */,
 			);
 			name = "Pods-FinikIosSdk_Example";
 			productName = Pods_FinikIosSdk_Example;
-			productReference = C204B5A688809AD3E83AD1AAAC75834A /* Pods_FinikIosSdk_Example.framework */;
+			productReference = C204B5A688809AD3E83AD1AAAC75834A /* Pods-FinikIosSdk_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -434,6 +434,8 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 19F76BF4AAE937F8CC7E21E4AD3E691A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -461,7 +463,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99F48F423D9695CC62F06BFAA1E8E3D4 /* Resources */ = {
+		9506E8321F20852DDB1804EB9EF3365B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -471,25 +473,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		10CCE7FEA2D65E84065A07FD4731E331 /* [CP] Copy XCFrameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Flutter/Flutter-xcframeworks.sh",
-				"${PODS_ROOT}/Flutter/Flutter.xcframework",
-			);
-			name = "[CP] Copy XCFrameworks";
-			outputPaths = (
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter/Flutter.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Flutter/Flutter-xcframeworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		129AA3849B15CF55679EF2C05D43EFEB /* [CP] Copy XCFrameworks */ = {
+		6A3ADF11B4EE315D4F268890DABB66B7 /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -521,26 +505,44 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/FinikIosSdk/FinikIosSdk-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		770E4FEB6A4C79302F3975B26B6A8E35 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Flutter/Flutter-xcframeworks.sh",
+				"${PODS_ROOT}/Flutter/Flutter.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter/Flutter.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Flutter/Flutter-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		09702A9A342A9AC07F6C5B4613422AF1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B1418C742C912F9641689413EDA652E3 /* FinikIosSdk-dummy.m in Sources */,
-				F554BD966C699251948E9ABED116CFE2 /* FinikProvider.swift in Sources */,
-				235FA60DA2C1657BADE02DE8929E6CAB /* FinikWidgetHelper.swift in Sources */,
-				644E21E1C7133C5067DEAD0C7E6552C8 /* FlutterEngineHolder.swift in Sources */,
-				F3DD636C27ECF691B20E04335A27AB69 /* Utils.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2E50A17481D250D33696E7697E195AC1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				19BF50D2B943F4BEF277D9558801D9E5 /* Pods-FinikIosSdk_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		570C651C19C50FAE91673067D98B5C62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C94C78917783BA20D43D22ABF20DAF /* FinikIosSdk-dummy.m in Sources */,
+				B39CBF529B0D8A2F69954CB06AFB69B1 /* FinikProvider.swift in Sources */,
+				3D08160919E24339F999893BA4CD3F4E /* FinikWidgetHelper.swift in Sources */,
+				AC7E33E51CCD26EE1A25BE70B798A8B2 /* FlutterEngineHolder.swift in Sources */,
+				FCFF1239B92E568728B8F0B96883750A /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,33 +557,69 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		B4BBF3760DA5A00A19C55025ECBBE5F0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FinikIosSdk;
-			target = 6E13BAB39F8384538323B5F5E9710EDF /* FinikIosSdk */;
-			targetProxy = E746CE09C9DAA01F4FF999A8668B4335 /* PBXContainerItemProxy */;
-		};
-		C9D32C0104ACB89552E43FE1BBE9DB89 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Flutter;
-			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
-			targetProxy = 98FACD20F79FC45A4ED20193638B62F2 /* PBXContainerItemProxy */;
-		};
-		E57AC6D73BE8BE08B64B8FABBA63987A /* PBXTargetDependency */ = {
+		01BA59C4E97056D174A1526CB2B203CB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-FinikIosSdk_Example";
 			target = BD94DE48EC052BC699BB044C4DCF674B /* Pods-FinikIosSdk_Example */;
-			targetProxy = 5383379A2893B09C940E68AD7CE27633 /* PBXContainerItemProxy */;
+			targetProxy = C49F82E76AD168FBE46FFBF4A5FC950B /* PBXContainerItemProxy */;
 		};
-		F4D662557D36F7629242EEC7FE4C4BFC /* PBXTargetDependency */ = {
+		04697F8B55E636DBCFD922428E962EB9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Flutter;
 			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
-			targetProxy = B643EB3B8268D4183F83A76BA8D9FD76 /* PBXContainerItemProxy */;
+			targetProxy = 0783A3217560DB31BF2BC561EC74052D /* PBXContainerItemProxy */;
+		};
+		1491F6E9F1D794814C437A4426B8AF20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Flutter;
+			target = 1EFDDC32A34D56D411E640A81DCD9E73 /* Flutter */;
+			targetProxy = 0D5DBDCC4694C0B6EF4E76396E059F50 /* PBXContainerItemProxy */;
+		};
+		6C80C8E73020813AE5085FFD5ECC5C0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FinikIosSdk;
+			target = 6E13BAB39F8384538323B5F5E9710EDF /* FinikIosSdk */;
+			targetProxy = 5BE697EFF7DEB9F22DDF8F1E81D8D7EE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		0C38AB7E5B3AA906636394B3244B0881 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8FCC7AFE3A797ED191F6F490D673CF1 /* FinikIosSdk.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/FinikIosSdk/FinikIosSdk-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/FinikIosSdk/FinikIosSdk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FinikIosSdk/FinikIosSdk.modulemap";
+				PRODUCT_MODULE_NAME = FinikIosSdk;
+				PRODUCT_NAME = FinikIosSdk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -648,6 +686,23 @@
 			};
 			name = Debug;
 		};
+		44165FA752F738E9174EB387A751DFC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DE0007984B818E1213FE1889D672D5B /* Flutter.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -703,9 +758,63 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		697E5759890B0957C4A129A506C482E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 409BC37899608F9AC48DD207FA08CE47 /* Flutter.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7A8EA5103D44EB34287CDC46FE0761F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E0500F73BD33F5E34728CD87B611FDB /* FinikIosSdk.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/FinikIosSdk/FinikIosSdk-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/FinikIosSdk/FinikIosSdk-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FinikIosSdk/FinikIosSdk.modulemap";
+				PRODUCT_MODULE_NAME = FinikIosSdk;
+				PRODUCT_NAME = FinikIosSdk;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -745,112 +854,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		93FBA3BE9DD7D06BFB1095F315D8E7D4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FB83C981ADC5B09208E35FC1EECD482E /* FinikIosSdk.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/FinikIosSdk/FinikIosSdk-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/FinikIosSdk/FinikIosSdk-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FinikIosSdk/FinikIosSdk.modulemap";
-				PRODUCT_MODULE_NAME = FinikIosSdk;
-				PRODUCT_NAME = FinikIosSdk;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		9AFF99BA1FA4D4C8B287266925F7BB12 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 409BC37899608F9AC48DD207FA08CE47 /* Flutter.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		AFF4EC9F6812BF8325A2C72E8E7305A4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DE0007984B818E1213FE1889D672D5B /* Flutter.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		CF8CA2A1EB30E2969EDC6388F29DEC2F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 465C2B9F86860D5D55B2197ED505C19C /* FinikIosSdk.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/FinikIosSdk/FinikIosSdk-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/FinikIosSdk/FinikIosSdk-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FinikIosSdk/FinikIosSdk.modulemap";
-				PRODUCT_MODULE_NAME = FinikIosSdk;
-				PRODUCT_NAME = FinikIosSdk;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		E614BE8A48837AF922F701065F218DDB /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -964,6 +967,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		349E67CC481557377DB29E36441233B3 /* Build configuration list for PBXNativeTarget "FinikIosSdk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C38AB7E5B3AA906636394B3244B0881 /* Debug */,
+				7A8EA5103D44EB34287CDC46FE0761F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -991,20 +1003,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F21DEB9EC7A6E57FF6CE8AC8CDF3D92 /* Build configuration list for PBXAggregateTarget "Flutter" */ = {
+		C51FF993451B420CF7FBF13215A98DA6 /* Build configuration list for PBXAggregateTarget "Flutter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9AFF99BA1FA4D4C8B287266925F7BB12 /* Debug */,
-				AFF4EC9F6812BF8325A2C72E8E7305A4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DC4A145E97D679EEEF1FB8C5BE615A17 /* Build configuration list for PBXNativeTarget "FinikIosSdk" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CF8CA2A1EB30E2969EDC6388F29DEC2F /* Debug */,
-				93FBA3BE9DD7D06BFB1095F315D8E7D4 /* Release */,
+				697E5759890B0957C4A129A506C482E9 /* Debug */,
+				44165FA752F738E9174EB387A751DFC2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

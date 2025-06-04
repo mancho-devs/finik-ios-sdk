@@ -8,7 +8,7 @@
 public class FinikSdkLocale {
     private init() {}
 
-    public static let en = "en"
-    public static let ru = "ru"
-    public static let kg = "ky"
+    public static let EN = "en"
+    public static let RU = "ru"
+    public static let KY = "ky"
 }

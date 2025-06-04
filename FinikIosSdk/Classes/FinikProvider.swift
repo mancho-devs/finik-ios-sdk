@@ -15,8 +15,8 @@ public class FinikProvider {
         apiKey: String,
         isBeta: Bool = false,
         locale: String,
-        textScenario: TextScenario = TextScenario.payment,
-        useHiveForGraphQLCache: Bool = true,
+        textScenario: TextScenario = TextScenario.PAYMENT,
+        paymentMethod: PaymentMethod = PaymentMethod.APP,
         onBackPressed: @escaping () -> Void,
         onPayment: @escaping ([String: Any]) -> Void,
         widget: FinikWidget
@@ -66,7 +66,7 @@ public class FinikProvider {
                 "isBeta": isBeta,
                 "locale": locale,
                 "textScenario": textScenario.rawValueString,
-                "useHiveForGraphQLCache": useHiveForGraphQLCache,
+                "paymentMethod": paymentMethod.rawValueString,
                 "widget": widget.toDictionary(),
             ]
 

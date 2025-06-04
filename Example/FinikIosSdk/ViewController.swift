@@ -17,9 +17,9 @@ class ViewController: UIViewController {
             from: self,
             apiKey: "YOUR_API_KEY",
             isBeta: true,
-            locale: FinikSdkLocale.kg,
-            textScenario: TextScenario.replenishment,
-            useHiveForGraphQLCache: false,
+            locale: FinikSdkLocale.KY,
+            textScenario: TextScenario.REPLENISHMENT,
+            paymentMethod: PaymentMethod.QR,
             onBackPressed: {
                 print("ExampleApp: Back pressed from Flutter")
             },
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
                 print("ExampleApp: Payment data: \(data)")
             },
             widget: CreateItemHandlerWidget(
-                accountId: "YOUR_ACCOUNT_ID",
+                accountId: "72145c2f-b987-46b9-b718-5d8313854f69",
                 nameEn: "YOUR_NAME_EN",
                 requestId: "110ec58a-a0f2-4ac4-8393-c866d813b8d1",
                 callbackUrl: "YOUR_CALLBACK_URL",
