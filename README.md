@@ -75,8 +75,8 @@ FinikProvider.present(
     from: self,
     apiKey: "YOUR_API_KEY",
     isBeta: true,
-    locale: FinikSdkLocale.kg,
-    textScenario: TextScenario.replenishment,
+    locale: FinikSdkLocale.KY,
+    textScenario: TextScenario.REPLENISHMENT,
     paymentMethod: PaymentMethod.QR,
     onBackPressed: {
       print("ExampleApp: Back pressed from Flutter")
