@@ -9,18 +9,17 @@
 Pod::Spec.new do |s|
   s.name             = 'FinikIosSdk'
   s.version          = '1.1.2'
-  s.summary          = 'A lightweight SDK for integrating Finik payments into your iOS app.'
+  s.summary          = 'Flutter-integrated Finik iOS SDK for seamless payments'
 
   s.description      = <<-DESC
-  This Pod enables seamless integration of Finik's payment system into your iOS application.
-  It offers a secure SDK for initiating payments, displaying QR codes,
-  handling fixed or dynamic amounts, and tracking payment status in real time.
-  Designed with developers in mind, the SDK ensures smooth user experience and fast integration.
-                       DESC
+  Finik iOS SDK allows you to embed payment workflows using a Flutter module.
+  It provides seamless integration of QR payments and custom checkout flows
+  through a simple and secure API. Compatible with iOS 12+.
+  DESC
 
   s.homepage         = 'https://github.com/mancho-devs/finik-ios-sdk'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
+  s.license          = { :type => 'MIT' }
   s.author           = { 'Finik' => 'engineering@quickpay.kg' }
   s.source           = { :git => 'https://github.com/mancho-devs/finik-ios-sdk.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'

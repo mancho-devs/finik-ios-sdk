@@ -27,7 +27,7 @@ class ViewController: UIViewController {
                 print("ExampleApp: Payment data: \(data)")
             },
             widget: CreateItemHandlerWidget(
-                accountId: "72145c2f-b987-46b9-b718-5d8313854f69",
+                accountId: "YOUR_ACCOUNT_ID",
                 nameEn: "YOUR_NAME_EN",
                 requestId: "110ec58a-a0f2-4ac4-8393-c866d813b8d1",
                 callbackUrl: "YOUR_CALLBACK_URL",
