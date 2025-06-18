@@ -6,6 +6,7 @@
 //
 
 import Flutter
+import FlutterPluginRegistrant
 import UIKit
 
 public class FinikProvider {
@@ -16,26 +17,28 @@ public class FinikProvider {
         isBeta: Bool = false,
         locale: String,
         textScenario: TextScenario = TextScenario.PAYMENT,
-        paymentMethod: PaymentMethod = PaymentMethod.APP,
+        paymentMethods: [PaymentMethod] = [PaymentMethod.ALL],
+        enableShare: Bool = true,
+        tapableSupportButtons: Bool = true,
         onBackPressed: @escaping () -> Void,
         onPayment: @escaping ([String: Any]) -> Void,
         widget: FinikWidget
     ) {
-        guard let engine = FlutterEngineHolder.shared.engine else {
-            print("Flutter engine not initialized")
-            return
-        }
+        let engine = FlutterEngine(name: "finik_ios_sdk-\(UUID().uuidString)")
+
+        engine.run()
+        GeneratedPluginRegistrant.register(with: engine)
 
         engine.viewController = nil
 
         let flutterVC = FlutterViewController(
             engine: engine, nibName: nil, bundle: nil)
-
         flutterVC.modalPresentationStyle = .fullScreen
 
         let channel = FlutterMethodChannel(
             name: "finik_sdk_channel",
-            binaryMessenger: flutterVC.binaryMessenger)
+            binaryMessenger: flutterVC.binaryMessenger
+        )
 
         channel.setMethodCallHandler {
             (call: FlutterMethodCall, result: @escaping FlutterResult) in
@@ -43,14 +46,16 @@ public class FinikProvider {
 
             case "onBackPressed":
                 onBackPressed()
-                flutterVC.dismiss(animated: true, completion: nil)
+                flutterVC.dismiss(animated: true) {
+                    engine.destroyContext()
+                }
                 result(nil)
 
             case "onPayment":
                 if let args = call.arguments as? [String: Any] {
                     onPayment(args)
                 } else {
-                    print("Invalid arguments for onPaymentSuccess")
+                    print("Invalid arguments for onPayment")
                 }
                 result(nil)
 
@@ -66,14 +71,13 @@ public class FinikProvider {
                 "isBeta": isBeta,
                 "locale": locale,
                 "textScenario": textScenario.rawValueString,
-                "paymentMethod": paymentMethod.rawValueString,
+                "paymentMethods": paymentMethods.map { $0.rawValueString },
+                "enableShare": enableShare,
+                "tapableSupportButtons": tapableSupportButtons,
                 "widget": widget.toDictionary(),
             ]
 
             channel.invokeMethod("getFinikSdkParams", arguments: args)
-
         }
-
     }
-
 }

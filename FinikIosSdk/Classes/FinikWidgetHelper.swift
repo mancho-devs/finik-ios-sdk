@@ -35,6 +35,7 @@ public class CreateItemHandlerWidget: FinikWidget {
     public let accountId: String
     public let nameEn: String
     public let requestId: String?
+    public let description: String?
     public let callbackUrl: String?
     public let fixedAmount: Double?
     public let maxAvailableQuantity: Int?
@@ -44,6 +45,7 @@ public class CreateItemHandlerWidget: FinikWidget {
         accountId: String,
         nameEn: String,
         requestId: String? = nil,
+        description: String? = nil,
         callbackUrl: String? = nil,
         fixedAmount: Double? = nil,
         maxAvailableQuantity: Int? = nil,
@@ -52,6 +54,7 @@ public class CreateItemHandlerWidget: FinikWidget {
         self.accountId = accountId
         self.nameEn = nameEn
         self.requestId = requestId
+        self.description = description
         self.callbackUrl = callbackUrl
         self.fixedAmount = fixedAmount
         self.maxAvailableQuantity = maxAvailableQuantity
@@ -64,6 +67,7 @@ public class CreateItemHandlerWidget: FinikWidget {
         dict["type"] = "createItem"
         dict["accountId"] = accountId
         dict["requestId"] = requestId
+        dict["description"] = description
         dict["nameEn"] = nameEn
         dict["callbackUrl"] = callbackUrl
         dict["fixedAmount"] = fixedAmount
@@ -98,11 +102,13 @@ public class CreateItemHandlerWidget: FinikWidget {
 }
 
 @objc public enum PaymentMethod: Int {
+    case ALL
     case APP
     case QR
 
     public var rawValueString: String {
         switch self {
+        case .ALL: return "ALL"
         case .APP: return "APP"
         case .QR: return "QR"
         }
@@ -110,6 +116,7 @@ public class CreateItemHandlerWidget: FinikWidget {
 
     public init?(rawString: String) {
         switch rawString {
+        case "ALL": self = .ALL
         case "APP": self = .APP
         case "QR": self = .QR
         default: return nil

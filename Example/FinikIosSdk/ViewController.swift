@@ -7,19 +7,22 @@
 //
 
 import FinikIosSdk
+import Flutter
+import FlutterPluginRegistrant
 import UIKit
 
 class ViewController: UIViewController {
 
     @IBAction func onTapped(_ sender: UIButton) {
-
         FinikProvider.present(
             from: self,
             apiKey: "YOUR_API_KEY",
             isBeta: true,
             locale: FinikSdkLocale.KY,
-            textScenario: TextScenario.REPLENISHMENT,
-            paymentMethod: PaymentMethod.QR,
+            textScenario: TextScenario.PAYMENT,
+            paymentMethods: [PaymentMethod.ALL],
+            enableShare: true,
+            tapableSupportButtons: true,
             onBackPressed: {
                 print("ExampleApp: Back pressed from Flutter")
             },
@@ -29,17 +32,38 @@ class ViewController: UIViewController {
             widget: CreateItemHandlerWidget(
                 accountId: "YOUR_ACCOUNT_ID",
                 nameEn: "YOUR_NAME_EN",
-                requestId: "110ec58a-a0f2-4ac4-8393-c866d813b8d1",
+                description: "YOUR_ITEM_DESCRIPTION",
                 callbackUrl: "YOUR_CALLBACK_URL",
-                fixedAmount: 77.77,
+                fixedAmount: 9.99,
                 maxAvailableQuantity: 1,
                 requiredFields: [
-                    RequiredField(
-                        fieldId: "YOU_FIELD_ID", value: "YOUR_FIELD_VALUE")
+                    RequiredField(fieldId: "FIELD_ID", value: "VALUE")
                 ]
             )
         )
 
+    }
+
+    @IBAction func onTappedAlternative(_ sender: UIButton) {
+        FinikProvider.present(
+            from: self,
+            apiKey: "YOUR_API_KEY",
+            isBeta: true,
+            locale: FinikSdkLocale.KY,
+            textScenario: TextScenario.REPLENISHMENT,
+            paymentMethods: [PaymentMethod.QR],
+            enableShare: false,
+            tapableSupportButtons: false,
+            onBackPressed: {
+                print("ExampleApp: Back pressed from Flutter")
+            },
+            onPayment: { data in
+                print("ExampleApp: Payment data: \(data)")
+            },
+            widget: GetItemHandlerWidget(
+                itemId: "YOUR_ITEM_ID"
+            )
+        )
     }
 
     override func viewDidLoad() {
