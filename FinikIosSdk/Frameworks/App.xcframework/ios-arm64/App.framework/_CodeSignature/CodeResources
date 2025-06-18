@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		k2UbCiEwtl1sJEOi8FZnZbsB9vA=
+		ci5IWPmnDalKtD7D+LHI43jYXuU=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		nnn91TXXmJyYJryxTzMPriVxobE=
+		zrbyxFZfxMrpiYPfntE4kBquqYA=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -100,9 +100,17 @@
 		<data>
 		8W985ztDP1IVGd+eyFtgJB5Z5G0=
 		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_arrow_down.svg</key>
+		<data>
+		6jXC71vNWPlWNtsjVd/tGPX4Ziw=
+		</data>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_arrow_left.svg</key>
 		<data>
 		pH5Bu4e3vyzyJsDB+qZtjQLAlQI=
+		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_arrow_up.svg</key>
+		<data>
+		jIFBEhM5H6I18814EWGcGswkqWk=
 		</data>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_beeline.svg</key>
 		<data>
@@ -151,14 +159,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IrdCRwUoVWc8MFYbE/blYRxobU5FRmUxnXn/ZFAxJnU=
+			ZsvXCf6m0C3pg9MXzrB/GyWyh7WT+ecEtWG3Gxvo4Ds=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9ZaBUQC62+tB/zkyJAGPrIVPDv353ckvJQ54W/8vawU=
+			e8bKObiuhtWi0n25aUDml0YHsqhFlV7vWsOr7HZf4vI=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -308,11 +316,25 @@
 			skYKY4jN1zIV5g3BWZtNwsFuYNMk+Rs7iTnhGzf9EMM=
 			</data>
 		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_arrow_down.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UsV1yiuCSPvTFersBY+yJdVjjCDr+yHlKQPVYamA85I=
+			</data>
+		</dict>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_arrow_left.svg</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			ZFEAuCrnl34xUvcuHz3g97wXMPU2bWzC6p7jnvWd9OU=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_arrow_up.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NogL1gUY6YBppoMKivwVxOlRbx3bDp96JKy8Q9Qn790=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_beeline.svg</key>

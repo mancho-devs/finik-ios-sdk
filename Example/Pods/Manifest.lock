@@ -1,5 +1,5 @@
 PODS:
-  - FinikIosSdk (1.1.2):
+  - FinikIosSdk (1.2.0):
     - Flutter
   - Flutter (3.13.0)
 
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FinikIosSdk: a9ca0a97fde834f94f38e44e6c2936f8f96340c0
+  FinikIosSdk: 4ad905a9049f6e9858c545d38e56f279dc88378a
   Flutter: 8ff16720b007bae16abfe75ef9fe3ee45ead486a
 
 PODFILE CHECKSUM: f415912fb50b84a286b62b6f43faf5c3bb2a01c9
