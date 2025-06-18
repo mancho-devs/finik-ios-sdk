@@ -6,9 +6,6 @@
 //  Copyright (c) 2025 birimkulov951. All rights reserved.
 //
 
-import FinikIosSdk
-import Flutter
-import FlutterPluginRegistrant
 import UIKit
 
 @UIApplicationMain
@@ -16,18 +13,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    lazy var flutterEngine = FlutterEngine(name: "finik_ios_sdk")
-
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions:
             [UIApplicationLaunchOptionsKey: Any]?
     ) -> Bool {
-
-        flutterEngine.run()
-        GeneratedPluginRegistrant.register(with: flutterEngine)
-        FlutterEngineHolder.shared.engine = flutterEngine
-
         return true
     }
 

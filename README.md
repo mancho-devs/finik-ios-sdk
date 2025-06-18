@@ -46,23 +46,6 @@ post_install do |installer|
 end
 ```
 
-# 🧠 Flutter Engine Initialization
-
-## In AppDelegate.swift, initialize the shared Flutter engine:
-
-``` swift
-lazy var flutterEngine = FlutterEngine(name: "finik_ios_sdk")
-
-func application(
-  _ application: UIApplication,
-  didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
-) -> Bool {
-  flutterEngine.run()
-  GeneratedPluginRegistrant.register(with: flutterEngine)
-  FlutterEngineHolder.shared.engine = flutterEngine
-  return true
-}    
-```
 
 # 💡 Usage
 
@@ -77,7 +60,9 @@ FinikProvider.present(
     isBeta: true,
     locale: FinikSdkLocale.KY,
     textScenario: TextScenario.REPLENISHMENT,
-    paymentMethod: PaymentMethod.QR,
+    paymentMethods: [PaymentMethod.ALL],
+    enableShare: true,
+    tapableSupportButtons: true,
     onBackPressed: {
       print("ExampleApp: Back pressed from Flutter")
     },
@@ -94,8 +79,9 @@ FinikProvider.present(
         accountId: "YOUR_ACCOUNT_ID",
         nameEn: "YOUR_ITEM_NAME_EN",
         requestId: "110ec58a-a0f2-4ac4-8393-c866d813b8d1",
+        description: "YOUR_ITEM_DESCRIPTION",
         callbackUrl: "YOUR_CALLBACK_URL",
-        fixedAmount: 77.77,
+        fixedAmount: 9.99,
         maxAvailableQuantity: 1,
         requiredFields: [
           RequiredField(
@@ -113,8 +99,12 @@ FinikProvider.present(
   FinikSdkLocale.RU.
 - **textScenario**: Defines the context for displayed UI text. Accepted values: TextScenario.PAYMENT,
   TextScenario.REPLENISHMENT.
-- **paymentMethod**: Specifies the active payment method tab on the QR code screen. Supported values: PaymentMethod.APP,
-  PaymentMethod.QR.
+- **paymentMethods**: Defines which payment options are shown to users:
+    - [PaymentMethod.ALL] - Shows all available methods (APP + QR)
+    - [PaymentMethod.APP] - Mobile application payment only
+    - [PaymentMethod.QR] - QR code payment only
+- **enableShare**: Controls the visibility of the share button in the app bar.
+- **tapableSupportButtons**: Controls whether support buttons are interactive.
 - **onBackPressed**: A function triggered when the back button is pressed. Useful for
   custom navigation or showing dialogs.
 - **onPayment**: A function triggered when the payment is done. Returns the payment status and other payment data.
@@ -141,6 +131,7 @@ Use this widget to create a new payment item and generate a QR code.
   payment.
 - **requestId**: An optional field to control the uniqueness of a request. For each request it must be unique so that
   Finik makes sure there are no duplicate QR items being created.
+- **description**: An optional field to specify a description.
 - **callbackUrl**: An optional field used as a webhook; when specified, Finik will send a POST request to your server
   with the payment details in its body in JSON format, including its final status that can be either SUCCEEDED or FAILED
   as well as requiredFields in the form of fields object attribute.
@@ -157,8 +148,9 @@ CreateItemHandlerWidget(
     accountId: "YOUR_ACCOUNT_ID",
     nameEn: "YOUR_ITEM_NAME_EN",
     requestId: "110ec58a-a0f2-4ac4-8393-c866d813b8d1",
+    description: "YOUR_ITEM_DESCRIPTION",
     callbackUrl: "YOUR_CALLBACK_URL",
-    fixedAmount: 77.77,
+    fixedAmount: 9.99,
     maxAvailableQuantity: 1,
     requiredFields: [
       RequiredField(
