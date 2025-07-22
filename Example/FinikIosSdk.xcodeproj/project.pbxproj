@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		433033EBEA05397D583E076D /* Pods_FinikIosSdk_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBB754F2BE46D0007FB3079 /* Pods_FinikIosSdk_Example.framework */; };
+		143F035353EE707A0CC16B49 /* Pods_FinikIosSdk_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705E33E41D5D8EC9E7FF616D /* Pods_FinikIosSdk_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		D5D6A15303D0A65A1BFEDEAB /* Pods_FinikIosSdk_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EA07B6EF7B499796DEEBA50 /* Pods_FinikIosSdk_Tests.framework */; };
+		AF5E891FCC0D0517AB0030A6 /* Pods_FinikIosSdk_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AEEF2EACD9E93B08EC55CE1 /* Pods_FinikIosSdk_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,11 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0DE69E3DDD035C32DADE7FA4 /* Pods-FinikIosSdk_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinikIosSdk_Example.release.xcconfig"; path = "Target Support Files/Pods-FinikIosSdk_Example/Pods-FinikIosSdk_Example.release.xcconfig"; sourceTree = "<group>"; };
+		18C131760B6825F58631F155 /* Pods-FinikIosSdk_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinikIosSdk_Tests.release.xcconfig"; path = "Target Support Files/Pods-FinikIosSdk_Tests/Pods-FinikIosSdk_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		19A39326E3F1C3D5602C26DD /* Pods-FinikIosSdk_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinikIosSdk_Example.debug.xcconfig"; path = "Target Support Files/Pods-FinikIosSdk_Example/Pods-FinikIosSdk_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		36EAA685A4286EDBE66DCE90 /* Pods-FinikIosSdk_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinikIosSdk_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FinikIosSdk_Tests/Pods-FinikIosSdk_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4476328404A3F385CE8E538B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		4F77721637152FA7F10DB4AB /* Pods-FinikIosSdk_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinikIosSdk_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FinikIosSdk_Tests/Pods-FinikIosSdk_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4FA41C2C35D4CD909C1053BD /* Pods-FinikIosSdk_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinikIosSdk_Example.debug.xcconfig"; path = "Target Support Files/Pods-FinikIosSdk_Example/Pods-FinikIosSdk_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5EA07B6EF7B499796DEEBA50 /* Pods_FinikIosSdk_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinikIosSdk_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* FinikIosSdk_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinikIosSdk_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,10 +42,11 @@
 		607FACE51AFB9204008FA782 /* FinikIosSdk_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinikIosSdk_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		705E33E41D5D8EC9E7FF616D /* Pods_FinikIosSdk_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinikIosSdk_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AEEF2EACD9E93B08EC55CE1 /* Pods_FinikIosSdk_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinikIosSdk_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D9754CB8CFB18C1DC485A6C /* FinikIosSdk.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FinikIosSdk.podspec; path = ../FinikIosSdk.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		934E891617D0172DA929526C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		ADBB754F2BE46D0007FB3079 /* Pods_FinikIosSdk_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FinikIosSdk_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1A08819BF3A917CB876799F /* Pods-FinikIosSdk_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinikIosSdk_Tests.release.xcconfig"; path = "Target Support Files/Pods-FinikIosSdk_Tests/Pods-FinikIosSdk_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9F9E35EF921B6F58F15F5E9D /* Pods-FinikIosSdk_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinikIosSdk_Example.release.xcconfig"; path = "Target Support Files/Pods-FinikIosSdk_Example/Pods-FinikIosSdk_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				433033EBEA05397D583E076D /* Pods_FinikIosSdk_Example.framework in Frameworks */,
+				AF5E891FCC0D0517AB0030A6 /* Pods_FinikIosSdk_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5D6A15303D0A65A1BFEDEAB /* Pods_FinikIosSdk_Tests.framework in Frameworks */,
+				143F035353EE707A0CC16B49 /* Pods_FinikIosSdk_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,10 +72,10 @@
 		154A447286F466ADB59B7B6B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4FA41C2C35D4CD909C1053BD /* Pods-FinikIosSdk_Example.debug.xcconfig */,
-				0DE69E3DDD035C32DADE7FA4 /* Pods-FinikIosSdk_Example.release.xcconfig */,
-				4F77721637152FA7F10DB4AB /* Pods-FinikIosSdk_Tests.debug.xcconfig */,
-				C1A08819BF3A917CB876799F /* Pods-FinikIosSdk_Tests.release.xcconfig */,
+				19A39326E3F1C3D5602C26DD /* Pods-FinikIosSdk_Example.debug.xcconfig */,
+				9F9E35EF921B6F58F15F5E9D /* Pods-FinikIosSdk_Example.release.xcconfig */,
+				36EAA685A4286EDBE66DCE90 /* Pods-FinikIosSdk_Tests.debug.xcconfig */,
+				18C131760B6825F58631F155 /* Pods-FinikIosSdk_Tests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -88,7 +88,7 @@
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				154A447286F466ADB59B7B6B /* Pods */,
-				ED0D8A715B1386FB665974CE /* Frameworks */,
+				B9FE11EEB9EFE2B589B98662 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -150,11 +150,11 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		ED0D8A715B1386FB665974CE /* Frameworks */ = {
+		B9FE11EEB9EFE2B589B98662 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				ADBB754F2BE46D0007FB3079 /* Pods_FinikIosSdk_Example.framework */,
-				5EA07B6EF7B499796DEEBA50 /* Pods_FinikIosSdk_Tests.framework */,
+				7AEEF2EACD9E93B08EC55CE1 /* Pods_FinikIosSdk_Example.framework */,
+				705E33E41D5D8EC9E7FF616D /* Pods_FinikIosSdk_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,11 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "FinikIosSdk_Example" */;
 			buildPhases = (
-				95B73B3ADB3CCC0CCC872345 /* [CP] Check Pods Manifest.lock */,
+				4D0416E6823FE6671F65ED05 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				601388D6C7B2F4E9B45584A5 /* [CP] Embed Pods Frameworks */,
+				52D485ACE6745D9096B3402C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,7 +185,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACF21AFB9204008FA782 /* Build configuration list for PBXNativeTarget "FinikIosSdk_Tests" */;
 			buildPhases = (
-				4A7D902BB8262FE82DC3B1D2 /* [CP] Check Pods Manifest.lock */,
+				27218319A1A7C03E8081FD81 /* [CP] Check Pods Manifest.lock */,
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
@@ -264,7 +264,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4A7D902BB8262FE82DC3B1D2 /* [CP] Check Pods Manifest.lock */ = {
+		27218319A1A7C03E8081FD81 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -286,7 +286,29 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		601388D6C7B2F4E9B45584A5 /* [CP] Embed Pods Frameworks */ = {
+		4D0416E6823FE6671F65ED05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FinikIosSdk_Example-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52D485ACE6745D9096B3402C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -318,28 +340,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FinikIosSdk_Example/Pods-FinikIosSdk_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		95B73B3ADB3CCC0CCC872345 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-FinikIosSdk_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -493,7 +493,7 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FA41C2C35D4CD909C1053BD /* Pods-FinikIosSdk_Example.debug.xcconfig */;
+			baseConfigurationReference = 19A39326E3F1C3D5602C26DD /* Pods-FinikIosSdk_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AKJQRRJU26;
@@ -510,7 +510,7 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DE69E3DDD035C32DADE7FA4 /* Pods-FinikIosSdk_Example.release.xcconfig */;
+			baseConfigurationReference = 9F9E35EF921B6F58F15F5E9D /* Pods-FinikIosSdk_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AKJQRRJU26;
@@ -527,7 +527,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4F77721637152FA7F10DB4AB /* Pods-FinikIosSdk_Tests.debug.xcconfig */;
+			baseConfigurationReference = 36EAA685A4286EDBE66DCE90 /* Pods-FinikIosSdk_Tests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = AKJQRRJU26;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -550,7 +550,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C1A08819BF3A917CB876799F /* Pods-FinikIosSdk_Tests.release.xcconfig */;
+			baseConfigurationReference = 18C131760B6825F58631F155 /* Pods-FinikIosSdk_Tests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = AKJQRRJU26;
 				FRAMEWORK_SEARCH_PATHS = (
