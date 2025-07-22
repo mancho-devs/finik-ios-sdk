@@ -18,9 +18,10 @@ class ViewController: UIViewController {
             from: self,
             apiKey: "YOUR_API_KEY",
             isBeta: true,
-            locale: FinikSdkLocale.KY,
+            locale: FinikSdkLocale.RU,
             textScenario: TextScenario.PAYMENT,
             paymentMethods: [PaymentMethod.ALL],
+            enableShimmer: true,
             enableShare: true,
             tapableSupportButtons: true,
             onBackPressed: {
@@ -49,9 +50,10 @@ class ViewController: UIViewController {
             from: self,
             apiKey: "YOUR_API_KEY",
             isBeta: true,
-            locale: FinikSdkLocale.KY,
+            locale: FinikSdkLocale.RU,
             textScenario: TextScenario.REPLENISHMENT,
             paymentMethods: [PaymentMethod.QR],
+            enableShimmer: false,
             enableShare: false,
             tapableSupportButtons: false,
             onBackPressed: {
