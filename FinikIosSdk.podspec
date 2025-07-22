@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
   Finik iOS SDK allows you to embed payment workflows using a Flutter module.
   It provides seamless integration of QR payments and custom checkout flows
-  through a simple and secure API. Compatible with iOS 12+.
+  through a simple and secure API. Compatible with iOS 12+ .
   DESC
 
   s.homepage         = 'https://github.com/mancho-devs/finik-ios-sdk'
