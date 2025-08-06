@@ -46,7 +46,6 @@ post_install do |installer|
 end
 ```
 
-
 # 💡 Usage
 
 ## 📲 Example Code
@@ -79,13 +78,16 @@ FinikProvider.present(
         accountId: "YOUR_ACCOUNT_ID",
         nameEn: "YOUR_ITEM_NAME_EN",
         requestId: "110ec58a-a0f2-4ac4-8393-c866d813b8d1",
+        amount: FixedAmount(value: 10.0),
         description: "YOUR_ITEM_DESCRIPTION",
         callbackUrl: "YOUR_CALLBACK_URL",
-        fixedAmount: 9.99,
         maxAvailableQuantity: 1,
+        maxAvailableAmount: 1000.0,
+        startDate: DateComponents(year: 2025, month: 7, day: 1),
+        endDate: DateComponents(year: 2025, month: 12, day: 31),
+        visibilityType: VisibilityType.PUBLIC,
         requiredFields: [
-          RequiredField(
-                fieldId: "YOU_FIELD_ID", value: "YOUR_FIELD_VALUE")
+            RequiredField(fieldId: "YOU_FIELD_ID", value: "YOUR_FIELD_VALUE")
         ]
     )
 )     
@@ -103,6 +105,7 @@ FinikProvider.present(
     - [PaymentMethod.ALL] - Shows all available methods (APP + QR)
     - [PaymentMethod.APP] - Mobile application payment only
     - [PaymentMethod.QR] - QR code payment only
+- **enableShimmer**: Controls the visibility of the shimmer animations in the app.
 - **enableShare**: Controls the visibility of the share button in the app bar.
 - **tapableSupportButtons**: Controls whether support buttons are interactive.
 - **onBackPressed**: A function triggered when the back button is pressed. Useful for
@@ -125,36 +128,46 @@ Use this widget to create a new payment item and generate a QR code.
 
 ### Parameters
 
-- **accountId**: A required field. It is the Finik account where the funds will be deposited acquired from merchant's
-  clients. Reach out to Finik representatives to receive your corporate accountId with x-api-key.
-- **nameEn**: A required field used as a QR name that will be displayed to merchant's clients on their devices upon
-  payment.
-- **requestId**: An optional field to control the uniqueness of a request. For each request it must be unique so that
-  Finik makes sure there are no duplicate QR items being created.
-- **description**: An optional field to specify a description.
-- **callbackUrl**: An optional field used as a webhook; when specified, Finik will send a POST request to your server
-  with the payment details in its body in JSON format, including its final status that can be either SUCCEEDED or FAILED
-  as well as requiredFields in the form of fields object attribute.
-- **fixedAmount**: An optional field. When specified, a QR is generated with this specific amount. The merchant's client
-  will not be able to specify any custom amount.
-- **maxAvailableQuantity**: An optional field. The value must be 1 or null.
-- **requiredFields**: An optional field. When specified, Finik will proxy the provided key:value in the fields field
-  when sending the payment details to callbackUrl if configured.
+- **accountId** (required): This is the Finik account where the funds will be deposited, acquired from the merchant's
+  clients. Reach out to Finik representatives to receive your corporate accountId along with the x-api-key.
+- **nameEn** (required): A field used as a QR name that will be displayed to the merchant's clients on their devices
+  upon payment.
+- **requestId** (optional): A field to control the uniqueness of a request. For each request, it must be unique so that
+  Finik ensures no duplicate QR items are created.
+- **amount** (optional): Defines the payment configuration. Supported types:
+    * \[FixedAmount] - A predefined, non-editable payment amount.
+    * \[MinMaxAmount] - Allows users to enter an amount within a specified minimum and maximum range.
+    * \[FreeAmount] - Fully flexible; users can input any amount.
+- **description** (optional): A short description of the item. Displayed in the payment UI.
+- **callbackUrl** (optional): A field used as a webhook. When specified, Finik will send a POST request to your server
+  with the payment details in its JSON body, including its final status (either SUCCEEDED or FAILED), as well as
+  requiredFields in the form of a `fields` object attribute.
+- For detailed specifications, see: https://quip.com/0IA3An5NLWRb
+- **maxAvailableQuantity** (optional): Maximum number of times this item can be purchased. Prevents over-selling.
+- **maxAvailableAmount** (optional): Maximum total payable amount allowed across all purchases of this item.
+- **startDate** (optional): The start date and time from which the item becomes available for payment.
+- **endDate** (optional): The end date and time after which the item is no longer available for payment.
+- **visibilityType** (optional): Determines whether the item is public or private.
+- **requiredFields** (optional): When specified, Finik will proxy the provided key\:value in the `fields` field when
+  sending the payment details to the `callbackUrl`, if configured.
 
 ### Example Code
 
 ```swift
-CreateItemHandlerWidget(
+CreateItemHandlerWidget( 
     accountId: "YOUR_ACCOUNT_ID",
     nameEn: "YOUR_ITEM_NAME_EN",
     requestId: "110ec58a-a0f2-4ac4-8393-c866d813b8d1",
+    amount: FixedAmount(value: 10.0),
     description: "YOUR_ITEM_DESCRIPTION",
     callbackUrl: "YOUR_CALLBACK_URL",
-    fixedAmount: 9.99,
     maxAvailableQuantity: 1,
+    maxAvailableAmount: 1000.0,
+    startDate: DateComponents(year: 2025, month: 7, day: 1),
+    endDate: DateComponents(year: 2025, month: 12, day: 31),
+    visibilityType: VisibilityType.PUBLIC,
     requiredFields: [
-      RequiredField(
-            fieldId: "YOU_FIELD_ID", value: "YOUR_FIELD_VALUE")
+        RequiredField(fieldId: "YOU_FIELD_ID", value: "YOUR_FIELD_VALUE")
     ]
 )
 ```

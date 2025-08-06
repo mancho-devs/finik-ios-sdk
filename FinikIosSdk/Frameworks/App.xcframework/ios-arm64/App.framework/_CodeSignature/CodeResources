@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		uN+9JPaGrT9Qe6Is7T2qUbDALBw=
+		Rvi9h1YD/taEFTKEY6lreQ3/QiQ=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		FQVN6d7C3fEasLrzB09knTD/qMk=
+		T5OYg4z85pj/A6cVlG9AUZAhTgw=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -96,6 +96,10 @@
 		<data>
 		ASX1d6ghYIiudStz9D0QO2whVX0=
 		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/.DS_Store</key>
+		<data>
+		3y++sUAKzaCQmjLBz2v0kvESHgc=
+		</data>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_applications.svg</key>
 		<data>
 		8W985ztDP1IVGd+eyFtgJB5Z5G0=
@@ -116,13 +120,21 @@
 		<data>
 		T6bA7WUrHVEmi6qs6lxodOty1b8=
 		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_content_copy.svg</key>
+		<data>
+		eLHba3SwZOPoBvQ+ApV+LuLorLc=
+		</data>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_finik_logo.svg</key>
 		<data>
-		EaqTGHBMtp4yIB7DGDEcpkqWqDY=
+		j/oVO+qE+1d+xYypadLtg5asRbw=
 		</data>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_finik_logo_text.svg</key>
 		<data>
 		vrtHvvjtrnJpMjHDs5p2TRZ0Xlc=
+		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_info.svg</key>
+		<data>
+		HER3m2N948nNzpqyXnphCTF/yHA=
 		</data>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_link_external.svg</key>
 		<data>
@@ -152,6 +164,10 @@
 		<data>
 		dr1S0pggyffJLVme8OTpXoi6Xn0=
 		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_verified_user.svg</key>
+		<data>
+		1XZ7G3yU+t1Ms39UfinerisZC7Q=
+		</data>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_whatsapp.svg</key>
 		<data>
 		+BhtTdZpkDgN6GkQGmsI+Rzk1yA=
@@ -167,14 +183,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IpcbmEb996514Z/Cig6CzPNtcVtM1wLrkyExHJF0CQ8=
+			RL6LpQ7aEr4ZEV+uMwx6ECfV38dw7VEctiZC1GHPqoM=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			aVxSRwZayP34dviwtTyYSI8Xm2qgR939aOAKzesPUQ8=
+			tbx1H8Ma/WjmrGLdmHEVLent8n4hDVErYVdEahRmBHU=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -352,11 +368,18 @@
 			vZe+s1dK6wEbgVFmip5ddDxkXdOUqKuh1JL0xGSbVX8=
 			</data>
 		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_content_copy.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lxRgQU1eNf6MzphSR9qxOQSxrVbYS97IouVNuwH8X14=
+			</data>
+		</dict>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_finik_logo.svg</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+WCqjeGDV/pbGdz4d2NxNI4frM/hObDQdwfM4WyYOIE=
+			1w3XN2U1yKRdGOyvLlR3HPmOW6/+7ydazwRs1Lir86M=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_finik_logo_text.svg</key>
@@ -364,6 +387,13 @@
 			<key>hash2</key>
 			<data>
 			FxTzc+wS28LYXAg/fd14D6SOTA1RKAP393tvmsOXwK4=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_info.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+gi0LRKynKUDCYOSz5FUWPl1y2tX6M3nlKKo/9m5AW8=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_link_external.svg</key>
@@ -413,6 +443,13 @@
 			<key>hash2</key>
 			<data>
 			/BINfrC45Rg+5KJ2uR1PdZk0WEymakWdOVMLBPXSVGY=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_verified_user.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jPp5vznWyz05Pbkn7E67x1aE3Lox56Gx4CTgKv2DJ/k=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_whatsapp.svg</key>
