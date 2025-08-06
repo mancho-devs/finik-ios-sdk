@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FinikIosSdk'
-  s.version          = '1.5.0'
+  s.version          = '2.0.3'
   s.summary          = 'Flutter-integrated Finik iOS SDK for seamless payments'
 
   s.description      = <<-DESC

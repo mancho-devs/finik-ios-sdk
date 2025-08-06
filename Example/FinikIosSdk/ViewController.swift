@@ -32,13 +32,16 @@ class ViewController: UIViewController {
             },
             widget: CreateItemHandlerWidget(
                 accountId: "YOUR_ACCOUNT_ID",
-                nameEn: "YOUR_NAME_EN",
+                nameEn: "YOUR_ITEM_NAME_EN",
+                amount: FixedAmount(value: 10.0),
                 description: "YOUR_ITEM_DESCRIPTION",
                 callbackUrl: "YOUR_CALLBACK_URL",
-                fixedAmount: 9.99,
                 maxAvailableQuantity: 1,
+                maxAvailableAmount: 1000.0,
+                startDate: DateComponents(year: 2025, month: 7, day: 1),
+                endDate: DateComponents(year: 2025, month: 12, day: 31),
                 requiredFields: [
-                    RequiredField(fieldId: "FIELD_ID", value: "VALUE")
+                    RequiredField(fieldId: "YOU_FIELD_ID", value: "YOUR_FIELD_VALUE")
                 ]
             )
         )
