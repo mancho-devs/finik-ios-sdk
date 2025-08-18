@@ -1,6 +1,6 @@
 {
   "name": "FinikIosSdk",
-  "version": "2.0.3",
+  "version": "2.1.1",
   "summary": "Flutter-integrated Finik iOS SDK for seamless payments",
   "description": "Finik iOS SDK allows you to embed payment workflows using a Flutter module.\nIt provides seamless integration of QR payments and custom checkout flows\nthrough a simple and secure API. Compatible with iOS 12+.",
   "homepage": "https://github.com/mancho-devs/finik-ios-sdk",
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/mancho-devs/finik-ios-sdk.git",
-    "tag": "2.0.3"
+    "tag": "2.1.1"
   },
   "swift_versions": "5.0",
   "platforms": {

@@ -85,7 +85,7 @@ FinikProvider.present(
         maxAvailableAmount: 1000.0,
         startDate: DateComponents(year: 2025, month: 7, day: 1),
         endDate: DateComponents(year: 2025, month: 12, day: 31),
-        visibilityType: VisibilityType.PUBLIC,
+        visibilityType: VisibilityType.PRIVATE,
         requiredFields: [
             RequiredField(fieldId: "YOU_FIELD_ID", value: "YOUR_FIELD_VALUE")
         ]
@@ -165,7 +165,7 @@ CreateItemHandlerWidget(
     maxAvailableAmount: 1000.0,
     startDate: DateComponents(year: 2025, month: 7, day: 1),
     endDate: DateComponents(year: 2025, month: 12, day: 31),
-    visibilityType: VisibilityType.PUBLIC,
+    visibilityType: VisibilityType.PRIVATE,
     requiredFields: [
         RequiredField(fieldId: "YOU_FIELD_ID", value: "YOUR_FIELD_VALUE")
     ]
@@ -190,7 +190,7 @@ GetItemHandlerWidget(
 
 ## Requirements
 
-- iOS 12.0 or later
+- iOS 13.0 or later
 
 ## 🙋‍♂️ Contributing
 

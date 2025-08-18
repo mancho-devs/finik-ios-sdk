@@ -57,7 +57,7 @@ public class CreateItemHandlerWidget: FinikWidget {
         maxAvailableAmount: Double? = nil,
         startDate: DateComponents? = nil,
         endDate: DateComponents? = nil,
-        visibilityType: VisibilityType? = nil,
+        visibilityType: VisibilityType? = VisibilityType.PRIVATE,
         mediaFiles: [MediaInput]? = nil,
         requiredFields: [RequiredField]? = nil
     ) {

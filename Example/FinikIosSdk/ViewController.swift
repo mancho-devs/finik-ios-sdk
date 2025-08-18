@@ -40,6 +40,7 @@ class ViewController: UIViewController {
                 maxAvailableAmount: 1000.0,
                 startDate: DateComponents(year: 2025, month: 7, day: 1),
                 endDate: DateComponents(year: 2025, month: 12, day: 31),
+                visibilityType: VisibilityType.PRIVATE,
                 requiredFields: [
                     RequiredField(fieldId: "YOU_FIELD_ID", value: "YOUR_FIELD_VALUE")
                 ]
