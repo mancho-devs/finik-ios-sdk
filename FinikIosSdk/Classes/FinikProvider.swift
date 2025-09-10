@@ -20,6 +20,7 @@ public class FinikProvider {
         paymentMethods: [PaymentMethod] = [PaymentMethod.ALL],
         enableShimmer: Bool = true,
         enableShare: Bool = true,
+        enableSupportButtons: Bool = true,
         tapableSupportButtons: Bool = true,
         onBackPressed: @escaping () -> Void,
         onPayment: @escaping ([String: Any]) -> Void,
@@ -75,6 +76,7 @@ public class FinikProvider {
                 "paymentMethods": paymentMethods.map { $0.rawValueString },
                 "enableShimmer": enableShimmer,
                 "enableShare": enableShare,
+                "enableSupportButtons": enableSupportButtons,
                 "tapableSupportButtons": tapableSupportButtons,
                 "widget": widget.toDictionary(),
             ]

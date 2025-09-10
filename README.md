@@ -61,6 +61,7 @@ FinikProvider.present(
     textScenario: TextScenario.REPLENISHMENT,
     paymentMethods: [PaymentMethod.ALL],
     enableShare: true,
+    enableSupportButtons: true,
     tapableSupportButtons: true,
     onBackPressed: {
       print("ExampleApp: Back pressed from Flutter")
@@ -87,7 +88,12 @@ FinikProvider.present(
         endDate: DateComponents(year: 2025, month: 12, day: 31),
         visibilityType: VisibilityType.PRIVATE,
         requiredFields: [
-            RequiredField(fieldId: "YOU_FIELD_ID", value: "YOUR_FIELD_VALUE")
+            RequiredField(
+                fieldId: "YOU_FIELD_ID",
+                label: "YOU_FIELD_LABEL",
+                value: "YOUR_FIELD_VALUE",
+                isHidden: false
+            )
         ]
     )
 )     
@@ -107,6 +113,7 @@ FinikProvider.present(
     - [PaymentMethod.QR] - QR code payment only
 - **enableShimmer**: Controls the visibility of the shimmer animations in the app.
 - **enableShare**: Controls the visibility of the share button in the app bar.
+- **enableSupportButtons**: Controls whether support buttons are visible.
 - **tapableSupportButtons**: Controls whether support buttons are interactive.
 - **onBackPressed**: A function triggered when the back button is pressed. Useful for
   custom navigation or showing dialogs.
@@ -148,8 +155,14 @@ Use this widget to create a new payment item and generate a QR code.
 - **startDate** (optional): The start date and time from which the item becomes available for payment.
 - **endDate** (optional): The end date and time after which the item is no longer available for payment.
 - **visibilityType** (optional): Determines whether the item is public or private.
-- **requiredFields** (optional): When specified, Finik will proxy the provided key\:value in the `fields` field when
-  sending the payment details to the `callbackUrl`, if configured.
+- **requiredFields** (optional): Represents an input field that can be pre-configured and optionally proxied back to
+  your server. When RequiredField objects are provided, their key:value pairs will be included in the fields map sent
+  to callbackUrl (if configured).
+    * fieldId (required): Unique identifier of the field.
+    * label (optional): Display text shown to the user.
+    * value (optional): Pre-filled value. If not provided, the SDK will prompt the user to enter it.
+    * isHidden (optional, default: true): Whether the field should be hidden in the UI.
+    * keyboardType (optional): Type of keyboard to use for input (e.g., text, number, email).
 
 ### Example Code
 
@@ -167,7 +180,12 @@ CreateItemHandlerWidget(
     endDate: DateComponents(year: 2025, month: 12, day: 31),
     visibilityType: VisibilityType.PRIVATE,
     requiredFields: [
-        RequiredField(fieldId: "YOU_FIELD_ID", value: "YOUR_FIELD_VALUE")
+        RequiredField(
+            fieldId: "YOU_FIELD_ID",
+            label: "YOU_FIELD_LABEL",
+            value: "YOUR_FIELD_VALUE",
+            isHidden: false
+        )
     ]
 )
 ```
@@ -178,13 +196,17 @@ Use this widget to retrieve an existing item by its ID and display its details.
 
 ### Parameters
 
-- **itemId**: A required field. It is the unique ID for the item to fetch.
+- **parameter** (required): Represents a set of parameters that can be used to retrieve an item. Each subtype wraps a
+  specific identifier type, ensuring type safety and clarity when making item queries.Supported types:
+    * \[ItemId] - Uses the unique item ID to fetch the item.
+    * \[ItemShortUrl] - Uses the short URL to fetch the item.
+    * \[FreeAmount] - Uses the associated transaction ID to fetch the item.
 
 ### Example Code
 
 ```swift
 GetItemHandlerWidget(
-    itemId: "YOUR_ITEM_ID",
+    parameter: ItemId(value: "YOUR_ITEM_ID")
 )
 ```
 

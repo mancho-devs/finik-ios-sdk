@@ -16,17 +16,74 @@ public class FinikWidget {
 }
 
 public class GetItemHandlerWidget: FinikWidget {
-    public let itemId: String
+    public let parameter: GetItemParameter
 
-    public init(itemId: String) {
-        self.itemId = itemId
+    public init(parameter: GetItemParameter) {
+        self.parameter = parameter
         super.init()
     }
 
     public override func toDictionary() -> [String: Any] {
         var dict = super.toDictionary()
         dict["type"] = "getItem"
-        dict["itemId"] = itemId
+        dict["parameter"] = parameter.toDictionary()
+        return dict
+    }
+}
+
+public class GetItemParameter {
+    public init() {
+    }
+
+    public func toDictionary() -> [String: Any] {
+        return [:]
+    }
+}
+
+public class ItemId: GetItemParameter {
+    public let value: String
+
+    public init(value: String) {
+        self.value = value
+        super.init()
+    }
+
+    public override func toDictionary() -> [String: Any] {
+        var dict = super.toDictionary()
+        dict["type"] = "itemId"
+        dict["value"] = value
+        return dict
+    }
+}
+
+public class ItemShortUrl: GetItemParameter {
+    public let value: String
+
+    public init(value: String) {
+        self.value = value
+        super.init()
+    }
+
+    public override func toDictionary() -> [String: Any] {
+        var dict = super.toDictionary()
+        dict["type"] = "itemShortUrl"
+        dict["value"] = value
+        return dict
+    }
+}
+
+public class ItemTransactionId: GetItemParameter {
+    public let value: String
+
+    public init(value: String) {
+        self.value = value
+        super.init()
+    }
+
+    public override func toDictionary() -> [String: Any] {
+        var dict = super.toDictionary()
+        dict["type"] = "itemTransactionId"
+        dict["value"] = value
         return dict
     }
 }
@@ -81,9 +138,9 @@ public class CreateItemHandlerWidget: FinikWidget {
         var dict = super.toDictionary()
         dict["type"] = "createItem"
         dict["accountId"] = accountId
+        dict["nameEn"] = nameEn
         dict["requestId"] = requestId
         dict["description"] = description
-        dict["nameEn"] = nameEn
         dict["callbackUrl"] = callbackUrl
         dict["maxAvailableQuantity"] = maxAvailableQuantity
         dict["maxAvailableAmount"] = maxAvailableAmount
@@ -139,17 +196,33 @@ public class MediaInput {
 
 public class RequiredField {
     public let fieldId: String
-    public let value: String
+    public let label: String?
+    public let value: String?
+    public let isHidden: Bool?
+    // Temporarily commented
+    // public let keyboardType: KeyboardType?
 
-    public init(fieldId: String, value: String) {
+    public init(
+        fieldId: String,
+        label: String? = nil,
+        value: String? = nil,
+        isHidden: Bool? = true
+        // keyboardType: KeyboardType? = nil
+    ) {
         self.fieldId = fieldId
+        self.label = label
         self.value = value
+        self.isHidden = isHidden
+        // self.keyboardType = keyboardType
     }
 
     public func toDictionary() -> [String: Any] {
         return [
             "fieldId": fieldId,
-            "value": value,
+            "label": label as Any,
+            "value": value as Any,
+            "isHidden": isHidden as Any,
+            // "keyboardType": keyboardType?.rawValueString as Any,
         ]
     }
 }

@@ -75,3 +75,38 @@ public class FinikSdkLocale {
         }
     }
 }
+
+@objc public enum KeyboardType: Int {
+    case EMAIL
+    case MONEY
+    case NUMBER
+    case PHONE
+    case PHONE_USER
+    case TEXT
+    case TEXT_DEVICE_ID
+
+    public var rawValueString: String {
+        switch self {
+        case .EMAIL: return "EMAIL"
+        case .MONEY: return "MONEY"
+        case .NUMBER: return "NUMBER"
+        case .PHONE: return "PHONE"
+        case .PHONE_USER: return "PHONE_USER"
+        case .TEXT: return "TEXT"
+        case .TEXT_DEVICE_ID: return "TEXT_DEVICE_ID"
+        }
+    }
+
+    public init?(rawString: String) {
+        switch rawString {
+        case "EMAIL": self = .EMAIL
+        case "MONEY": self = .MONEY
+        case "NUMBER": self = .NUMBER
+        case "PHONE": self = .PHONE
+        case "PHONE_USER": self = .PHONE_USER
+        case "TEXT": self = .TEXT
+        case "TEXT_DEVICE_ID": self = .TEXT_DEVICE_ID
+        default: return nil
+        }
+    }
+}

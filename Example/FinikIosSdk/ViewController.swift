@@ -23,6 +23,7 @@ class ViewController: UIViewController {
             paymentMethods: [PaymentMethod.ALL],
             enableShimmer: true,
             enableShare: true,
+            enableSupportButtons: true,
             tapableSupportButtons: true,
             onBackPressed: {
                 print("ExampleApp: Back pressed from Flutter")
@@ -42,7 +43,12 @@ class ViewController: UIViewController {
                 endDate: DateComponents(year: 2025, month: 12, day: 31),
                 visibilityType: VisibilityType.PRIVATE,
                 requiredFields: [
-                    RequiredField(fieldId: "YOU_FIELD_ID", value: "YOUR_FIELD_VALUE")
+                    RequiredField(
+                        fieldId: "YOU_FIELD_ID",
+                        label: "YOU_FIELD_LABEL",
+                        value: "YOUR_FIELD_VALUE",
+                        isHidden: false
+                    )
                 ]
             )
         )
@@ -57,8 +63,9 @@ class ViewController: UIViewController {
             locale: FinikSdkLocale.RU,
             textScenario: TextScenario.REPLENISHMENT,
             paymentMethods: [PaymentMethod.QR],
-            enableShimmer: false,
-            enableShare: false,
+            enableShimmer: true,
+            enableShare: true,
+            enableSupportButtons: false,
             tapableSupportButtons: false,
             onBackPressed: {
                 print("ExampleApp: Back pressed from Flutter")
@@ -67,7 +74,7 @@ class ViewController: UIViewController {
                 print("ExampleApp: Payment data: \(data)")
             },
             widget: GetItemHandlerWidget(
-                itemId: "YOUR_ITEM_ID"
+                parameter: ItemId(value: "YOUR_ITEM_ID")
             )
         )
     }
