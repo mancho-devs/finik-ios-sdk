@@ -29,6 +29,12 @@ variant_for_slice()
   "connectivity_plus.xcframework/ios-arm64_x86_64-simulator")
     echo "simulator"
     ;;
+  "device_info_plus.xcframework/ios-arm64")
+    echo ""
+    ;;
+  "device_info_plus.xcframework/ios-arm64_x86_64-simulator")
+    echo "simulator"
+    ;;
   "FlutterPluginRegistrant.xcframework/ios-arm64")
     echo ""
     ;;
@@ -81,6 +87,12 @@ archs_for_slice()
     echo "arm64"
     ;;
   "connectivity_plus.xcframework/ios-arm64_x86_64-simulator")
+    echo "arm64 x86_64"
+    ;;
+  "device_info_plus.xcframework/ios-arm64")
+    echo "arm64"
+    ;;
+  "device_info_plus.xcframework/ios-arm64_x86_64-simulator")
     echo "arm64 x86_64"
     ;;
   "FlutterPluginRegistrant.xcframework/ios-arm64")
@@ -203,6 +215,7 @@ install_xcframework() {
 
 install_xcframework "${PODS_ROOT}/../../FinikIosSdk/Frameworks/App.xcframework" "FinikIosSdk" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 install_xcframework "${PODS_ROOT}/../../FinikIosSdk/Frameworks/connectivity_plus.xcframework" "FinikIosSdk" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
+install_xcframework "${PODS_ROOT}/../../FinikIosSdk/Frameworks/device_info_plus.xcframework" "FinikIosSdk" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 install_xcframework "${PODS_ROOT}/../../FinikIosSdk/Frameworks/FlutterPluginRegistrant.xcframework" "FinikIosSdk" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 install_xcframework "${PODS_ROOT}/../../FinikIosSdk/Frameworks/path_provider_foundation.xcframework" "FinikIosSdk" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
 install_xcframework "${PODS_ROOT}/../../FinikIosSdk/Frameworks/Reachability.xcframework" "FinikIosSdk" "framework" "ios-arm64" "ios-arm64_x86_64-simulator"
