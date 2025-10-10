@@ -48,19 +48,20 @@ end
 
 ## Screenshots
 
-<table>
+<table align="center">
   <tr>
-    <td align="center">
+    <td>
       <img src="https://raw.githubusercontent.com/mancho-devs/finik-ios-sdk/master/images/screenshot-1.png" alt="screenshots-1" width="250" />
     </td>
-    <td align="center">
+    <td>
       <img src="https://raw.githubusercontent.com/mancho-devs/finik-ios-sdk/master/images/screenshot-2.png" alt="screenshots-2" width="250" />
     </td>
-    <td align="center">
+    <td>
       <img src="https://raw.githubusercontent.com/mancho-devs/finik-ios-sdk/master/images/screenshot-3.png" alt="screenshots-3" width="250" />
     </td>
   </tr>
 </table>
+
 
 # 💡 Usage
 
