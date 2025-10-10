@@ -48,7 +48,13 @@ end
 
 ## Screenshots
 
-<img src="https://github.com/mancho-devs/finik-ios-sdk/blob/master/images/combined-screenshots.png" width="100%" alt="screenshots" />
+<table>
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/mancho-devs/finik-ios-sdk/master/images/screenshot-1.png" alt="screenshots-1" width="200" /></td>
+    <td><img src="https://raw.githubusercontent.com/mancho-devs/finik-ios-sdk/master/images/screenshot-2.png" alt="screenshots-2" width="200" /></td>
+    <td><img src="https://raw.githubusercontent.com/mancho-devs/finik-ios-sdk/master/images/screenshot-3.png" alt="screenshots-3" width="200" /></td>
+  </tr>
+</table>
 
 # 💡 Usage
 
