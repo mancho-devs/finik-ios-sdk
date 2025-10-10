@@ -99,7 +99,9 @@ public class CreateItemHandlerWidget: FinikWidget {
     public let maxAvailableAmount: Double?
     public let startDate: DateComponents?
     public let endDate: DateComponents?
+    public let mcc: String?
     public let visibilityType: VisibilityType?
+    public let actionLabelType: ActionLabelType?
     public let mediaFiles: [MediaInput]?
     public let requiredFields: [RequiredField]?
 
@@ -114,7 +116,9 @@ public class CreateItemHandlerWidget: FinikWidget {
         maxAvailableAmount: Double? = nil,
         startDate: DateComponents? = nil,
         endDate: DateComponents? = nil,
+        mcc: String? = nil,
         visibilityType: VisibilityType? = VisibilityType.PRIVATE,
+        actionLabelType: ActionLabelType? = nil,
         mediaFiles: [MediaInput]? = nil,
         requiredFields: [RequiredField]? = nil
     ) {
@@ -128,7 +132,9 @@ public class CreateItemHandlerWidget: FinikWidget {
         self.maxAvailableAmount = maxAvailableAmount
         self.startDate = startDate
         self.endDate = endDate
+        self.mcc = mcc
         self.visibilityType = visibilityType
+        self.actionLabelType = actionLabelType
         self.mediaFiles = mediaFiles
         self.requiredFields = requiredFields
         super.init()
@@ -144,7 +150,9 @@ public class CreateItemHandlerWidget: FinikWidget {
         dict["callbackUrl"] = callbackUrl
         dict["maxAvailableQuantity"] = maxAvailableQuantity
         dict["maxAvailableAmount"] = maxAvailableAmount
+        dict["mcc"] = mcc
         dict["visibilityType"] = visibilityType?.rawValueString
+        dict["actionLabelType"] = actionLabelType?.rawValueString
 
         let calendar = Calendar.current
 
@@ -207,7 +215,7 @@ public class RequiredField {
         label: String? = nil,
         value: String? = nil,
         isHidden: Bool? = true
-        // keyboardType: KeyboardType? = nil
+            // keyboardType: KeyboardType? = nil
     ) {
         self.fieldId = fieldId
         self.label = label
@@ -222,7 +230,7 @@ public class RequiredField {
             "label": label as Any,
             "value": value as Any,
             "isHidden": isHidden as Any,
-            // "keyboardType": keyboardType?.rawValueString as Any,
+                // "keyboardType": keyboardType?.rawValueString as Any,
         ]
     }
 }

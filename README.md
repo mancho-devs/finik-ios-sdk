@@ -76,6 +76,7 @@ FinikProvider.present(
     locale: FinikSdkLocale.KY,
     textScenario: TextScenario.REPLENISHMENT,
     paymentMethods: [PaymentMethod.ALL],
+    enableShimmer: true,
     enableShare: true,
     enableSupportButtons: true,
     tapableSupportButtons: true,
@@ -102,7 +103,9 @@ FinikProvider.present(
         maxAvailableAmount: 1000.0,
         startDate: DateComponents(year: 2025, month: 7, day: 1),
         endDate: DateComponents(year: 2025, month: 12, day: 31),
+        mcc: "YOUR_MERCHANT_CATEGORY_CODE",
         visibilityType: VisibilityType.PRIVATE,
+        actionLabelType: ActionLabelType.BUY,
         requiredFields: [
             RequiredField(
                 fieldId: "YOU_FIELD_ID",
@@ -170,6 +173,7 @@ Use this widget to create a new payment item and generate a QR code.
 - **maxAvailableAmount** (optional): Maximum total payable amount allowed across all purchases of this item.
 - **startDate** (optional): The start date and time from which the item becomes available for payment.
 - **endDate** (optional): The end date and time after which the item is no longer available for payment.
+- **mcc** (optional): Your MCC (Merchant Category Code) code.
 - **visibilityType** (optional): Determines whether the item is public or private.
 - **requiredFields** (optional): Represents an input field that can be pre-configured and optionally proxied back to
   your server. When RequiredField objects are provided, their key:value pairs will be included in the fields map sent
@@ -194,7 +198,9 @@ CreateItemHandlerWidget(
     maxAvailableAmount: 1000.0,
     startDate: DateComponents(year: 2025, month: 7, day: 1),
     endDate: DateComponents(year: 2025, month: 12, day: 31),
+    mcc: 'YOUR_MERCHANT_CATEGORY_CODE',
     visibilityType: VisibilityType.PRIVATE,
+    actionLabelType: ActionLabelType.BUY,
     requiredFields: [
         RequiredField(
             fieldId: "YOU_FIELD_ID",

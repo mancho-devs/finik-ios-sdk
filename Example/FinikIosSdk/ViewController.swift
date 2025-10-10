@@ -34,7 +34,7 @@ class ViewController: UIViewController {
             widget: CreateItemHandlerWidget(
                 accountId: "YOUR_ACCOUNT_ID",
                 nameEn: "YOUR_ITEM_NAME_EN",
-                amount: FixedAmount(value: 10.0),
+                amount: FixedAmount(value: 99.99),
                 description: "YOUR_ITEM_DESCRIPTION",
                 callbackUrl: "YOUR_CALLBACK_URL",
                 maxAvailableQuantity: 1,
@@ -42,6 +42,7 @@ class ViewController: UIViewController {
                 startDate: DateComponents(year: 2025, month: 7, day: 1),
                 endDate: DateComponents(year: 2025, month: 12, day: 31),
                 visibilityType: VisibilityType.PRIVATE,
+                actionLabelType: ActionLabelType.BUY,
                 requiredFields: [
                     RequiredField(
                         fieldId: "YOU_FIELD_ID",

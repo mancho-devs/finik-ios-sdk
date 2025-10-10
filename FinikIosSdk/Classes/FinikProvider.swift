@@ -34,7 +34,10 @@ public class FinikProvider {
         engine.viewController = nil
 
         let flutterVC = FlutterViewController(
-            engine: engine, nibName: nil, bundle: nil)
+            engine: engine,
+            nibName: nil,
+            bundle: nil
+        )
         flutterVC.modalPresentationStyle = .fullScreen
 
         let channel = FlutterMethodChannel(

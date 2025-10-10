@@ -53,6 +53,50 @@ public class FinikSdkLocale {
     }
 }
 
+@objc public enum ActionLabelType: Int {
+    case PAY
+    case BUY
+    case TRANSFER
+    case REGISTER
+    case JOIN
+    case ENROLL
+    case BOOK
+    case DONATE
+    case TOP_UP
+    case SEND_KOSHUMCHA
+
+    public var rawValueString: String {
+        switch self {
+        case .PAY: return "PAY"
+        case .BUY: return "BUY"
+        case .TRANSFER: return "TRANSFER"
+        case .REGISTER: return "REGISTER"
+        case .JOIN: return "JOIN"
+        case .ENROLL: return "ENROLL"
+        case .BOOK: return "BOOK"
+        case .DONATE: return "DONATE"
+        case .TOP_UP: return "TOP_UP"
+        case .SEND_KOSHUMCHA: return "SEND_KOSHUMCHA"
+        }
+    }
+
+    public init?(rawString: String) {
+        switch rawString {
+        case "PAY": self = .PAY
+        case "BUY": self = .BUY
+        case "TRANSFER": self = .TRANSFER
+        case "REGISTER": self = .REGISTER
+        case "JOIN": self = .JOIN
+        case "ENROLL": self = .ENROLL
+        case "BOOK": self = .BOOK
+        case "DONATE": self = .DONATE
+        case "TOP_UP": self = .TOP_UP
+        case "SEND_KOSHUMCHA": self = .SEND_KOSHUMCHA
+        default: return nil
+        }
+    }
+}
+
 @objc public enum PaymentMethod: Int {
     case ALL
     case APP
