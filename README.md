@@ -62,7 +62,6 @@ end
   </tr>
 </table>
 
-
 # 💡 Usage
 
 ## 📲 Example Code
