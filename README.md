@@ -48,7 +48,7 @@ end
 
 ## Screenshots
 
-<img src="https://github.com/mancho-devs/finik-ios-sdk/blob/master/images/combined-screenshots.jpeg" width="100%" alt="logo" />
+<img src="https://github.com/mancho-devs/finik-ios-sdk/blob/master/images/combined-screenshots.png" width="100%" alt="screenshots" />
 
 # 💡 Usage
 
