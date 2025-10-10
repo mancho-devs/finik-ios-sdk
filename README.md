@@ -46,6 +46,10 @@ post_install do |installer|
 end
 ```
 
+## Screenshots
+
+<img src="https://github.com/mancho-devs/finik-ios-sdk/blob/master/images/combined-screenshots.jpeg" width="100%" alt="logo" />
+
 # 💡 Usage
 
 ## 📲 Example Code
