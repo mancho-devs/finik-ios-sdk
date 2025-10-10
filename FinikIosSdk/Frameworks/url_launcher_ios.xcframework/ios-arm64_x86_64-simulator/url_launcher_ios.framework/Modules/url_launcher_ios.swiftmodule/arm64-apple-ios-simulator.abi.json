@@ -103,8 +103,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:16url_launcher_ios8LauncherP4open_7options17completionHandlery10Foundation3URLV_SDySo38UIApplicationOpenExternalURLOptionsKeyaypGySbYbScMYccSgtF",
-            "mangledName": "$s16url_launcher_ios8LauncherP4open_7options17completionHandlery10Foundation3URLV_SDySo38UIApplicationOpenExternalURLOptionsKeyaypGySbYbScMYccSgtF",
+            "usr": "s:16url_launcher_ios8LauncherP4open_7options17completionHandlery10Foundation3URLV_SDySo38UIApplicationOpenExternalURLOptionsKeyaypGySbcSgtF",
+            "mangledName": "$s16url_launcher_ios8LauncherP4open_7options17completionHandlery10Foundation3URLV_SDySo38UIApplicationOpenExternalURLOptionsKeyaypGySbcSgtF",
             "moduleName": "url_launcher_ios",
             "genericSig": "<τ_0_0 where τ_0_0 : url_launcher_ios.Launcher>",
             "sugared_genericSig": "<Self where Self : url_launcher_ios.Launcher>",
