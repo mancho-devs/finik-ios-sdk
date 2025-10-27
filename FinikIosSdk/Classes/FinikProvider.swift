@@ -59,6 +59,9 @@ public class FinikProvider {
             case "onPayment":
                 if let args = call.arguments as? [String: Any] {
                     onPayment(args)
+                    flutterVC.dismiss(animated: true) {
+                        engine.destroyContext()
+                    }
                 } else {
                     print("Invalid arguments for onPayment")
                 }
