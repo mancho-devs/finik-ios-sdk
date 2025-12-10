@@ -8,7 +8,6 @@
 
 import FinikIosSdk
 import Flutter
-import FlutterPluginRegistrant
 import UIKit
 
 class ViewController: UIViewController {

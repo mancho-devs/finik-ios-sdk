@@ -1,16 +1,23 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
-// swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name connectivity_plus
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-bare-slash-regex -module-name connectivity_plus
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import Flutter
 import Foundation
 import Network
-import Reachability
 import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @_exported import connectivity_plus
+@objc @_hasMissingDesignatedInitializers public class ConnectivityPlusPlugin : ObjectiveC.NSObject, Flutter.FlutterPlugin, Flutter.FlutterStreamHandler {
+  @objc public static func register(with registrar: any Flutter.FlutterPluginRegistrar)
+  @objc public func detachFromEngine(for registrar: any Flutter.FlutterPluginRegistrar)
+  @objc public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
+  @objc public func onListen(withArguments _: Any?, eventSink events: @escaping Flutter.FlutterEventSink) -> Flutter.FlutterError?
+  @objc public func onCancel(withArguments _: Any?) -> Flutter.FlutterError?
+  @objc deinit
+}
 public enum ConnectivityType {
   case none
   case wiredEthernet
@@ -24,43 +31,19 @@ public enum ConnectivityType {
   }
 }
 public protocol ConnectivityProvider : ObjectiveC.NSObjectProtocol {
-  typealias ConnectivityUpdateHandler = (connectivity_plus.ConnectivityType) -> Swift.Void
-  var currentConnectivityType: connectivity_plus.ConnectivityType { get }
-  #if compiler(>=5.3) && $NonescapableTypes
+  typealias ConnectivityUpdateHandler = ([connectivity_plus.ConnectivityType]) -> Swift.Void
+  var currentConnectivityTypes: [connectivity_plus.ConnectivityType] { get }
   var connectivityUpdateHandler: Self.ConnectivityUpdateHandler? { get set }
-  #endif
   func start()
   func stop()
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @available(iOS 12, *)
-public class PathMonitorConnectivityProvider : ObjectiveC.NSObject, connectivity_plus.ConnectivityProvider {
-  public var currentConnectivityType: connectivity_plus.ConnectivityType {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class PathMonitorConnectivityProvider : ObjectiveC.NSObject, connectivity_plus.ConnectivityProvider {
+  public var currentConnectivityTypes: [connectivity_plus.ConnectivityType] {
     get
   }
   public var connectivityUpdateHandler: connectivity_plus.PathMonitorConnectivityProvider.ConnectivityUpdateHandler?
   public func start()
   public func stop()
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class ReachabilityConnectivityProvider : ObjectiveC.NSObject, connectivity_plus.ConnectivityProvider {
-  public var currentConnectivityType: connectivity_plus.ConnectivityType {
-    get
-  }
-  public var connectivityUpdateHandler: connectivity_plus.ReachabilityConnectivityProvider.ConnectivityUpdateHandler?
-  public func start()
-  public func stop()
-  @objc deinit
-}
-@objc @_hasMissingDesignatedInitializers public class SwiftConnectivityPlusPlugin : ObjectiveC.NSObject, Flutter.FlutterPlugin, Flutter.FlutterStreamHandler {
-  @objc public static func register(with registrar: any Flutter.FlutterPluginRegistrar)
-  @objc public func detachFromEngine(for registrar: any Flutter.FlutterPluginRegistrar)
-  @objc public func handle(_ call: Flutter.FlutterMethodCall, result: @escaping Flutter.FlutterResult)
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public func onListen(withArguments _: Any?, eventSink events: @escaping Flutter.FlutterEventSink) -> Flutter.FlutterError?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
-  @objc public func onCancel(withArguments _: Any?) -> Flutter.FlutterError?
-  #endif
   @objc deinit
 }
 extension connectivity_plus.ConnectivityType : Swift.Equatable {}

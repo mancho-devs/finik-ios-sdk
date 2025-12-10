@@ -1,12 +1,12 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
 CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/FinikIosSdk" "${PODS_ROOT}/../../FinikIosSdk/Frameworks" "${PODS_ROOT}/Flutter" "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk" "${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/FinikIosSdk" "${PODS_ROOT}/../../FinikIosSdk/Frameworks" "${PODS_ROOT}/FinikFlutterEngine" "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikFlutterEngine" "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/FinikIosSdk/FinikIosSdk.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) /usr/lib/swift '@executable_path/Frameworks' '@loader_path/Frameworks'
 LIBRARY_SEARCH_PATHS = $(inherited) "${TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}" /usr/lib/swift
-OTHER_LDFLAGS = $(inherited) -ObjC -framework "App" -framework "FinikIosSdk" -framework "Flutter" -framework "Reachability" -framework "connectivity_plus" -framework "device_info_plus" -framework "path_provider_foundation" -framework "share_plus" -framework "sqflite" -framework "url_launcher_ios"
-OTHER_MODULE_VERIFIER_FLAGS = $(inherited) "-F${PODS_CONFIGURATION_BUILD_DIR}/FinikIosSdk" "-F${PODS_CONFIGURATION_BUILD_DIR}/Flutter"
+OTHER_LDFLAGS = $(inherited) -ObjC -framework "App" -framework "FinikIosSdk" -framework "Flutter" -framework "connectivity_plus" -framework "device_info_plus" -framework "path_provider_foundation" -framework "share_plus" -framework "sqflite" -framework "sqflite_darwin" -framework "url_launcher_ios"
+OTHER_MODULE_VERIFIER_FLAGS = $(inherited) "-F${PODS_CONFIGURATION_BUILD_DIR}/FinikFlutterEngine" "-F${PODS_CONFIGURATION_BUILD_DIR}/FinikIosSdk"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

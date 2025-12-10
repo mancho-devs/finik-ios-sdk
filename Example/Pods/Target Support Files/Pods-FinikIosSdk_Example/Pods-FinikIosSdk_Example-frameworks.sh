@@ -177,27 +177,27 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FinikIosSdk/FinikIosSdk.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikFlutterEngine/Flutter.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/App.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/connectivity_plus.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/device_info_plus.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/path_provider_foundation.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/Reachability.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/share_plus.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/sqflite.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/sqflite_darwin.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/url_launcher_ios.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter/Flutter.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FinikIosSdk/FinikIosSdk.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikFlutterEngine/Flutter.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/App.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/connectivity_plus.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/device_info_plus.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/path_provider_foundation.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/Reachability.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/share_plus.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/sqflite.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/sqflite_darwin.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/url_launcher_ios.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter/Flutter.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FinikIosSdk'
-  s.version          = '2.6.0'
+  s.version          = '2.8.1'
   s.summary          = 'Flutter-integrated Finik iOS SDK for seamless payments'
 
   s.description      = <<-DESC
@@ -31,5 +31,5 @@ Pod::Spec.new do |s|
   s.source_files = 'FinikIosSdk/Classes/**/*'
   s.vendored_frameworks = 'FinikIosSdk/Frameworks/*'
 
-  s.dependency 'Flutter'  # Flutter version is 3.13.0
+  s.dependency 'FinikFlutterEngine'
 end

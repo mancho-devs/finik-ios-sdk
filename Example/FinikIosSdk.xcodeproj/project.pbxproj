@@ -212,12 +212,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = AKJQRRJU26;
+						DevelopmentTeam = ARM722Q25G;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = AKJQRRJU26;
+						DevelopmentTeam = ARM722Q25G;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -294,28 +294,28 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FinikIosSdk_Example/Pods-FinikIosSdk_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FinikIosSdk/FinikIosSdk.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikFlutterEngine/Flutter.framework/Flutter",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/App.framework/App",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/connectivity_plus.framework/connectivity_plus",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/device_info_plus.framework/device_info_plus",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/path_provider_foundation.framework/path_provider_foundation",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/Reachability.framework/Reachability",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/share_plus.framework/share_plus",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/sqflite.framework/sqflite",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/sqflite_darwin.framework/sqflite_darwin",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/url_launcher_ios.framework/url_launcher_ios",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Flutter/Flutter.framework/Flutter",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FinikIosSdk.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/App.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/connectivity_plus.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/device_info_plus.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/path_provider_foundation.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/share_plus.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqflite.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqflite_darwin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/url_launcher_ios.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flutter.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -498,7 +498,7 @@
 			baseConfigurationReference = AA58E8F7D15E21E6A0F21E70 /* Pods-FinikIosSdk_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AKJQRRJU26;
+				DEVELOPMENT_TEAM = ARM722Q25G;
 				INFOPLIST_FILE = FinikIosSdk/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -515,7 +515,7 @@
 			baseConfigurationReference = 915C4F89D9A98CE204378762 /* Pods-FinikIosSdk_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AKJQRRJU26;
+				DEVELOPMENT_TEAM = ARM722Q25G;
 				INFOPLIST_FILE = FinikIosSdk/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -531,7 +531,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0EAED28A6FF99327C4DEEB5D /* Pods-FinikIosSdk_Tests.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = AKJQRRJU26;
+				DEVELOPMENT_TEAM = ARM722Q25G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -554,7 +554,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9760E6F182BC7232A894C1A1 /* Pods-FinikIosSdk_Tests.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = AKJQRRJU26;
+				DEVELOPMENT_TEAM = ARM722Q25G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
