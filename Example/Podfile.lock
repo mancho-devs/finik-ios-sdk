@@ -1,6 +1,6 @@
 PODS:
-  - FinikFlutterEngine (2.8.0)
-  - FinikIosSdk (2.8.1):
+  - FinikFlutterEngine (3.35.7)
+  - FinikIosSdk (2.8.2):
     - FinikFlutterEngine
 
 DEPENDENCIES:
@@ -15,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FinikFlutterEngine: 6e20f2ccd5f8ae473a619fd337623ddb7797dd75
-  FinikIosSdk: 47730b8a6c331fa754e4fb56ad1ca58f16e64c8e
+  FinikFlutterEngine: 83814caf020e2860be77b77b12590e3b00e1e658
+  FinikIosSdk: b90c2a203a1adb39cb798f14ad19df449a5194e6
 
-PODFILE CHECKSUM: 82d452af739fee81a0bfa03d592fb6a2d1ef297c
+PODFILE CHECKSUM: 5478efc7483c8d0d3bf2637c21e10cb407cc4ec1
 
 COCOAPODS: 1.16.2
