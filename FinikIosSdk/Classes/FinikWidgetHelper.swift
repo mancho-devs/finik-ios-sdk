@@ -6,10 +6,10 @@
 //
 
 public class FinikWidget {
-
+    
     public init() {
     }
-
+    
     public func toDictionary() -> [String: Any] {
         return [:]
     }
@@ -17,12 +17,12 @@ public class FinikWidget {
 
 public class GetItemHandlerWidget: FinikWidget {
     public let parameter: GetItemParameter
-
+    
     public init(parameter: GetItemParameter) {
         self.parameter = parameter
         super.init()
     }
-
+    
     public override func toDictionary() -> [String: Any] {
         var dict = super.toDictionary()
         dict["type"] = "getItem"
@@ -34,7 +34,7 @@ public class GetItemHandlerWidget: FinikWidget {
 public class GetItemParameter {
     public init() {
     }
-
+    
     public func toDictionary() -> [String: Any] {
         return [:]
     }
@@ -42,12 +42,12 @@ public class GetItemParameter {
 
 public class ItemId: GetItemParameter {
     public let value: String
-
+    
     public init(value: String) {
         self.value = value
         super.init()
     }
-
+    
     public override func toDictionary() -> [String: Any] {
         var dict = super.toDictionary()
         dict["type"] = "itemId"
@@ -58,12 +58,12 @@ public class ItemId: GetItemParameter {
 
 public class ItemShortUrl: GetItemParameter {
     public let value: String
-
+    
     public init(value: String) {
         self.value = value
         super.init()
     }
-
+    
     public override func toDictionary() -> [String: Any] {
         var dict = super.toDictionary()
         dict["type"] = "itemShortUrl"
@@ -74,12 +74,12 @@ public class ItemShortUrl: GetItemParameter {
 
 public class ItemTransactionId: GetItemParameter {
     public let value: String
-
+    
     public init(value: String) {
         self.value = value
         super.init()
     }
-
+    
     public override func toDictionary() -> [String: Any] {
         var dict = super.toDictionary()
         dict["type"] = "itemTransactionId"
@@ -104,7 +104,8 @@ public class CreateItemHandlerWidget: FinikWidget {
     public let actionLabelType: ActionLabelType?
     public let mediaFiles: [MediaInput]?
     public let requiredFields: [RequiredField]?
-
+    public let onCreated: (([String: Any]) -> Void)?
+    
     public init(
         accountId: String,
         nameEn: String,
@@ -120,7 +121,8 @@ public class CreateItemHandlerWidget: FinikWidget {
         visibilityType: VisibilityType? = VisibilityType.PRIVATE,
         actionLabelType: ActionLabelType? = nil,
         mediaFiles: [MediaInput]? = nil,
-        requiredFields: [RequiredField]? = nil
+        requiredFields: [RequiredField]? = nil,
+        onCreated: (([String: Any]) -> Void)? = nil
     ) {
         self.accountId = accountId
         self.nameEn = nameEn
@@ -137,9 +139,10 @@ public class CreateItemHandlerWidget: FinikWidget {
         self.actionLabelType = actionLabelType
         self.mediaFiles = mediaFiles
         self.requiredFields = requiredFields
+        self.onCreated = onCreated
         super.init()
     }
-
+    
     public override func toDictionary() -> [String: Any] {
         var dict = super.toDictionary()
         dict["type"] = "createItem"
@@ -153,9 +156,9 @@ public class CreateItemHandlerWidget: FinikWidget {
         dict["mcc"] = mcc
         dict["visibilityType"] = visibilityType?.rawValueString
         dict["actionLabelType"] = actionLabelType?.rawValueString
-
+        
         let calendar = Calendar.current
-
+        
         if startDate != nil {
             if let date = calendar.date(from: startDate!) {
                 let formatter = ISO8601DateFormatter()
@@ -163,7 +166,7 @@ public class CreateItemHandlerWidget: FinikWidget {
                 dict["startDate"] = isoString
             }
         }
-
+        
         if endDate != nil {
             if let date = calendar.date(from: endDate!) {
                 let formatter = ISO8601DateFormatter()
@@ -171,30 +174,30 @@ public class CreateItemHandlerWidget: FinikWidget {
                 dict["endDate"] = isoString
             }
         }
-
+        
         if let amountDict = amount?.toDictionary() {
             dict["amount"] = amountDict
         }
-
+        
         if let mediaFiles = mediaFiles {
             dict["mediaFiles"] = mediaFiles.map { $0.toDictionary() }
         }
-
+        
         if let fields = requiredFields {
             dict["requiredFields"] = fields.map { $0.toDictionary() }
         }
-
+        
         return dict
     }
 }
 
 public class MediaInput {
     public let id: String
-
+    
     public init(id: String) {
         self.id = id
     }
-
+    
     public func toDictionary() -> [String: Any] {
         return [
             "id": id
@@ -209,13 +212,13 @@ public class RequiredField {
     public let isHidden: Bool?
     // Temporarily commented
     // public let keyboardType: KeyboardType?
-
+    
     public init(
         fieldId: String,
         label: String? = nil,
         value: String? = nil,
         isHidden: Bool? = true
-            // keyboardType: KeyboardType? = nil
+        // keyboardType: KeyboardType? = nil
     ) {
         self.fieldId = fieldId
         self.label = label
@@ -223,14 +226,14 @@ public class RequiredField {
         self.isHidden = isHidden
         // self.keyboardType = keyboardType
     }
-
+    
     public func toDictionary() -> [String: Any] {
         return [
             "fieldId": fieldId,
             "label": label as Any,
             "value": value as Any,
             "isHidden": isHidden as Any,
-                // "keyboardType": keyboardType?.rawValueString as Any,
+            // "keyboardType": keyboardType?.rawValueString as Any,
         ]
     }
 }
@@ -238,7 +241,7 @@ public class RequiredField {
 public class Amount {
     public init() {
     }
-
+    
     public func toDictionary() -> [String: Any] {
         return [:]
     }
@@ -246,12 +249,12 @@ public class Amount {
 
 public class FixedAmount: Amount {
     public let value: Double
-
+    
     public init(value: Double) {
         self.value = value
         super.init()
     }
-
+    
     public override func toDictionary() -> [String: Any] {
         var dict = super.toDictionary()
         dict["type"] = "fixedAmount"
@@ -263,13 +266,13 @@ public class FixedAmount: Amount {
 public class MinMaxAmount: Amount {
     public let min: Double?
     public let max: Double?
-
+    
     public init(min: Double? = nil, max: Double? = nil) {
         self.min = min
         self.max = max
         super.init()
     }
-
+    
     public override func toDictionary() -> [String: Any] {
         var dict = super.toDictionary()
         dict["type"] = "minMaxAmount"
@@ -283,7 +286,7 @@ public class FreeAmount: Amount {
     public override init() {
         super.init()
     }
-
+    
     public override func toDictionary() -> [String: Any] {
         var dict = super.toDictionary()
         dict["type"] = "freeAmount"

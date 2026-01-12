@@ -113,7 +113,10 @@ FinikProvider.present(
                 value: "YOUR_FIELD_VALUE",
                 isHidden: false
             )
-        ]
+        ],
+        onCreated: { data in
+            print("ExampleApp: QrCode created data: \(data)")
+        }
     )
 )     
 ```
@@ -183,6 +186,7 @@ Use this widget to create a new payment item and generate a QR code.
     * value (optional): Pre-filled value. If not provided, the SDK will prompt the user to enter it.
     * isHidden (optional, default: true): Whether the field should be hidden in the UI.
     * keyboardType (optional): Type of keyboard to use for input (e.g., text, number, email).
+- **onCreated**: A function triggered when the item is created. Returns the item data.
 
 ### Example Code
 
@@ -208,7 +212,10 @@ CreateItemHandlerWidget(
             value: "YOUR_FIELD_VALUE",
             isHidden: false
         )
-    ]
+    ],
+    onCreated: { data in
+        print("ExampleApp: QrCode created data: \(data)")
+    }
 )
 ```
 

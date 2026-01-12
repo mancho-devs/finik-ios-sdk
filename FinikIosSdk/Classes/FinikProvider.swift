@@ -10,7 +10,7 @@ import FlutterPluginRegistrant
 import UIKit
 
 public class FinikProvider {
-
+    
     public static func present(
         from viewController: UIViewController,
         apiKey: String,
@@ -27,53 +27,37 @@ public class FinikProvider {
         widget: FinikWidget
     ) {
         let engine = FlutterEngine(name: "finik_ios_sdk-\(UUID().uuidString)")
-
+        
         engine.run()
         GeneratedPluginRegistrant.register(with: engine)
-
-        engine.viewController = nil
-
+        
         let flutterVC = FlutterViewController(
             engine: engine,
             nibName: nil,
             bundle: nil
         )
         flutterVC.modalPresentationStyle = .fullScreen
-
+        
         let channel = FlutterMethodChannel(
             name: "finik_sdk_channel",
             binaryMessenger: flutterVC.binaryMessenger
         )
-
-        channel.setMethodCallHandler {
-            (call: FlutterMethodCall, result: @escaping FlutterResult) in
-            switch call.method {
-
-            case "onBackPressed":
-                onBackPressed()
-                flutterVC.dismiss(animated: true) {
-                    engine.destroyContext()
-                }
-                result(nil)
-
-            case "onPayment":
-                if let args = call.arguments as? [String: Any] {
-                    onPayment(args)
-                    flutterVC.dismiss(animated: true) {
-                        engine.destroyContext()
-                    }
-                } else {
-                    print("Invalid arguments for onPayment")
-                }
-                result(nil)
-
-            default:
-                result(FlutterMethodNotImplemented)
+        
+        
+        DispatchQueue.main.async {
+            
+            guard let windowScene = UIApplication.shared.connectedScenes
+                .first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene,
+                  let window = windowScene.windows.first
+            else {
+                return
             }
-        }
-
-        viewController.present(flutterVC, animated: true) {
-
+            
+            let previousRootVC = window.rootViewController
+            
+            window.rootViewController = flutterVC
+            window.makeKeyAndVisible()
+            
             let args: [String: Any] = [
                 "apiKey": apiKey,
                 "isBeta": isBeta,
@@ -86,8 +70,51 @@ public class FinikProvider {
                 "tapableSupportButtons": tapableSupportButtons,
                 "widget": widget.toDictionary(),
             ]
-
+            
             channel.invokeMethod("getFinikSdkParams", arguments: args)
+            
+            channel.setMethodCallHandler {
+                (call: FlutterMethodCall, result: @escaping FlutterResult) in
+                switch call.method {
+                    
+                case "onBackPressed":
+                    onBackPressed()
+                    flutterVC.dismiss(animated: true) {
+                        engine.destroyContext()
+                    }
+                    window.rootViewController = previousRootVC
+                    result(nil)
+                    
+                case "onPayment":
+                    if let args = call.arguments as? [String: Any] {
+                        onPayment(args)
+                        flutterVC.dismiss(animated: true) {
+                            engine.destroyContext()
+                        }
+                    } else {
+                        print("Invalid arguments for onPayment")
+                    }
+                    window.rootViewController = previousRootVC
+                    result(nil)
+                    
+                case "onCreated":
+                    if let args = call.arguments as? [String: Any] {
+                        print("FinikProvider onCreated \(args)")
+                        if let createItemWidget = widget as? CreateItemHandlerWidget {
+                            createItemWidget.onCreated?(args)
+                        } else {
+                            print("onCreated ignored: widget is not CreateItemHandlerWidget")
+                        }
+                    } else {
+                        print("Invalid arguments for onCreated")
+                    }
+                    result(nil)
+                    
+                default:
+                    result(FlutterMethodNotImplemented)
+                }
+            }
         }
+        
     }
 }

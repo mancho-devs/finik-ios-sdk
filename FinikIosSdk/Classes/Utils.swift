@@ -7,7 +7,7 @@
 
 public class FinikSdkLocale {
     private init() {}
-
+    
     public static let EN = "en"
     public static let RU = "ru"
     public static let KY = "ky"
@@ -16,14 +16,14 @@ public class FinikSdkLocale {
 @objc public enum TextScenario: Int {
     case PAYMENT
     case REPLENISHMENT
-
+    
     public var rawValueString: String {
         switch self {
         case .PAYMENT: return "PAYMENT"
         case .REPLENISHMENT: return "REPLENISHMENT"
         }
     }
-
+    
     public init?(rawString: String) {
         switch rawString {
         case "PAYMENT": self = .PAYMENT
@@ -36,14 +36,14 @@ public class FinikSdkLocale {
 @objc public enum VisibilityType: Int {
     case PRIVATE
     case PUBLIC
-
+    
     public var rawValueString: String {
         switch self {
         case .PRIVATE: return "PRIVATE"
         case .PUBLIC: return "PUBLIC"
         }
     }
-
+    
     public init?(rawString: String) {
         switch rawString {
         case "PRIVATE": self = .PRIVATE
@@ -64,7 +64,7 @@ public class FinikSdkLocale {
     case DONATE
     case TOP_UP
     case SEND_KOSHUMCHA
-
+    
     public var rawValueString: String {
         switch self {
         case .PAY: return "PAY"
@@ -79,7 +79,7 @@ public class FinikSdkLocale {
         case .SEND_KOSHUMCHA: return "SEND_KOSHUMCHA"
         }
     }
-
+    
     public init?(rawString: String) {
         switch rawString {
         case "PAY": self = .PAY
@@ -101,7 +101,7 @@ public class FinikSdkLocale {
     case ALL
     case APP
     case QR
-
+    
     public var rawValueString: String {
         switch self {
         case .ALL: return "ALL"
@@ -109,7 +109,7 @@ public class FinikSdkLocale {
         case .QR: return "QR"
         }
     }
-
+    
     public init?(rawString: String) {
         switch rawString {
         case "ALL": self = .ALL
@@ -128,7 +128,7 @@ public class FinikSdkLocale {
     case PHONE_USER
     case TEXT
     case TEXT_DEVICE_ID
-
+    
     public var rawValueString: String {
         switch self {
         case .EMAIL: return "EMAIL"
@@ -140,7 +140,7 @@ public class FinikSdkLocale {
         case .TEXT_DEVICE_ID: return "TEXT_DEVICE_ID"
         }
     }
-
+    
     public init?(rawString: String) {
         switch rawString {
         case "EMAIL": self = .EMAIL
