@@ -2,7 +2,7 @@ CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO
 FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/FinikIosSdk" "${PODS_ROOT}/../../FinikIosSdk/Frameworks" "${PODS_ROOT}/FinikFlutterEngine" "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikFlutterEngine" "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/FinikIosSdk/FinikIosSdk.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -ObjC -framework "App" -framework "FinikIosSdk" -framework "Flutter" -framework "connectivity_plus" -framework "device_info_plus" -framework "path_provider_foundation" -framework "share_plus" -framework "sqflite" -framework "sqflite_darwin" -framework "url_launcher_ios"
+OTHER_LDFLAGS = $(inherited) -ObjC -framework "App" -framework "FinikIosSdk" -framework "Flutter" -framework "connectivity_plus" -framework "device_info_plus" -framework "path_provider_foundation" -framework "share_plus" -framework "sqflite_darwin" -framework "url_launcher_ios" -framework "webview_flutter_wkwebview"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_PODFILE_DIR_PATH = ${SRCROOT}/.

@@ -183,9 +183,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/device_info_plus.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/path_provider_foundation.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/share_plus.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/sqflite.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/sqflite_darwin.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/url_launcher_ios.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/webview_flutter_wkwebview.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/FinikIosSdk/FinikIosSdk.framework"
@@ -195,9 +195,9 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/device_info_plus.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/path_provider_foundation.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/share_plus.framework"
-  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/sqflite.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/sqflite_darwin.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/url_launcher_ios.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/webview_flutter_wkwebview.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

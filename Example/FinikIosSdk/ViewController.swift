@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBAction func onTapped(_ sender: UIButton) {
         FinikProvider.present(
             from: self,
-            apiKey: "YOUR_API_KEY",
+            apiKey: "5MBMJUt1Hm7mFU7kGQ3NtHC0EH5CQ9p34mVQ9q37",
             isBeta: true,
             locale: FinikSdkLocale.RU,
             textScenario: TextScenario.PAYMENT,
@@ -31,7 +31,7 @@ class ViewController: UIViewController {
                 print("ExampleApp: Payment data: \(data)")
             },
             widget: CreateItemHandlerWidget(
-                accountId: "YOUR_ACCOUNT_ID",
+                accountId: "7ed750b3-cfa9-4eff-babe-5b885fc7339f",
                 nameEn: "YOUR_ITEM_NAME_EN",
                 amount: FixedAmount(value: 99.99),
                 description: "YOUR_ITEM_DESCRIPTION",
@@ -61,11 +61,11 @@ class ViewController: UIViewController {
     @IBAction func onTappedAlternative(_ sender: UIButton) {
         FinikProvider.present(
             from: self,
-            apiKey: "YOUR_API_KEY",
+            apiKey: "5MBMJUt1Hm7mFU7kGQ3NtHC0EH5CQ9p34mVQ9q37",
             isBeta: true,
             locale: FinikSdkLocale.RU,
             textScenario: TextScenario.REPLENISHMENT,
-            paymentMethods: [PaymentMethod.QR],
+            paymentMethods: [PaymentMethod.QR, PaymentMethod.VISA],
             enableShimmer: true,
             enableShare: true,
             enableSupportButtons: false,
@@ -77,7 +77,7 @@ class ViewController: UIViewController {
                 print("ExampleApp: Payment data: \(data)")
             },
             widget: GetItemHandlerWidget(
-                parameter: ItemId(value: "YOUR_ITEM_ID")
+                parameter: ItemId(value: "1937300863_0fc2c83a-484f-48a9-b7bb-0fdc1dc53c6c")
             )
         )
     }

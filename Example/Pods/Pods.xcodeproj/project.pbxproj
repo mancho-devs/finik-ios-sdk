@@ -66,27 +66,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00D3CA48CE0D61EABF03D1788E9E4B08 /* device_info_plus.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = device_info_plus.xcframework; path = FinikIosSdk/Frameworks/device_info_plus.xcframework; sourceTree = "<group>"; };
 		0805751E1E4AB3488FDA470A2D9ED3CB /* FinikFlutterEngine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FinikFlutterEngine.release.xcconfig; sourceTree = "<group>"; };
 		10DF0FD9638D939C844F76C661153E17 /* Pods-FinikIosSdk_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FinikIosSdk_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1614423EF145AB4BEB8A764926004C11 /* Pods-FinikIosSdk_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FinikIosSdk_Example-umbrella.h"; sourceTree = "<group>"; };
 		161443063EE3EFC7BFDCE2ADBF5686BA /* Flutter.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = Flutter.xcframework; sourceTree = "<group>"; };
+		16D9DA01893BD9F945A1E4EA0D7E81C6 /* device_info_plus.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = device_info_plus.xcframework; path = FinikIosSdk/Frameworks/device_info_plus.xcframework; sourceTree = "<group>"; };
+		1910B5D1C50463F31AE551884BFF46DE /* share_plus.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = share_plus.xcframework; path = FinikIosSdk/Frameworks/share_plus.xcframework; sourceTree = "<group>"; };
 		193C1D43840AB7E05FE638CC5FDD33E3 /* FinikIosSdk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FinikIosSdk.debug.xcconfig; sourceTree = "<group>"; };
-		1D88D86800DE68FEE267688F6D04845D /* connectivity_plus.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = connectivity_plus.xcframework; path = FinikIosSdk/Frameworks/connectivity_plus.xcframework; sourceTree = "<group>"; };
-		273A6B3AF2CDFBD48D848D2F0A77B0EF /* FlutterPluginRegistrant.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = FlutterPluginRegistrant.xcframework; path = FinikIosSdk/Frameworks/FlutterPluginRegistrant.xcframework; sourceTree = "<group>"; };
+		1B06DDB845EC21B0FE21C07AC58713BC /* url_launcher_ios.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = url_launcher_ios.xcframework; path = FinikIosSdk/Frameworks/url_launcher_ios.xcframework; sourceTree = "<group>"; };
 		2A69A17200195BE4547422088646BFD9 /* Pods-FinikIosSdk_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FinikIosSdk_Tests"; path = Pods_FinikIosSdk_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		30F8EC23CA5C6389C7B976250DCEF558 /* Pods-FinikIosSdk_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FinikIosSdk_Tests-dummy.m"; sourceTree = "<group>"; };
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3A94081A9ACC85B9B54914ED7BCB4F17 /* FlutterPluginRegistrant.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = FlutterPluginRegistrant.xcframework; path = FinikIosSdk/Frameworks/FlutterPluginRegistrant.xcframework; sourceTree = "<group>"; };
 		43D7B66C658FFFA0AFDBB616F241EE5A /* Pods-FinikIosSdk_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FinikIosSdk_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		463716B5C2B8559E0FF6E0EEE54A25B7 /* FinikIosSdk-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FinikIosSdk-Info.plist"; sourceTree = "<group>"; };
 		46AB0DAF5B12A2D12E2E66C23C0CCA46 /* Pods-FinikIosSdk_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FinikIosSdk_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		48CC1992C610DC3D26D7A4D2186AE85B /* FinikIosSdk-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FinikIosSdk-umbrella.h"; sourceTree = "<group>"; };
+		4A3FA0DA69240FA82E05B3BEBAED02A8 /* webview_flutter_wkwebview.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = webview_flutter_wkwebview.xcframework; path = FinikIosSdk/Frameworks/webview_flutter_wkwebview.xcframework; sourceTree = "<group>"; };
 		5202C5E32E0894894EDD881AD092E633 /* FinikIosSdk-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FinikIosSdk-dummy.m"; sourceTree = "<group>"; };
 		52DF848401C71C64C1754846C4C7F344 /* Pods-FinikIosSdk_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FinikIosSdk_Tests.modulemap"; sourceTree = "<group>"; };
-		5685E76C09D11D35C7662FEAF4ADF582 /* sqflite.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = sqflite.xcframework; path = FinikIosSdk/Frameworks/sqflite.xcframework; sourceTree = "<group>"; };
 		5BF17E17ED1F5525EAA22F7EB9A59E46 /* FinikProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FinikProvider.swift; path = FinikIosSdk/Classes/FinikProvider.swift; sourceTree = "<group>"; };
+		61A00486726DF7BE4DBA0A3BD032B2FC /* path_provider_foundation.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = path_provider_foundation.xcframework; path = FinikIosSdk/Frameworks/path_provider_foundation.xcframework; sourceTree = "<group>"; };
+		6A1118B7AD0CC19A0FC5C3669B346DF0 /* connectivity_plus.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = connectivity_plus.xcframework; path = FinikIosSdk/Frameworks/connectivity_plus.xcframework; sourceTree = "<group>"; };
 		6DB98A51DE4BE29C27E080D5AB8C3F37 /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = FinikIosSdk/Classes/Utils.swift; sourceTree = "<group>"; };
-		713DD04EC6B6B0D7F9B4DF4235E32305 /* share_plus.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = share_plus.xcframework; path = FinikIosSdk/Frameworks/share_plus.xcframework; sourceTree = "<group>"; };
 		71AA541935135893FC4D2B32FCD6533B /* FinikIosSdk.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FinikIosSdk.modulemap; sourceTree = "<group>"; };
 		73EADCA1FAD9A148B2AC718B0733A700 /* Pods-FinikIosSdk_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FinikIosSdk_Example.modulemap"; sourceTree = "<group>"; };
 		74B42126F6F7DFC052B8DE3DD61EE47C /* Pods-FinikIosSdk_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinikIosSdk_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,22 +96,20 @@
 		885303F4B36A1796D9A7353414E9DC70 /* Pods-FinikIosSdk_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FinikIosSdk_Tests-umbrella.h"; sourceTree = "<group>"; };
 		8A1E5C74CBADA8A7F208B1F7A5174896 /* Pods-FinikIosSdk_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinikIosSdk_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		8AB9E9558749DB550FC345B6537C5831 /* FinikWidgetHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FinikWidgetHelper.swift; path = FinikIosSdk/Classes/FinikWidgetHelper.swift; sourceTree = "<group>"; };
+		8E8C8BFF81646DCADCB7B6EF3439DD7C /* App.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = App.xcframework; path = FinikIosSdk/Frameworks/App.xcframework; sourceTree = "<group>"; };
 		90B8F0CD563C365E74EC6AB617E41A17 /* FinikIosSdk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FinikIosSdk.release.xcconfig; sourceTree = "<group>"; };
 		932C8D55AA0E1D13946FF22FC5ADDEC3 /* Pods-FinikIosSdk_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinikIosSdk_Example.release.xcconfig"; sourceTree = "<group>"; };
 		98B26478DAF3A79929B5FE7BAFAB3AA1 /* Pods-FinikIosSdk_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FinikIosSdk_Example-frameworks.sh"; sourceTree = "<group>"; };
 		99EF069DA8CA80D6A886E474D418B783 /* FinikFlutterEngine-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FinikFlutterEngine-xcframeworks.sh"; sourceTree = "<group>"; };
-		9BA36F3A7EFB1ED29A2AFBAFA5C170A5 /* sqflite_darwin.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = sqflite_darwin.xcframework; path = FinikIosSdk/Frameworks/sqflite_darwin.xcframework; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DEF7F66018BB74EB19C1AC30FC1F440 /* FinikIosSdk-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "FinikIosSdk-xcframeworks.sh"; sourceTree = "<group>"; };
 		AAB50A9E3648F06BFF10132231F200D5 /* FinikIosSdk-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FinikIosSdk-prefix.pch"; sourceTree = "<group>"; };
 		AAE41564181679A00F04D5BF0284FF08 /* FinikIosSdk.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FinikIosSdk.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AEAC6026CCB7F36DB3C6CBBCBD381350 /* Pods-FinikIosSdk_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FinikIosSdk_Example-Info.plist"; sourceTree = "<group>"; };
+		BD42B3A083034BA41EF78512A55A0FA9 /* sqflite_darwin.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = sqflite_darwin.xcframework; path = FinikIosSdk/Frameworks/sqflite_darwin.xcframework; sourceTree = "<group>"; };
 		C05C2B1A891EC589D8793F6D0760FF93 /* Pods-FinikIosSdk_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FinikIosSdk_Example-dummy.m"; sourceTree = "<group>"; };
 		C204B5A688809AD3E83AD1AAAC75834A /* Pods-FinikIosSdk_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FinikIosSdk_Example"; path = Pods_FinikIosSdk_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C42A48898CE3818B8E56AA8F7A24DCFA /* App.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = App.xcframework; path = FinikIosSdk/Frameworks/App.xcframework; sourceTree = "<group>"; };
 		C75BB723044856530773731F699E7812 /* FinikIosSdk */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FinikIosSdk; path = FinikIosSdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF41077A7035CF5F06F409F18C7E1019 /* url_launcher_ios.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = url_launcher_ios.xcframework; path = FinikIosSdk/Frameworks/url_launcher_ios.xcframework; sourceTree = "<group>"; };
-		E6B8BD6D2AEF9733EE380D26810A220A /* path_provider_foundation.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = path_provider_foundation.xcframework; path = FinikIosSdk/Frameworks/path_provider_foundation.xcframework; sourceTree = "<group>"; };
 		F05D6570ADA2A624F66631D2599340FB /* Pods-FinikIosSdk_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FinikIosSdk_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F1814FAF6264D97F5055269E7C865E3B /* Pods-FinikIosSdk_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FinikIosSdk_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F39A74B523864D3BD38C18E3A74AB5FE /* FinikFlutterEngine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FinikFlutterEngine.debug.xcconfig; sourceTree = "<group>"; };
@@ -182,6 +182,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5140A21F1545130E457A8A0A897C6FF3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E8C8BFF81646DCADCB7B6EF3439DD7C /* App.xcframework */,
+				6A1118B7AD0CC19A0FC5C3669B346DF0 /* connectivity_plus.xcframework */,
+				16D9DA01893BD9F945A1E4EA0D7E81C6 /* device_info_plus.xcframework */,
+				3A94081A9ACC85B9B54914ED7BCB4F17 /* FlutterPluginRegistrant.xcframework */,
+				61A00486726DF7BE4DBA0A3BD032B2FC /* path_provider_foundation.xcframework */,
+				1910B5D1C50463F31AE551884BFF46DE /* share_plus.xcframework */,
+				BD42B3A083034BA41EF78512A55A0FA9 /* sqflite_darwin.xcframework */,
+				1B06DDB845EC21B0FE21C07AC58713BC /* url_launcher_ios.xcframework */,
+				4A3FA0DA69240FA82E05B3BEBAED02A8 /* webview_flutter_wkwebview.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		51DD2C4C3BB60E105F281910E6658821 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -213,7 +229,7 @@
 				5BF17E17ED1F5525EAA22F7EB9A59E46 /* FinikProvider.swift */,
 				8AB9E9558749DB550FC345B6537C5831 /* FinikWidgetHelper.swift */,
 				6DB98A51DE4BE29C27E080D5AB8C3F37 /* Utils.swift */,
-				BCBB8773E2B804F95128BBAD756B77C7 /* Frameworks */,
+				5140A21F1545130E457A8A0A897C6FF3 /* Frameworks */,
 				E3AB55CF9CAA62B7FCCFE20185553118 /* Pod */,
 				51DD2C4C3BB60E105F281910E6658821 /* Support Files */,
 			);
@@ -243,22 +259,6 @@
 			);
 			name = "Pods-FinikIosSdk_Tests";
 			path = "Target Support Files/Pods-FinikIosSdk_Tests";
-			sourceTree = "<group>";
-		};
-		BCBB8773E2B804F95128BBAD756B77C7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C42A48898CE3818B8E56AA8F7A24DCFA /* App.xcframework */,
-				1D88D86800DE68FEE267688F6D04845D /* connectivity_plus.xcframework */,
-				00D3CA48CE0D61EABF03D1788E9E4B08 /* device_info_plus.xcframework */,
-				273A6B3AF2CDFBD48D848D2F0A77B0EF /* FlutterPluginRegistrant.xcframework */,
-				E6B8BD6D2AEF9733EE380D26810A220A /* path_provider_foundation.xcframework */,
-				713DD04EC6B6B0D7F9B4DF4235E32305 /* share_plus.xcframework */,
-				5685E76C09D11D35C7662FEAF4ADF582 /* sqflite.xcframework */,
-				9BA36F3A7EFB1ED29A2AFBAFA5C170A5 /* sqflite_darwin.xcframework */,
-				DF41077A7035CF5F06F409F18C7E1019 /* url_launcher_ios.xcframework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -376,7 +376,7 @@
 			buildConfigurationList = 917F9D4A0BD170E818AE0B268236970F /* Build configuration list for PBXNativeTarget "FinikIosSdk" */;
 			buildPhases = (
 				E27DCBE28F2E41A29EDD177649F2BA7D /* Headers */,
-				539F8F41B0D7ADF76419621B53825358 /* [CP] Copy XCFrameworks */,
+				F052D15F5B9E5E371F331EFD9B6F03BF /* [CP] Copy XCFrameworks */,
 				8EC5A9DFCD93F55E293634DF3850EB4D /* Sources */,
 				B234ADFFC5D7CF5D32AA3A6E38F53840 /* Frameworks */,
 				E6FFFE79A2A682AF5D0FA2C9AB42187F /* Resources */,
@@ -468,40 +468,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		539F8F41B0D7ADF76419621B53825358 /* [CP] Copy XCFrameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/FinikIosSdk/FinikIosSdk-xcframeworks.sh",
-				"${PODS_ROOT}/../../FinikIosSdk/Frameworks/App.xcframework",
-				"${PODS_ROOT}/../../FinikIosSdk/Frameworks/connectivity_plus.xcframework",
-				"${PODS_ROOT}/../../FinikIosSdk/Frameworks/device_info_plus.xcframework",
-				"${PODS_ROOT}/../../FinikIosSdk/Frameworks/FlutterPluginRegistrant.xcframework",
-				"${PODS_ROOT}/../../FinikIosSdk/Frameworks/path_provider_foundation.xcframework",
-				"${PODS_ROOT}/../../FinikIosSdk/Frameworks/share_plus.xcframework",
-				"${PODS_ROOT}/../../FinikIosSdk/Frameworks/sqflite.xcframework",
-				"${PODS_ROOT}/../../FinikIosSdk/Frameworks/sqflite_darwin.xcframework",
-				"${PODS_ROOT}/../../FinikIosSdk/Frameworks/url_launcher_ios.xcframework",
-			);
-			name = "[CP] Copy XCFrameworks";
-			outputPaths = (
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/App.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/connectivity_plus.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/device_info_plus.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/FlutterPluginRegistrant.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/path_provider_foundation.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/share_plus.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/sqflite.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/sqflite_darwin.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/url_launcher_ios.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/FinikIosSdk/FinikIosSdk-xcframeworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		DD368B5196B15529577B02E3C92D5F7C /* [CP] Copy XCFrameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -518,6 +484,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/FinikFlutterEngine/FinikFlutterEngine-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F052D15F5B9E5E371F331EFD9B6F03BF /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/FinikIosSdk/FinikIosSdk-xcframeworks.sh",
+				"${PODS_ROOT}/../../FinikIosSdk/Frameworks/App.xcframework",
+				"${PODS_ROOT}/../../FinikIosSdk/Frameworks/connectivity_plus.xcframework",
+				"${PODS_ROOT}/../../FinikIosSdk/Frameworks/device_info_plus.xcframework",
+				"${PODS_ROOT}/../../FinikIosSdk/Frameworks/FlutterPluginRegistrant.xcframework",
+				"${PODS_ROOT}/../../FinikIosSdk/Frameworks/path_provider_foundation.xcframework",
+				"${PODS_ROOT}/../../FinikIosSdk/Frameworks/share_plus.xcframework",
+				"${PODS_ROOT}/../../FinikIosSdk/Frameworks/sqflite_darwin.xcframework",
+				"${PODS_ROOT}/../../FinikIosSdk/Frameworks/url_launcher_ios.xcframework",
+				"${PODS_ROOT}/../../FinikIosSdk/Frameworks/webview_flutter_wkwebview.xcframework",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputPaths = (
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/App.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/connectivity_plus.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/device_info_plus.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/FlutterPluginRegistrant.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/path_provider_foundation.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/share_plus.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/sqflite_darwin.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/url_launcher_ios.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/webview_flutter_wkwebview.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/FinikIosSdk/FinikIosSdk-xcframeworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

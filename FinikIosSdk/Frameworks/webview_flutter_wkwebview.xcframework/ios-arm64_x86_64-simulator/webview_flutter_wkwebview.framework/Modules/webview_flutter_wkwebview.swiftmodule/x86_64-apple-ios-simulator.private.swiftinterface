@@ -1,0 +1,53 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -enable-bare-slash-regex -module-name webview_flutter_wkwebview
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+import Darwin
+import Flutter
+import Foundation
+import Security
+import Swift
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+@_exported import webview_flutter_wkwebview
+@_hasMissingDesignatedInitializers open class FlutterAssetManager {
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency public class NavigationDelegateImpl : ObjectiveC.NSObject, WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didFailProvisionalNavigation navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  @_Concurrency.MainActor @preconcurrency @objc public func webViewWebContentProcessDidTerminate(_ webView: WebKit.WKWebView)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping @_Concurrency.MainActor (WebKit.WKNavigationActionPolicy) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationResponse: WebKit.WKNavigationResponse, decisionHandler: @escaping @_Concurrency.MainActor (WebKit.WKNavigationResponsePolicy) -> Swift.Void)
+  @_Concurrency.MainActor @preconcurrency @objc public func webView(_ webView: WebKit.WKWebView, didReceive challenge: Foundation.URLAuthenticationChallenge, completionHandler: @escaping @_Concurrency.MainActor (Foundation.URLSession.AuthChallengeDisposition, Foundation.URLCredential?) -> Swift.Void)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class ProxyAPIRegistrar : webview_flutter_wkwebview.WebKitLibraryPigeonProxyApiRegistrar {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class WebKitLibraryPigeonProxyApiRegistrar {
+  public var ignoreCallsToDart: Swift.Bool
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class PigeonApiDelegateURLResponse {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers open class PigeonApiDelegateWKWebView {
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class WebViewFlutterPlugin : ObjectiveC.NSObject, Flutter.FlutterPlugin {
+  @objc public static func register(with registrar: any Flutter.FlutterPluginRegistrar)
+  @objc public func detachFromEngine(for registrar: any Flutter.FlutterPluginRegistrar)
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc(FWFWebViewFlutterWKWebViewExternalAPI) public class FWFWebViewFlutterWKWebViewExternalAPI : ObjectiveC.NSObject {
+  @objc(webViewForIdentifier:withPluginRegistry:) public static func webView(forIdentifier identifier: Swift.Int64, withPluginRegistry registry: any Flutter.FlutterPluginRegistry) -> WebKit.WKWebView?
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension webview_flutter_wkwebview.NavigationDelegateImpl : Swift.Sendable {}

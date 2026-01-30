@@ -10,11 +10,11 @@
 		</data>
 		<key>flutter_assets/AssetManifest.bin</key>
 		<data>
-		kO6Oz5thQwbFNZCT/Fg2ydYj8Xg=
+		1Og5CDi+FfmKqKHNZ/hqMsNDaCY=
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		CRlSX/rtinUdYUKXr7tlcEy6wf0=
+		TPFTTDso1T5ECzBwfReT9NxAdeI=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		0yS66cAGxoZD6fbSG91NjAkOkPo=
+		fFCeceLGAh82prLKE+WxOrNHKJs=
 		</data>
 		<key>flutter_assets/NativeAssetsManifest.json</key>
 		<data>
@@ -180,6 +180,10 @@
 		<data>
 		1XZ7G3yU+t1Ms39UfinerisZC7Q=
 		</data>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_visa.svg</key>
+		<data>
+		ByNUQtvFbqUUhZ8WCQGd+/9wQjQ=
+		</data>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_whatsapp.svg</key>
 		<data>
 		+BhtTdZpkDgN6GkQGmsI+Rzk1yA=
@@ -195,14 +199,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			P7p/0rFbH+Dynb8jOhYtpZ34MX/HbgSOUGNuLhtexeo=
+			UdEzQiPbTUol+3PzJ4UuR+0935Lpp5ErMIA3MiPoMXc=
 			</data>
 		</dict>
 		<key>flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			riG7f8SaowupxmeasQcZqDh+fUU9NL/0EK6ehwHoLT0=
+			M1w4GHElrYOUf/Fab5dltKi5C/8d4eZyySuJjJZkdKI=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -216,7 +220,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			x8DSSOMLUUxqz2K/dI/KDooejD1scrpyU1WCrlMIsa8=
+			OQtbr7Ed/+1lutn7CYpPcNJDlFN5GOBWbMIqNvlokjw=
 			</data>
 		</dict>
 		<key>flutter_assets/NativeAssetsManifest.json</key>
@@ -490,6 +494,13 @@
 			<key>hash2</key>
 			<data>
 			jPp5vznWyz05Pbkn7E67x1aE3Lox56Gx4CTgKv2DJ/k=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_visa.svg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VSbdBo2I8rT151+f/APL8IFGDBTvrlAactEVOJmmI7Q=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/finik_sdk/assets/svg/ic_whatsapp.svg</key>

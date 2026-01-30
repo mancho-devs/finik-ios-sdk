@@ -101,12 +101,14 @@ public class FinikSdkLocale {
     case ALL
     case APP
     case QR
+    case VISA
     
     public var rawValueString: String {
         switch self {
         case .ALL: return "ALL"
         case .APP: return "APP"
         case .QR: return "QR"
+        case .VISA: return "VISA"
         }
     }
     
@@ -115,6 +117,7 @@ public class FinikSdkLocale {
         case "ALL": self = .ALL
         case "APP": self = .APP
         case "QR": self = .QR
+        case "VISA": self = .VISA
         default: return nil
         }
     }

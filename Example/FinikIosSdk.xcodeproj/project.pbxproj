@@ -300,9 +300,9 @@
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/device_info_plus.framework/device_info_plus",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/path_provider_foundation.framework/path_provider_foundation",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/share_plus.framework/share_plus",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/sqflite.framework/sqflite",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/sqflite_darwin.framework/sqflite_darwin",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/url_launcher_ios.framework/url_launcher_ios",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/FinikIosSdk/webview_flutter_wkwebview.framework/webview_flutter_wkwebview",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -313,9 +313,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/device_info_plus.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/path_provider_foundation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/share_plus.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqflite.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/sqflite_darwin.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/url_launcher_ios.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/webview_flutter_wkwebview.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
