@@ -7,5 +7,4 @@ framework module path_provider_foundation {
 
 module path_provider_foundation.Swift {
   header "path_provider_foundation-Swift.h"
-  requires objc
 }

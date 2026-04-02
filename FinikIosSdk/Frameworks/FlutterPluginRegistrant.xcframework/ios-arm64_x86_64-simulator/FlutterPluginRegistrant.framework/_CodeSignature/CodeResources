@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LyjHGjPyPK6Q5fKdxutK8DTlVYY=
+		ZM3W8LUMeHhkNg7lvZJSLn1PXcM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -25,10 +25,6 @@
 	<dict>
 		<key>Headers/FlutterPluginRegistrant-umbrella.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			BlXyOkl1muCCIB1VnqAWVectDfU=
-			</data>
 			<key>hash2</key>
 			<data>
 			3cVVto8eb/sKPk5f5F69EhmtKa+WSnGsI0ox4w+GcGA=
@@ -36,10 +32,6 @@
 		</dict>
 		<key>Headers/GeneratedPluginRegistrant.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TESPWpyRMYQntVufMz6fb0/uekw=
-			</data>
 			<key>hash2</key>
 			<data>
 			pfiMxkFdLmOdLLVJNIuE4Cp/3QJhYDsAY6vvb6EfB1o=
@@ -47,10 +39,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			iTD5plvMurvrDjStxy2dm6e+pBY=
-			</data>
 			<key>hash2</key>
 			<data>
 			kQPs5On+4EVuv3Zb8VnSiYHtRNpranpxr4chT8qhXSA=
