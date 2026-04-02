@@ -2,13 +2,13 @@
 triple:          'arm64-apple-darwin'
 binary-path:     '/Users/k.asanov/Projects/averspay-flutter-sdk/flutter_module/build/ios/framework/Release/iphoneos/Release-iphoneos/device_info_plus/device_info_plus.framework/device_info_plus'
 relocations:
-  - { offset: 0x3D55, size: 0x8, addend: 0x0, symName: _device_info_plusVersionString, symObjAddr: 0x0, symBinAddr: 0xA0A0, symSize: 0x0 }
-  - { offset: 0x3D89, size: 0x8, addend: 0x0, symName: _device_info_plusVersionNumber, symObjAddr: 0x30, symBinAddr: 0xA0D0, symSize: 0x0 }
-  - { offset: 0x3DC5, size: 0x8, addend: 0x0, symName: '+[DeviceIdentifiers userKnownDeviceModel:]', symObjAddr: 0x0, symBinAddr: 0x8000, symSize: 0xE18 }
-  - { offset: 0x3DD2, size: 0x8, addend: 0x0, symName: '+[DeviceIdentifiers userKnownDeviceModel:]', symObjAddr: 0x0, symBinAddr: 0x8000, symSize: 0xE18 }
-  - { offset: 0x3E76, size: 0x8, addend: 0x0, symName: '+[FPPDeviceInfoPlusPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x8E18, symSize: 0xA0 }
-  - { offset: 0x3FB5, size: 0x8, addend: 0x0, symName: '+[FPPDeviceInfoPlusPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x8E18, symSize: 0xA0 }
-  - { offset: 0x400E, size: 0x8, addend: 0x0, symName: '-[FPPDeviceInfoPlusPlugin handleMethodCall:result:]', symObjAddr: 0xA0, symBinAddr: 0x8EB8, symSize: 0x6E4 }
-  - { offset: 0x41E4, size: 0x8, addend: 0x0, symName: '-[FPPDeviceInfoPlusPlugin availableMemoryInbMB]', symObjAddr: 0x784, symBinAddr: 0x959C, symSize: 0x64 }
-  - { offset: 0x4357, size: 0x8, addend: 0x0, symName: '-[FPPDeviceInfoPlusPlugin isDevicePhysical]', symObjAddr: 0x7E8, symBinAddr: 0x9600, symSize: 0x8 }
+  - { offset: 0x3DCB, size: 0x8, addend: 0x0, symName: _device_info_plusVersionString, symObjAddr: 0x0, symBinAddr: 0x60C0, symSize: 0x0 }
+  - { offset: 0x3DFF, size: 0x8, addend: 0x0, symName: _device_info_plusVersionNumber, symObjAddr: 0x30, symBinAddr: 0x60F0, symSize: 0x0 }
+  - { offset: 0x3E3B, size: 0x8, addend: 0x0, symName: '+[DeviceIdentifiers userKnownDeviceModel:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xE1C }
+  - { offset: 0x3E48, size: 0x8, addend: 0x0, symName: '+[DeviceIdentifiers userKnownDeviceModel:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xE1C }
+  - { offset: 0x3EEC, size: 0x8, addend: 0x0, symName: '+[FPPDeviceInfoPlusPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4E1C, symSize: 0xA4 }
+  - { offset: 0x4047, size: 0x8, addend: 0x0, symName: '+[FPPDeviceInfoPlusPlugin registerWithRegistrar:]', symObjAddr: 0x0, symBinAddr: 0x4E1C, symSize: 0xA4 }
+  - { offset: 0x40A0, size: 0x8, addend: 0x0, symName: '-[FPPDeviceInfoPlusPlugin handleMethodCall:result:]', symObjAddr: 0xA4, symBinAddr: 0x4EC0, symSize: 0x6E8 }
+  - { offset: 0x4277, size: 0x8, addend: 0x0, symName: '-[FPPDeviceInfoPlusPlugin availableMemoryInbMB]', symObjAddr: 0x78C, symBinAddr: 0x55A8, symSize: 0x64 }
+  - { offset: 0x4408, size: 0x8, addend: 0x0, symName: '-[FPPDeviceInfoPlusPlugin isDevicePhysical]', symObjAddr: 0x7F0, symBinAddr: 0x560C, symSize: 0x8 }
 ...
